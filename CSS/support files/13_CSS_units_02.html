@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_units_support_02</title>
+
+    <style>
+
+        #pre{
+            white-space: pre;
+        }
+
+        html{
+            font-size: 15px;
+        }
+
+        .border{
+            border: 1px solid blue;
+        }
+
+        #id_03{
+            font-size: 2rem;
+        }
+
+        #id_04{
+            font-size: 0.5rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>rem</h1> <hr>
+
+    <p>
+        <ul>
+            <li>rem provides measure relative to the root [html tag] size.</li>
+
+            - Example : <br>
+
+            <li>Here is this setup : a div and a p-tag (paragraph tag) in it</li>
+            <li>the div and the p (paragraph) tag have their respective text to make them separate.</li> <br> <br>
+
+            <div id="id_01" class="border">
+                This is div text.
+                <p id="id_02" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+
+            <li>we setup a custom size value of root [html tag]:</li>
+            <p id="pre">
+                html{
+                    font-size: 15px;
+                }
+            </p> <br> <br>
+
+            <li>if we want to make the size of div text twice the base font size (15px*2) and make the size of paragraph text half the base font size (15px/2) we will use <b>2rem</b> and <b>0.5rem</b> respecively.</li>
+            <br> <br>
+
+            <div id="id_03" class="border">
+                This is div text.
+                <p id="id_04" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

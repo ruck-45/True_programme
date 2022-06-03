@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradients</title>
+
+    <style>
+        #id_01{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(red, yellow, green);
+        }
+
+        #id_02{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(to right ,red, yellow, green);
+        }
+
+        #id_03{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(to left ,red, yellow, green);
+        }
+
+        #id_04{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(to bottom right ,red, yellow, green);
+        }
+
+        #id_05{
+            height: 300px;
+            width: 500px;
+            background-image: linear-gradient(120deg ,red, yellow, green);
+        }
+
+        #id_06{
+            height: 300px;
+            width: 500px;
+            background-image: radial-gradient(red, yellow, green);
+        }
+
+        #id_07{
+            height: 300px;
+            width: 500px;
+            background-image: radial-gradient(circle ,red, yellow, green);
+        }
+
+        #id_08{
+            height: 300px;
+            width: 500px;
+            background-image: radial-gradient(circle ,red 20%, yellow 30%, green 50%);
+        }
+    </style>
+</head>
+<body>
+    <h1>Gradients</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Gradient is the blending of diffrent</li>
+            <li>syntax : <b>background-image: linear-gradient( mode, color1, color2, color3 );</b> </li> <br> <br>
+
+            - Example : <br> <br>
+
+            background-image: linear-gradient(red, yellow, green); <br> <br>
+            <div id="id_01"></div>
+            <br> <br>
+
+            background-image: linear-gradient(to right ,red, yellow, green); [makes the gradient from left to right] <br> <br>
+            <div id="id_02"></div>
+            <br> <br>
+
+            background-image: linear-gradient(to left ,red, yellow, green); [makes the gradient from right to left] <br> <br>
+            <div id="id_03"></div>
+            <br> <br>
+
+            background-image: linear-gradient(to bottom right ,red, yellow, green); [makes the gradient go to bottom-right corner wise] <br> <br>
+            <div id="id_04"></div>
+            <br> <br>
+
+            background-image: linear-gradient(120deg ,red, yellow, green); [makes the gradient turn that much degree] <br> <br>
+            <div id="id_05"></div>
+            <br> <br>
+
+            background-image: linear-gradient(to bottom right ,red, yellow, green); [makes the gradient ellyptical pattern] <br> <br>
+            <div id="id_06"></div>
+            <br> <br>
+
+            background-image: radial-gradient(circle, red, yellow, green); [makes the ellyptical pattern of radial gradient circular] <br> <br>
+            <div id="id_07"></div>
+            <br> <br>
+
+            background-image: radial-gradient(circle ,red 20%, yellow 30%, green 50%); [sets the percentage of container space taken by each color] <br> <br>
+            <div id="id_08"></div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print Style</title>
+
+    <style>
+        #para_01{
+            white-space: pre;
+        }
+        
+        #div_01 p{
+            overflow: auto;
+        }
+
+        #div_01 img{
+            margin: 5px;
+            border: 2px solid;
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Print Style</h1> <hr>
+
+    <p>
+        <ul>
+            <li>We can customize the way our website looks when it is requested for a print. (ctrl + p)</li>
+            <li>We can exclude unnecessery menues, drop downs, header/footer, sidebars etc from appearing in the print version of our website using this method.</li>
+            <li>We use media queries to perform this task.</li>
+            <li>We can create specific CSS code for each different media, but we are going to focus on only print here.</li>
+            <li>syntax :</li>
+
+            <p id="para_01">
+                @media print {
+
+                    CSS code;
+
+                }
+            </p>
+
+            <li>"@media screen { }" can be used to apply the CSS code for vewing on screen (which by default is) . So we dont often use it.</li>
+        </ul>
+    </p>
+
+    <h1>Example</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Default Print layout : <a href="./support files/39_print_style_01.html" target="_blank">Click Here</a></li>
+            <li>Custom Print layout : <a href="./support files/39_print_style_02.html" target="_blank">Click Here</a></li>
+
+            <br> <br>
+
+            <li>press ctrl + p to see the print page</li>
+        </ul>
+    </p>
+</body>
+</html>

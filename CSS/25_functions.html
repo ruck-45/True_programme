@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+
+    <style>
+        #box{
+            height: 200px;
+            background-color: cadetblue;
+        }
+
+        #box_02{
+            width: calc(100% - 200px);
+            height: 200px;
+            background-color: cornflowerblue;
+        }
+
+        #text{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Functions</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Css is not a programming language, but it still has functions in it.</li>
+            <li>Some functions we have used before without knowing they were like : rgb(), rgba(), linear-gradient(), url() .... etc.</li>
+        </ul>
+    </p>
+
+    <h1>calc() Function</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It is used to give values in form of mathemetical expression.</li> <br>
+            Example :
+            <li>Suppose we have following box -</li>
+        </ul>
+        <div id="box"></div>
+        <ul>
+            <li>we want to provide a space right side of 200px, and also when we change the viewport size the box can change, but the space in the right side should remain 200px always.</li>
+            <li>We can use calc() function here.</li>
+            <li>we will set - {width : calc(100% - 200px)} </li>
+            <li>Try changing the viewport , you will see the difference.</li>
+        </ul>
+        <div id="box_02"></div>
+    </p>
+
+    <h1>var() Function</h1> <hr>
+
+    <p>
+        <ul>
+            <li>We can create variables using var function.</li>
+            <li>Variables can be used to make big changes in website easily by just changing the values of the variables, instead of manually finding each value to change throughout the website.</li>
+            <li>Syntax :</li>
+        </ul>
+        <div id="text">
+            :root{
+                --back-color: (color value);
+                --text-color: (color value);
+                --text-font: (font-family);
+                
+                etc...
+            }
+
+            #id{
+                background-color: var(--back-color);
+                color: var(--text-color)
+                etc....
+            }
+        </div>
+
+        <ul>
+            <li>If we need to cahnge background color, we can do it in :root and it will be applied to whole website.</li>
+        </ul>
+    </p>
+</body>
+</html>

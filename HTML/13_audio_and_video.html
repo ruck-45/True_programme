@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio & Video</title>
+</head>
+<body>
+    <h1>Audio</h1> <hr>
+    <ul>
+        <li>(audio-tag) is used to make an audio element</li>
+        <li>(controls) atttribute is used to setup the audio player and give control to users</li>
+        <li>(source-tag) is used to provide address of original audio file</li>
+        <li>We can provide multiple audio file types such that the browser can choose which file it supports and then play it.</li>
+        <li>We can add a text to notify users if the browsr doesnot support any of the file we provided inside (audio-tag).</li>
+        <br>
+        Example :
+        <br>
+        <audio controls>
+            <source src="./audio/quarentine_song.mp3" type="audio/mpeg">
+            Sorry! your browser doesnt support mp3 files.
+        </audio>
+    </ul>
+
+    <h1>Video</h1> <hr>
+    <ul>
+        <li>(video-tag) is used to make an audio element</li>
+        <li>(controls) atttribute is used to setup the audio player and give control to users.</li>
+        <li>(autoplay) attribute can be used to take the controls away from user and directly autoplay in background.</li>
+        <li>(source-tag) is used to provide address of original video file.</li>
+        <li>We can provide multiple video file types such that the browser can choose which file it supports and then play it.</li>
+        <li>We can add a text to notify users if the browsr doesnot support any of the file we provided inside (audio-tag).</li>
+        <br>
+        <li>(width and height) attributes are present to specify dimentions.</li>
+        <br>
+        Example : control features available
+        <br>
+        <video controls height="450" width="700" >
+            <source src="./video/tears.mp4" type="video/mp4">
+        </video>
+        <br> <br>
+        Example : autoplay
+        <br>
+        <video autoplay height="450" width="700" >
+            <source src="./video/tears.mp4" type="video/mp4">
+        </video>
+    </ul>
+</body>
+</html>

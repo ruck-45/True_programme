@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border</title>
+
+    <style>
+        #para_01{
+            border-style: solid;
+        }
+
+        #para_02{
+            border-style: dotted;
+        }
+
+        #para_03{
+            border-style: dashed;
+        }
+
+        #para_04{
+            border-style: groove;
+        }
+
+        #para_05{
+            border-style: ridge;
+        }
+
+        #para_06{
+            border-style: dotted;
+            border-width: 10px;
+        }
+
+        #para_07{
+            border-style: solid;
+            border-width: 4px;
+            border-color: green;
+        }
+
+        #para_08{
+            border-style: solid;
+            border-color: green;
+            border-radius: 10px;
+        }
+
+        #para_09{
+            border-style: solid;
+            border-color: green;
+            border-radius: 40%;
+        }
+
+        #para_10{
+            border-style : dashed solid;
+            border-width : 5px 8px;
+            border-color : red green;
+            border-radius : 15px 0%;
+        }
+
+        #para_11{
+            border-style: solid dashed double dotted;
+            border-width: 8px 2px 5px 4px;
+            border-color: yellow blue violet red;
+            border-radius: 20px 10px 0px 30px;
+        }
+
+        #para_12{
+            border-style: solid;
+            border-right-color: saddlebrown;
+            border-left-color: greenyellow;
+            border-top-right-radius: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Border Properties</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>border-style: (different styles) ;</b></li>
+
+            - provides different style presets to border<br>
+            - by default it is set to none <br>
+            - there are a lot of presets , a few are only mentioned here.
+
+            <br> <br>
+            - solid
+            <p id="para_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+
+            <br> <br>
+            - dotted
+            <p id="para_02">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+
+            <br> <br>
+            - dashed
+            <p id="para_03">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+
+            <br> <br>
+            - groove
+            <p id="para_04">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+
+            <br> <br>
+            - ridge
+            <p id="para_05">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+            <br> <br>
+
+            <li><b>border-width: (width in px) ;</b></li>
+
+            - sets width of border<br>
+            <br> <br>
+            - 10px
+            <p id="para_06">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+            <br> <br>
+
+            <li><b>border-color: (color) ;</b></li>
+
+            - sets border color<br>
+            <br> <br>
+            - green
+            <p id="para_07">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+            <br> <br>
+
+            <li><b>border-radius: (value in px or %) ;</b></li>
+
+            - makes the edes of border rounded.<br>
+            - can be set using pixel or percentage-of-width. <br>
+            - becomes gooduse giving border to images with rounded corners. <br>
+            <br> <br>
+            - border-radius = 10px
+            <p id="para_08">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+
+            <br> <br>
+            - border-radius = 40%
+            <p id="para_09">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+        </ul>
+    </p>
+
+    <h1>Giving two values in Border Properties</h1> <hr>
+
+    <p>
+        <ul>
+            - giving two values (separated by space) in border properties makes the <ins>first value applied to top and bottom part</ins>, and <ins>second value to right and left part</ins>.
+            <br> <br>
+
+            - Example : <br>
+
+            <li>border-style : dashed solid;</li>
+            <li>border-width : 5px 8px;</li>
+            <li>border-color : red green;</li>
+            <li>border-radius : 15px 0%;</li>
+
+            <p id="para_10">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus!
+            </p>
+        </ul>
+    </p>
+
+    <h1>Giving four values in Border Properties</h1> <hr>
+
+    <p>
+        <ul>
+            - giving four values (separated by space) in border properties makes the <ins>first value</ins> applied to <ins>top part</ins>, <ins>second value</ins> applied to <ins>right part</ins>, <ins>third value</ins> applied to <ins>bottom part</ins> and <ins>fourth value</ins> applied to <ins>left part</ins>. <br>
+            - 1st 2nd 3rd 4th = top right bottom left (clockwise)
+            <br> <br>
+
+            - Example : <br>
+
+            <li>border-style: solid dashed double dotted;</li>
+            <li>border-width: 8px 2px 5px 4px;</li>
+            <li>border-color: yellow blue violet red;</li>
+            <li>border-radius: 20px 10px 0px 30px;</li>
+
+            <p id="para_11">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus! <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam consequatur corporis sit quaerat maxime mollitia id porro quia quas sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat laboriosam nobis modi cumque labore accusamus facere nostrum quod voluptatibus animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laboriosam quam maxime est quas, accusantium velit consequuntur sequi magnam necessitatibus!
+            </p>
+        </ul>
+    </p>
+
+    <h1>Giving value to a specific part in Border Properties</h1> <hr>
+
+    <p>
+        <ul>
+            - to give value to a specific part just write that part name in border property.
+            <br> <br>
+
+            - Example : <br>
+
+            <li>border-style: solid;</li>
+            <li>border-right-color: saddlebrown; (top/left/bottom/right for edges)</li>
+            <li>border-left-color: greenyellow;</li>
+            <li>border-top-right-radius: 16px; (top-right/top-left/bottom-right/bottom-left.. for vertices)</li>
+
+            <p id="para_12">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo enim quibusdam vero sequi sapiente, nesciunt aut, eius incidunt praesentium in fugiat deleniti! Excepturi tempora iure blanditiis. Voluptas autem aspernatur voluptatibus! <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam consequatur corporis sit quaerat maxime mollitia id porro quia quas sequi! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat laboriosam nobis modi cumque labore accusamus facere nostrum quod voluptatibus animi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati laboriosam quam maxime est quas, accusantium velit consequuntur sequi magnam necessitatibus!
+            </p>
+        </ul>
+    </p>
+</body>
+</html>

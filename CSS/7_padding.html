@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padding</title>
+
+    <style>
+        .class_01{
+            border: 2px solid red; 
+        }
+
+        #id_01{
+            padding: 25px;
+        }
+
+        #id_02{
+            padding: 10%;
+        }
+
+        #id_03{
+            padding: 25px 70px;
+        }
+
+        #id_04{
+            padding: 10px 25px 45px 70px;
+        }
+
+        #id_05{
+            padding-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Padding</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It is the distance between the container and the actual content in it.</li>
+            <li>We can visualize the padding by giving a border to the container.</li>
+            <li>The distance between the the border and inner text from all its edges is the default padding given to it by the browser.</li>
+            <br>
+            Visualization - (the distance between two borders is padding)
+
+            <div class="class_01">
+                <p class="class_01">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam voluptas odit enim sed aspernatur? Amet laudantium tempora unde accusantium? Eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo accusamus hic magni soluta cupiditate vel molestias sunt beatae incidunt suscipit.
+                </p>
+            </div>
+
+            <br>
+            <li>To customize padding space using padding property.</li>
+            <li>'padding property' acts just like 'border property'.</li>
+            <li>Values can be given in pixel(px) or percentage(%).</li>
+            <li>If a single value is given , it is applied ti all sides.</li>
+            <li>If two values are given it is applied to (top,bottom and right,left) respectively.</li>
+            <li>If four values are given it is applied in order of (top,right,bottom,left) order.</li>
+            <li>If we want to give value to a certain part we have to include its name in the syntax like : [ padding-top: (value) ;]</li>
+            <br>
+
+            Example - <br> <br>
+            
+            - padding: 25px;
+            <div class="class_01" id="id_01">
+                <p class="class_01">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ratione veniam autem quibusdam eveniet nihil non corporis laudantium culpa obcaecati minus unde quo, sint officiis dolore id hic ullam repellat assumenda et fuga laboriosam cupiditate itaque. Blanditiis eveniet doloribus incidunt laboriosam ducimus reiciendis magnam nostrum repellendus mollitia, ea magni fuga?
+                </p>
+            </div>
+            <br> <br>
+
+            - padding: 10%;
+            <div class="class_01" id="id_02">
+                <p class="class_01">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ratione veniam autem quibusdam eveniet nihil non corporis laudantium culpa obcaecati minus unde quo, sint officiis dolore id hic ullam repellat assumenda et fuga laboriosam cupiditate itaque. Blanditiis eveniet doloribus incidunt laboriosam ducimus reiciendis magnam nostrum repellendus mollitia, ea magni fuga?
+                </p>
+            </div>
+            <br> <br>
+
+            - padding: 25px 70px;
+            <div class="class_01" id="id_03">
+                <p class="class_01">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ratione veniam autem quibusdam eveniet nihil non corporis laudantium culpa obcaecati minus unde quo, sint officiis dolore id hic ullam repellat assumenda et fuga laboriosam cupiditate itaque. Blanditiis eveniet doloribus incidunt laboriosam ducimus reiciendis magnam nostrum repellendus mollitia, ea magni fuga?
+                </p>
+            </div>
+            <br> <br>
+
+            - padding: 10px 25px 45px 70px;
+            <div class="class_01" id="id_04">
+                <p class="class_01">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ratione veniam autem quibusdam eveniet nihil non corporis laudantium culpa obcaecati minus unde quo, sint officiis dolore id hic ullam repellat assumenda et fuga laboriosam cupiditate itaque. Blanditiis eveniet doloribus incidunt laboriosam ducimus reiciendis magnam nostrum repellendus mollitia, ea magni fuga?
+                </p>
+            </div>
+            <br> <br>
+
+            - padding-left: 60px;
+            <div class="class_01" id="id_05">
+                <p class="class_01">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tenetur ratione veniam autem quibusdam eveniet nihil non corporis laudantium culpa obcaecati minus unde quo, sint officiis dolore id hic ullam repellat assumenda et fuga laboriosam cupiditate itaque. Blanditiis eveniet doloribus incidunt laboriosam ducimus reiciendis magnam nostrum repellendus mollitia, ea magni fuga?
+                </p>
+            </div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

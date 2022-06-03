@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+
+    <style>
+        .pre{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animations</h1> <hr>
+
+    <p>
+        <ul>
+            <li>We can apply animations apart from Javascript, through CSS.</li>
+
+            <br>
+
+            <li><b>@keyframes (animation-name) { Frames }</b>
+                <ul>
+                    <li>It is used to define each frames/stages of the animation.</li>
+                    <li>if we have just 2 stages in animation, we can write them as-</li>
+
+                    <p class="pre">
+                        @keyframes change_color 
+                        {
+                                from{
+                                    background-color: red;
+                                }
+
+                                to{
+                                    background-color: yellow;
+                                }
+                        }
+                    </p>
+
+                    <li>if we have more than two stages we can precisely define the frames using percentage.</li>
+                    <li>the percentage is the fraction of the "animation-duration" mentioned below at which the transition will occure.</li>
+                    <li>Example:</li>
+
+                    <p class="pre">
+                        @keyframes change_color 
+                        {
+                                0%{
+                                    background-color: red;
+                                }
+
+                                25%{
+                                    background-color: yellow;
+                                }
+
+                                50%{
+                                    background-color: red;
+                                }
+
+                                75%{
+                                    background-color: yellow;
+                                }
+
+                                100%{
+                                    background-color: red;
+                                }
+                        }
+                    </p>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>animation-name: (name) ;</b>
+                <ul>
+                    <li>we use it to apply the animation we defined using "@keyframes" to a specific element.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>animation-duration: (time in s or ms) ;</b>
+                <ul>
+                    <li>defines the time duration for one cycle of the animation.</li>
+                    <li>The percentage given in "@keyframes" are fractions of this time duration specified.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>animation-delay: (time in s or ms) ;</b>
+                <ul>
+                    <li>defines the time after which the animation will start.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>animation-iteration-count: (number of iterations) ;</b>
+                <ul>
+                    <li>defines the number of times the animation will loop itself before coming to a halt.</li>
+                    <li>We can write- animation-iteration-count: infinite; to make the animation continue looping forever.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>animation-timing-funtion: (different modes) ;</b>
+                <ul>
+                    <li>Just like "transition-timing-function" , "animation-timing-function" also has same set of modes like - ease, ease-in, ease-in-out, ease-out ... etc.</li>
+                    <li>It specifies the nature of transition in our animation.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>animation-direction: (different modes) ;</b>
+                <ul>
+                    <li>It has different modes to control the direction of the animation.</li>
+                    <li>Some modes are : 
+                        <ul >
+                            <li>reverse - reverses the anmation direction, starts the animation at the bottom frame.</li>
+                            <li>alternate - starts the animation normally and then alters the direction in every iteration.</li>
+                            <li>alteranate-reverse - alters the direction in every iteration just like "alternate", but starts in reverse direction first</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <br> <br>
+        </ul>
+    </p>
+
+    <h1>Examples:</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Refresh pages to see the animations in each links provided</li>
+            <br>
+            <li><b>Basic color change (@keyframe from-to):</b> <a href="./support files/38_animations_01.html" target="_blank">Click Here</a></li>
+            <li><b>Basic color change (@keyframe percentage):</b> <a href="./support files/38_animations_02.html" target="_blank">Click Here</a></li>
+            <li><b>Multiple changes: (color and width)</b> <a href="./support files/38_animations_03.html" target="_blank">Click Here</a></li>
+            <li><b>Delay: (3s)</b> <a href="./support files/38_animations_04.html" target="_blank">Click Here</a></li>
+            <li><b>Iterations-3:</b> <a href="./support files/38_animations_05.html" target="_blank">Click Here</a></li>
+            <li><b>Iterations-infinite:</b> <a href="./support files/38_animations_06.html" target="_blank">Click Here</a></li>
+            <li><b>Direction-reverse:</b> <a href="./support files/38_animations_07.html" target="_blank">Click Here</a></li>
+            <li><b>Direction-alternate:</b> <a href="./support files/38_animations_08.html" target="_blank">Click Here</a></li>
+            <li><b>Direction-alternate reverse:</b> <a href="./support files/38_animations_09.html" target="_blank">Click Here</a></li>
+            <li><b>Timing function - ease in:</b> <a href="./support files/38_animations_10.html" target="_blank">Click Here</a></li>
+            <li><b>Timing function - ease in out:</b> <a href="./support files/38_animations_11.html" target="_blank">Click Here</a></li>
+        </ul>
+    </p>
+</body>
+</html>

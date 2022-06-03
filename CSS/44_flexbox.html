@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+<link rel="stylesheet" href="./CSS/44_style.css" type="text/css">
+</head>
+<body>
+    <h1>Flexbox</h1> <hr>
+
+    <div>
+        <ul>
+            <li>Flexbox is a relatively new addition to CSS.</li>
+            <li>It makes the positioning of container in HTML easier by mixing the functions of "inline-block", "float" & "position".</li>
+            <li>It is another display-type, and it makes all children of the element on which the display property is applied "flexible".</li>
+        </ul>
+    </div>
+
+    <h1>display: flex;</h1> <hr>
+
+    <div>
+        <ul>
+            <li>It makes the children of the element "flexible" and makes them available to "flexbox applications".</li>
+            <li>Majority of the flexbox properties is applied on the parent. Some are applicable on children for personal customization.</li>
+            <li>It is possible to achieve same results using "float", "positions". But the calculations involved will be very touh and complex.</li>
+        </ul>
+    </div>
+
+    <h1>Flexbox Properties For Parent-Box (to manipulate children)</h1> <hr>
+
+    <div>
+        <ul>
+            <li>
+                <b>flex-direction: (modes of direction) ;</b>
+
+                <ul>
+                    <li>Sets the way the boxes wil be aligned using various modes.</li>
+                    <li>
+                        modes include :
+                        <ul>
+                            <li> row : default, left to right</li>
+                            <li> row-reverse : right to left</li>
+                            <li> column : top to bottom</li>
+                            <li> column-reverse : bottom to top</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>flex-direction: row;</b> (default)
+                <div id="parent_01" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>flex-direction: row-reverse;</b>
+                <div id="parent_02" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>flex-direction: column;</b>
+                <div id="parent_03" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>flex-direction: column-reverse;</b>
+                <div id="parent_04" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>
+
+            <br> <hr> <br>
+
+            <li>
+                <b>flex-wrap: (modes of wrap) ;</b>
+
+                <ul>
+                    <li>By default if the number of children increase, then flexbox reduces each individual width to accomodate all in a single line.</li>
+                    <li>The default mode is : "nowrap".</li>
+                    <li>
+                        modes include :
+                        <ul>
+                            <li> nowrap : default, reduce individual width below the set width to accomodate all in single line.</li>
+                            <li> wrap : maintains the set width, and brings additional elements below to a new line</li>
+                            <li> wrap-reverse : reverses the order of "wrap" mode</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>flex-warp: nowrap;</b> (default)
+                <div id="parent_05" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>flex-warp: wrap;</b>
+                <div id="parent_06" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>flex-warp: wrap-reverse;</b>
+                <div id="parent_07" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+            </li>
+
+            <br> <hr> <br>
+
+            <li>
+                <b>flex-flow: (flex-direction) (flex-wrap) ;</b>
+
+                <ul>
+                    <li>It is a shorthand to write both "flex-direction" & "flex-wrap" in same line.</li>
+                </ul>
+
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>flex-flow: row-reverse wrap;</b>
+                <div id="parent_08" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+            </li>
+            
+            <br> <hr> <br>
+
+            <li>
+                <b>justify-content: (different modes) ;</b>
+
+                <ul>
+                    <li>It lets us align the boxes in various ways in horizontal direction.</li>
+                    <li>The default mode is : "flex-start"</li>
+                    <li>
+                        modes include :
+                        <ul>
+                            <li> flex-start : default, left alignment</li>
+                            <li> flex-end : right alignment</li>
+                            <li> center : center alignment</li>
+                            <li> space-around : gives equal amount of spaces in right and left of each box, the spaces distributed are the free spaces</li>
+                            <li> space-between : equally divides free spaces in the region between the boxes, no space is provided at the extreme ends.</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>justify-content: flex-start;</b> (default)
+                <div id="parent_09" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>justify-content: flex-end;</b>
+                <div id="parent_10" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>justify-content: center;</b>
+                <div id="parent_11" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>justify-content: space-around;</b> (The space between the boxes seems bigger because the right-space of the previous-box is added with the left-space of the later-box)
+                <div id="parent_12" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>justify-content: space-between;</b>
+                <div id="parent_13" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>            
+            
+            <br> <hr> <br>
+
+            <li>
+                <b>align-content: (different modes) ;</b>
+
+                <ul>
+                    <li>It lets us align the boxes in various ways in vertical direction. [It is "justify-content" for vertical direction]</li>
+                    <li>The default mode is : "stretch"</li>
+                    <li>
+                        modes include :
+                        <ul>
+                            <li> stretch : default, all boxes stretch equally to fill the height</li>
+                            <li> flex-start : top allinment</li>
+                            <li> flex-end : bottom allinment</li>
+                            <li> center : center allinment</li>
+                            <li> space-around : gives equal amount of spaces in top and bottom of each box, the spaces distributed are the free spaces</li>
+                            <li> space-between : equally divides free spaces in the region between the boxes (vertically), no space is provided at the extreme ends (top & bottom).</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                Examples :
+                
+                <br> <br>
+                <b>align-content: stretch;</b> (default)
+                <div id="parent_14" class="parent height_01">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>align-content: flex-start;</b>
+                <div id="parent_15" class="parent height_01">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>align-content: flex-end;</b>
+                <div id="parent_16" class="parent height_01">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>align-content: center;</b>
+                <div id="parent_17" class="parent height_01">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>align-content: space-around;</b> (The space between the boxes seems bigger because the bottom-space of the upper-box is added with the upper-space of the bottom-box)
+                <div id="parent_18" class="parent height_01">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+
+                <br> <br>
+                <b>align-content: space-between;</b>
+                <div id="parent_19" class="parent height_01">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                    <div class="child">twelve</div>
+                    <div class="child">thirteen</div>
+                </div>
+            </li>         
+            
+            <br> <hr> <br>
+
+            <li>
+                <b>align-items: (different modes) ;</b>
+
+                <ul>
+                    <li>"align-content" doesn't work if there is only one line of content.</li>
+                    <li>To vertically manipulate a single line of content we use "align-items".</li>
+                    <li>The default mode is : "stretch"</li>
+                    <li>
+                        modes include :
+                        <ul>
+                            <li> stretch : default, all boxes stretch equally to fill the height</li>
+                            <li> flex-start : top allinment</li>
+                            <li> flex-end : bottom allinment</li>
+                            <li> center : center allinment</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                Examples :
+                
+                <br> <br>
+                <b>align-items: stretch;</b> (default)
+                <div id="parent_20" class="parent height_02">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>align-items: flex-start;</b>
+                <div id="parent_21" class="parent height_02">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>align-items: flex-end;</b>
+                <div id="parent_22" class="parent height_02">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>align-items: center;</b>
+                <div id="parent_23" class="parent height_02">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>         
+        </ul>
+    </div>
+
+    <br> <br>
+
+    <h1>Flexbox Properties For Child-Box</h1> <hr>
+
+    <div>
+        <ul>
+            <li>
+                <b>order: (order of box) ;</b>
+
+                <ul>
+                    <li>lets us set the order through CSS irrespective of the order written in HTML.</li>
+                    <li>Each child is iven an order number through which its order is defined.</li>
+                </ul>
+
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>HTML order :</b>
+                <div id="parent_24" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>Custom order : three-(order: 1;), one-(order: 2;), two-(order: 3;)</b>
+                <div id="parent_25" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>
+
+            <br> <hr> <br>
+
+            <li>
+                <b>flex-grow: (ratio of growth) ;</b>
+
+                <ul>
+                    <li>flex-grow sets the ratio at which child-box will grow in size to fill in box if there are any empty spaces remaining.</li>
+                    <li>The value given in flex-grow is relative to others (in ratio).</li>
+                </ul>
+
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>normal setup :</b>
+                <div id="parent_26" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+
+                <br> <br>
+                <b>flex-grow : one-(flex-grow: 1;), two-(flex-grow: 3;), three-(flex-grow: 1;)</b>  [box-"two" will grow three times the other boxes]
+                <div id="parent_27" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>
+
+            <br> <hr> <br>
+
+            <li>
+                <b>flex-shrink: (ratio of shrink) ;</b>
+
+                <ul>
+                    <li>We know flexbox reduces individual width of child-boxes to accomodate all extra boxes in a single line.</li>
+                    <li>flex-shrink sets the ratio at which child-box will shrink in size if the number of boxes increase.</li>
+                    <li>The value given in flex-shrink is relative to others (in ratio).</li>
+                </ul>
+
+                <br>
+
+                Examples :
+
+                <br> <br>
+                <b>normal setup :</b>
+                <div id="parent_28" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                </div>
+
+                <br> <br>
+                <b>flex-shrink : one-(flex-shrink: 3;), two-(flex-shrink: 2;), three-(flex-shrink: 0;)</b>  [box-"one" will shrink three times, box-"two" will shrink two times, box-"three" will not shrink at all]
+                <div id="parent_29" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                    <div class="child">four</div>
+                    <div class="child">five</div>
+                    <div class="child">six</div>
+                    <div class="child">seven</div>
+                    <div class="child">eight</div>
+                    <div class="child">nine</div>
+                    <div class="child">ten</div>
+                    <div class="child">eleven</div>
+                </div>
+            </li>
+            
+            <br> <hr> <br>
+    
+            <li>
+                <b>align-self: (different modes) ;</b>
+
+                <ul>
+                    <li>"align-self" allows vertical alignment for each child-box individually. </li>
+                    <li>The default mode is : "stretch"</li>
+                    <li>
+                        modes include :
+                        <ul>
+                            <li> stretch : default, boxe stretches fully vertically to fill the height</li>
+                            <li> flex-start : top allinment</li>
+                            <li> flex-end : bottom allinment</li>
+                            <li> center : center allinment</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <br>
+
+                Example :
+                
+                <br> <br>
+                <b>align-self:  one-(align-self: flex-start;), two-(align-self: center;), three-(align-self: flex-end;)</b>
+                <div id="parent_30" class="parent height_02">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>
+            
+            <br> <hr> <br>
+    
+            <li>
+                <b>flex-basis: (value in px) ;</b>
+
+                <ul>
+                    <li>It sets the innitial width of a child-box.</li>
+                </ul>
+
+                <br>
+
+                Example :
+                
+                <br> <br>
+                <b>two-(flex-basis: 300px;)</b>
+                <div id="parent_31" class="parent">
+                    <div class="child">one</div>
+                    <div class="child">two</div>
+                    <div class="child">three</div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

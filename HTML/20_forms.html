@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Forms</h1> <hr>
+    <ul>
+        <li>We can use forms to take data from user.</li>
+        <li>&lt;form> tag is used to declare a form object.</li>
+        <br><br>
+        <li>For making a user input section , we use &lt;input> tag.</li>
+        <li>There are a lot different types of &lt;input> tags ,here in example only text and submit ones are shown.</li>
+        <li>We can change between different types of input tags using "type" attribute</li>
+        <br><br>
+        <li>We should make it a practice to make a &lt;div> wrapper for every inputs of a form.</li>
+        <br>
+        Example: <br> <br>
+        <form action="">
+            <div>
+                Name : <input type="text" >
+            </div>
+            <br>
+            <div>
+                Submit : <input type="Submit">
+            </div>
+        </form>
+    </ul>
+
+    <h1>Form Attributes</h1> <hr>
+    <ul>
+        <li>'method' [GET/POST] - backend stuff, by default GET</li>
+        <li>'action' [specifies where the user inputs from form will end up stored, we can specify the file/webpage...etc name to it] - by default it stores in current webpage</li>
+    </ul>
+
+    <h1>Form Input Types</h1> <hr>
+    <form action="">
+        <div>
+            text : <input type="text">
+        </div>
+        <br>
+        <div>
+            time : <input type="time"> [provides clock format, hour : minute]
+        </div>
+        <br>
+        <div>
+            date : <input type="date"> [provides calender format]
+        </div>
+        <br>
+        <div>
+            number : <input type="number"> [will only allow numbers, provides number format]
+        </div>
+        <br>
+        <div>
+            URL : <input type="url"> [will only allow URL format]
+        </div>
+        <br>
+        <div>
+            email : <input type="email"> [will only allow email format]
+        </div>
+        <br>
+        <div>
+            color : <input type="color"> [provides color palette format]
+        </div>
+        <br>
+        <div>
+            password : <input type="password"> [provides password format]
+        </div>
+        <br>
+        <div>
+            hidden : <input type="hidden" value="456"> [will hide value passed by backend and will not be seen by user, use value atribute to set value, used to pass default values]
+        </div>
+        <br>
+        <div>
+            range : <input type="range" min="10" max="1000"> [provides range format, must provide min amd max attribute to define range]
+        </div>
+        <br>
+        <div>
+            file : <input type="file"> [provides interface to upload file]
+        </div>
+        <br>
+        <div>
+            submit : <input type="submit"> [creates submit button]
+        </div>
+        <br>
+        <div>
+            reset : <input type="reset"> [will clear out whole form]
+        </div>
+        <br>
+    </form>
+
+    <h1>Attribute of Input Types</h1> <hr>
+    <br>
+    <dl>
+        <dt><h2>type - "file"</h2></dt>
+        <dd>
+            <ul>
+                <li>If using input type as "file" make sure to add an attribute - (enctype = 'multipart/form-data') to &lt;form&gt; to encrypt the uploaded data [benificial for backend]</li>
+                <li>Use "multiple" attribute in  &lt;input&gt; to allow multiple file sto be uploaded simultaneously</li>
+                <br>
+                Example : <br><br>
+                <form enctype="multipart/form-data">
+                    <div>
+                        file: <input type="file" multiple>
+                    </div>
+                </form>
+            </ul>
+        </dd>
+
+        <dt><h2>type - almost all type (text,url,email,password,submit,reset....etc)</h2></dt>
+        <dd>
+            <p>
+                - All attributes below are applicable on &lt;input&gt; tag
+                <br><br>
+                <h3> 'value' Attribute </h3>
+                - Provides default value in case of text based input, provides button names in case of buttons <br>
+                - Default value provided can be erased and user input can be provided as wish.
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text] : <input type="text" value="rucKDent">
+                    </div>
+                    <div>
+                        submit : <input type="submit" value="GO">
+                    </div>
+                    <div>
+                        reset : <input type="reset" value="Clear All">
+                    </div>
+                    <div>
+                        password : <input type="password" value="1234">
+                    </div>
+                    <div>
+                        number : <input type="number" value="6006">
+                    </div>
+                </form>
+
+                <h3> 'readonly' Attribute </h3>
+                - No editing is allowed <br>
+                - If a default value is present then that will be recorded.
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text] : <input type="text" value="rucKDent" readonly>
+                    </div>
+                    <div>
+                        password : <input type="password" value="1234" readonly>
+                    </div>
+                    <div>
+                        number : <input type="number" value="6006" readonly>
+                    </div>
+                </form>
+
+                <h3> 'disabled' Attribute </h3>
+                - totally disables the input tag <br>
+                - If a default value is present then that will be recorded.
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text] : <input type="text" value="rucKDent" disabled>
+                    </div>
+                    <div>
+                        password : <input type="password" value="1234" disabled>
+                    </div>
+                    <div>
+                        number : <input type="number" value="6006" disabled>
+                    </div>
+                    <div>
+                        date : <input type="date" disabled>
+                    </div>
+                </form>
+
+                <h3> 'size' Attribute </h3>
+                - sets the size of the box [viewport] <br>
+                - If size = '50' then it will make a box that can show 50 charecters at a time.
+                - 'size' does not affect how much charecters that box can hold, it can hold way more (if set so) but will display only that many charecters how many are set in 'size' attribute
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text, size = 50] : <input type="text" value="rucKDent" size="50">
+                    </div>
+                    <div>
+                        password [size = 10] : <input type="password" value="1234" size = "10">
+                    </div>
+                </form>
+
+                <h3> 'maxlength' Attribute </h3>
+                - sets the number of charecters that can be entered in thet input box <br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text, size = 50 , maxlength = 10] : <input type="text" value="rucKDent" size="50" maxlength="10">
+                    </div>
+                    <div>
+                        password [size = 10 , maxlength = 2] : <input type="password" value="14" size = "10" maxlength="2">
+                    </div>
+                </form>
+
+                <h3> 'placeholder' Attribute </h3>
+                - provides a gray description in input box. (set as per the programmer) <br>
+                - it doesnt affects user input, neither acts as defult input. <br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text] : <input type="text" placeholder="Enter name here" size="50">
+                    </div>
+                    <div>
+                        number : <input type="number" placeholder="Enter number">
+                    </div>
+                </form>
+
+                <h3> 'required' Attribute </h3>
+                - makes the input box as a mandatory input <br>
+                - cant submit without filling out inputs having 'required' attribute. <br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text] : <input type="text" placeholder="Enter name here" size="50" required>
+                    </div>
+                    <div>
+                        number : <input type="number" placeholder="Enter number" required>
+                    </div>
+                    <div>
+                        submit : <input type="submit" placeholder="Enter number">
+                    </div>
+                </form>
+
+                <h3> 'autofocus' Attribute </h3>
+                - no required to click on an input box to start typing, the field with autofocus will autometically becomes active as the site loads, and user can directly start typing. (refresh to see) <br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[text] : <input type="text" placeholder="Enter name here" autofocus>
+                    </div>
+                    <div>
+                        submit : <input type="submit" placeholder="Enter number">
+                    </div>
+                </form>
+
+                <h3> 'autocomplete' Attribute </h3>
+                - if set on , site will suggest the user similar words based on past filled records<br>
+                - by default it remains on<br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        Name[autocomplete not working here because we haven't set up a well rounded form submission system here] : <input type="text" placeholder="Enter name here" autocomplete="on">
+                    </div>
+                    <div>
+                        submit : <input type="submit" placeholder="Enter number">
+                    </div>
+                </form>
+
+                <h3> 'name' Attribute </h3>
+                - Specially helpful for backend. <br>
+                - If we have used a lot of input tags of same type (e.g. "text") to differentiate in backend , we give them unique id using name attribute<br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        First Name[text] : <input type="text" placeholder="Enter first name here" name="first_name">
+                    </div>
+                    <div>
+                        Middle Name[text] : <input type="text" placeholder="Enter middle name here" name="middle_name">
+                    </div>
+                    <div>
+                        Last Name[text] : <input type="text" placeholder="Enter last name here" name="last_name">
+                    </div>
+                    <div>
+                        Address[text] : <input type="text" placeholder="Enter address here" name="address">
+                    </div>
+                    <div>
+                        Hobby[text] : <input type="text" placeholder="Enter hobby here" name="hobby">
+                    </div>
+                    <div>
+                        submit : <input type="submit" placeholder="Enter number">
+                    </div>
+                </form>
+            </p>
+        </dd>
+
+        <dt><h2>type - number type (number,range....etc)</h2></dt>
+        <dd>
+            <p>
+                <h3> 'min' & 'max' Attribute </h3>
+                - Provides the range of inputs allowed <br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        number[10-1000] : <input type="number" value="60" min="10" max="1000">
+                    </div>
+                    <div>
+                        range[10-1000] : <input type="range" min="10" max="1000">
+                    </div>
+                </form>
+
+                <h3> 'step' Attribute </h3>
+                - Sets how much the increase/decrease button will change the value in one go.<br>
+                <br><br>
+                Example : <br> <br>
+                <form action="">
+                    <div>
+                        number[step = 5] : <input type="number" value="5" step="5">
+                    </div>
+                    <div>
+                        range[step = 10] : <input type="range" step="10">
+                    </div>
+                </form>
+            </p>
+        </dd>
+    </dl>
+
+
+
+</body>
+</html>

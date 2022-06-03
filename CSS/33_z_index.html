@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+
+    <style>
+        #div_01{
+            height: 200px;
+        }
+        
+        #div_01 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            display: inline-block;
+            position: relative;
+        }
+
+        #div_01 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+            position: relative;
+            top: 40px;
+            right: 40px;
+        }
+
+        #div_01 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+            position: relative;
+            top: 80px;
+            right: 80px;
+        }
+
+        #div_02{
+            height: 200px;
+        }
+        
+        #div_02 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            display: inline-block;
+            position: relative;
+            z-index: 3;
+        }
+
+        #div_02 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+            position: relative;
+            top: 40px;
+            right: 40px;
+            z-index: 2;
+        }
+
+        #div_02 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+            position: relative;
+            top: 80px;
+            right: 80px;
+            z-index: 1;
+        }
+
+        #div_03{
+            height: 200px;
+        }
+        
+        #div_03 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: green;
+            display: inline-block;
+            position: relative;
+            z-index: 2;
+        }
+
+        #div_03 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+            position: relative;
+            top: 40px;
+            right: 40px;
+            z-index: 3;
+        }
+
+        #div_03 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+            position: relative;
+            top: 80px;
+            right: 80px;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>z-index</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Here is a setup:</li>
+
+            <div id="div_01">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+            <li>if we wanted to bring the green one to front or the orange one to front then, we can do that by assignin the z-index.</li>
+            <li>z-index is the priority given in z axis (if screen is conidered x and y plane)</li>
+            <li>z-index has no limit on its value</li>
+            <li>The higher the z-index , the more hih up it is over others</li>
+
+            <br>
+            Example : <br> <br>
+
+            z-index of green = 3, orange = 2, black = 1
+            <div id="div_02">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br> <br>
+
+            z-index of green = 2, orange = 3, black = 1
+            <div id="div_03">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            
+            <br>
+            <li>z-index works on only those elements who are positioned. static elements will not respond to z-index.</li>
+        </ul>
+    </p>
+
+</body>
+</html>

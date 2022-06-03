@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specificity</title>
+
+    <style>
+        .pre{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS specificity</h1> <hr>
+
+    <div>
+        <p>
+            <b>If one element is styled by more than one rule, the which style will be applicable?</b> <br> <br>
+
+            - the more specific rule will get more priority. (the rule havin more information about the element)
+        </p>
+    </div>
+
+    <h1>General Priority rules</h1> <hr>
+
+    <div>
+        <ul>
+            <li><b>"!important"</b> will override everything.</li>
+            <li><b>"inline-CSS"</b> can override everything except "!important".</li>
+            <li>"External-CSS" & "Internal-CSS" will work according to the <b>"Specificity Rule"</b></li>
+            <li>if same rule is written two or more times in external/internal sheet, then the last rule will be applicable.</li>
+        </ul>
+    </div>
+
+    <h1>Specificity Rule</h1> <hr>
+
+    <div>
+        <ul>
+            <li><b>(#) id selector</b> has highest value.</li>
+            <li><b>(*) universal selector</b> has lowest value.</li>
+            <br> <br>
+
+            <h2>Point System to give value :</h2>
+
+            <li><b>!important</b> = 10,000 points</li>
+            <li><b>inline-CSS</b> = 1000 points</li>
+            <li><b>id selector</b> = 100 points</li>
+            <li><b>class selector, attribute selector, psudo-class selector</b> = 10 points</li>
+            <li><b>element selector, psudo-element selector</b> = 1 point</li>
+            <li><b>universal selector</b> = 0 points</li>
+        </ul>
+    </div>
+
+    <h1>Example</h1> <hr>
+
+    <div>
+
+        <p class="pre">
+
+            &lt;style&gt;
+                
+                p{
+                    background-color: blue;
+
+                    <b>(1 point)</b>
+                }
+
+                .bgcolor{
+                    background-color: blue;
+
+                    <b>(10 point)</b>
+                }
+
+                div p:first-class{
+                    background-color: blue;
+
+                    <b><mark>(1 point + 10 point = 11 points)</mark></b>
+                }
+
+            &lt;/style&gt;
+
+            <br> <br>
+            - <b>The last one will be applied as its specificity is higher.</b>
+        </p>
+</body>
+</html>

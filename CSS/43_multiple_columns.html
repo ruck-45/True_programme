@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Columns</title>
+
+    <style>
+        .border{
+            border: 2px solid;
+        }
+
+        #div_01{
+            column-count: 3;
+        }
+
+        #div_02{
+            column-count: 3;
+            column-gap: 100px;
+        }
+
+        #div_03{
+            column-count: 3;
+            column-rule-style: dotted;
+        }
+
+        #div_04{
+            column-count: 3;
+            column-rule-style: solid;
+            column-rule-width: 5px;
+        }
+
+        #div_05{
+            column-count: 3;
+            column-rule-style: solid;
+            column-rule-color: red;
+        }
+
+        #div_06{
+            column-count: 3;
+            column-rule: 5px dotted green;
+        }
+
+        #div_07{
+            column-count: 4;
+            column-width: 300px;
+        }
+
+        #div_08{
+            column-count: 3;
+        }
+
+        #div_09{
+            column-count: 3;
+        }
+
+        #div_09 h2{
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    <h1>Multiple Columns</h1> <hr>
+
+    <div>
+        <ul>
+            <li><b>column-count: (number of columns) ;</b> - divides width into specified number of columns </li>
+            <br>
+
+            Example =&gt; column-count: 3;
+            <br> <br>
+
+            <div class="border" id="div_01">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-gap: (gap in px) ;</b> - specifies the gap between each columns. </li>
+            <br>
+
+            Example =&gt; column-count: 3; column-gap: 100px;
+            <br> <br>
+
+            <div class="border" id="div_02">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-rule-style: (type of column rule) ;</b> - specifies the type of line separates the columns (solid / dotted etc...). </li>
+            <br>
+
+            Example =&gt; column-count: 3; column-rule-style: dotted;
+            <br> <br>
+
+            <div class="border" id="div_03">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-rule-width: (width of the column-rule in px) ;</b> - specifies the width of column-rule . </li>
+            <br>
+
+            Example =&gt; column-count: 3; column-rule-style: solid; column-rule-width: 5px;
+            <br> <br>
+
+            <div class="border" id="div_04">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-rule-color: (color of the column-rule) ;</b> - specifies the color of column-rule . </li>
+            <br>
+
+            Example =&gt; column-count: 3; column-rule-style: solid; column-rule-color: red;
+            <br> <br>
+
+            <div class="border" id="div_05">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-rule: (column-rule-width) (column-rule-style) (column-rule-color);</b> - short hand to give all properties of column-rule simultaneously . </li>
+            <br>
+
+            Example =&gt; column-count: 3; column-rule: 5px dotted green;
+            <br> <br>
+
+            <div class="border" id="div_06">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-width: (width in px);</b> - sets the minimum width one column should occupy . (if the viewport width gets shorter, then it maintains the minimum width by reducing the number of column-count) </li>
+            <br>
+
+            Example =&gt; column-count: 4; column-width: 300px; <b>{try changing the viewport width}</b>
+            <br> <br>
+
+            <div class="border" id="div_07">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            <li><b>column-span: all;</b> - allows a content to span across all the column without getting devided . (by default its set to none) </li>
+            <br>
+
+            Example =&gt; without column span, if we add a heading into the div-container
+            <br> <br>
+
+            <div class="border" id="div_08">
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ut ipsa dignissimos? Magni, aperiam quos?</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+
+            Example =&gt; column-span: all; (on the heading tag)
+            <br> <br>
+            <div class="border" id="div_09">
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque ut ipsa dignissimos? Magni, aperiam quos?</h2>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui iusto porro facilis facere dolore, nostrum deserunt consectetur ullam voluptatem est inventore pariatur non cum ex excepturi adipisci autem. Magni sapiente praesentium quam minima rem quaerat deserunt, aliquid asperiores explicabo officiis possimus labore recusandae nisi doloribus in consequatur! Sit vel voluptatem illum sapiente natus a omnis facere tenetur porro magnam incidunt quisquam accusamus minus dignissimos ipsa placeat explicabo, maiores beatae ab fugit nulla eveniet harum temporibus doloremque. Tempora facilis ratione saepe vel, suscipit molestiae natus minus, deserunt iure est asperiores. Deleniti provident dolore rem in ipsa fugit quaerat numquam, maxime magnam assumenda molestiae ducimus voluptatum neque obcaecati cum possimus, minima esse quis nesciunt vel dolores. Voluptatum, soluta nisi. Dolore perspiciatis sed obcaecati tempore! Eligendi rerum, nulla, fugit tempore, adipisci non sunt delectus possimus ipsa magni saepe! Veniam nisi nobis corrupti a quaerat totam eos eveniet quisquam nostrum, in magnam ex delectus.
+            </div>
+            <br> <br>
+        </ul>
+    </div>
+</body>
+</html>

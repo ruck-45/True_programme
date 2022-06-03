@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Backgrounds</title>
+</head>
+<body>
+    <h1>Properties under Background : </h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>background-color : (color);</b></li>
+
+            - applies backround color to the selected area <br>
+            <a href="./support files/4_backgrounds_01.html" target="_blank">background-color</a>
+            <br> <br>
+
+            <li><b>background-image : url('(image path)');</b></li>
+
+            - applies selected image as backround color to the selected area <br>
+            <a href="./support files/4_backgrounds_02.html" target="_blank">background-image</a>
+            <br> <br>
+
+            <li><b>background-repeat : (no-repeat/repeat-x/repeat-y....);</b></li>
+
+            - different ways to repeat or stop repeating <br>
+            - by default it is set to repeat <br>
+            <a href="./support files/4_backgrounds_03.html" target="_blank">background-repeat [no-repeat]</a> <br>
+            <a href="./support files/4_backgrounds_04.html" target="_blank">background-repeat [repeat-x]</a> <br>
+            <a href="./support files/4_backgrounds_05.html" target="_blank">background-repeat [repeat-y]</a>
+            <br> <br>
+
+            <li><b>background-position : (x-pos y-pos);</b></li>
+
+            - sets the position of image if decided to not repeat <br>
+            - the position can be given 3 ways : <br>
+            1. Using words like top,bottom,right,left,center etc... (Example - top right) <br>
+            2. Using Pixel to give exact position. (x-pixel y-pixel) <br>
+            3. Using Percentage to give exact position. (%-of-width %-of-height) <br>
+            <a href="./support files/4_backgrounds_06.html" target="_blank">top left</a> <br>
+            <a href="./support files/4_backgrounds_07.html" target="_blank">bottom right</a> <br>
+            <a href="./support files/4_backgrounds_08.html" target="_blank">right center</a> <br>
+            <a href="./support files/4_backgrounds_09.html" target="_blank">center center</a> <br>
+            <a href="./support files/4_backgrounds_10.html" target="_blank">50px 120px</a> <br>
+            <a href="./support files/4_backgrounds_11.html" target="_blank">70% 40%</a>
+            <br> <br>
+
+            <li><b>background-size : (x-size y-size);</b></li>
+
+            - sets the size of image if decided to not repeat <br>
+            - the size can be given 3 ways : <br>
+            1. Using words like cover [will cut the sides of image to fully cover the background] ,contain [will show the full image, but unfilled background will remain blank] etc... <br>
+            2. Using Pixel to give exact size. (x-pixel y-pixel) <br>
+            3. Using Percentage to give exact size. (%-of-width %-of-height) <br>
+            <a href="./support files/4_backgrounds_12.html" target="_blank">cover</a> <br>
+            <a href="./support files/4_backgrounds_13.html" target="_blank">contain</a> <br>
+            <a href="./support files/4_backgrounds_14.html" target="_blank">800px 600px</a> <br>
+            <a href="./support files/4_backgrounds_15.html" target="_blank">100% 100%</a>
+            <br> <br>
+
+            <li><b>background-attachment : (fixed/scroll);</b></li>
+
+            - sets wheather to fix the background or let it scroll with the content <br>
+            - by default it is set to scroll <br>
+            <a href="./support files/4_backgrounds_16.html" target="_blank">fixed</a>
+        </ul>
+    </p>
+
+    <h1>Shortcut to write background Properties in a single line</h1> <hr>
+
+    <p>
+        <b>Syntax:</b> - background : (background-color) (background-image url) (no-repeat) (fixed) (position [in %]) ;<br>
+        - the order is mandatory, ommitting properties not required is acceptable. <br>
+    </p>
+
+    <h1>Using Multiple Images</h1> <hr>
+
+    <p>
+        <ul>
+            <li>We can use multiple images by providing their ur separated by a comma.</li>
+            <li>For all other properties give that many sets of values separated by comma as many images being used.</li>
+            <a href="./support files/4_backgrounds_17.html" target="_blank">Example</a>
+        </ul>
+    </p>
+</body>
+</html>

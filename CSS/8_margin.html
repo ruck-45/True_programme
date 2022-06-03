@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin</title>
+
+    <style>
+        body{
+            border: 2px dotted violet;
+        }
+
+        .class_01{
+            border: 2px solid ;
+        }
+
+        #id_02{
+            margin: 20px;
+        }
+
+        #id_05{
+            margin: 20px 2% 50px 5%;
+        }
+
+        #id_08{
+            width: 800px;
+            margin: auto;
+        }
+
+        #id_11{
+            width: 800px;
+            margin: -20px auto;
+        }
+
+        #id_13{
+            margin-bottom: 20px;
+        }
+
+        #id_14{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Margin</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Margin is the space between two separate containers.</li>
+            <li>By defult there is no space for margin form browser side.</li>
+            <br>
+        </ul>
+
+        - Example : Notice there is no margin whatsoever.<br><br>
+
+        <div class="class_01">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+
+        <ul>
+            <br> <br>
+            <li>We can provide margin space using 'margin property'.</li>
+            <li>'margin property' value charecteristics is same as border and padding</li>
+            <li>we can give value in px or %</li>
+            <li>one value affects all sides, two and four value affect clock wise like in border.</li>
+            <li>we can also specify side name to apply margin to that side only like in border and padding.</li>
+            <br>
+        </ul>
+
+        - Example :<br><br>
+
+        - margin: 20px;
+        <div class="class_01" id="id_01">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_02">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_03">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <br> <br>
+
+        - margin: 20px 2% 50px 5%;
+        <div class="class_01" id="id_04">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_05">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_06">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <br> <br>
+
+        <ul>
+            <li>we use 'auto' in margin to give equal margins from sides autometically.</li>
+        </ul>
+
+        - margin: auto;
+        <div class="class_01" id="id_07">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_08">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_09">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <br> <br>
+
+        <ul>
+            <li>unlike padding we can give negetive values.</li>
+            <li>negetive margine clips through other margins.</li>
+        </ul>
+        <br>
+
+        - margin: -20px auto;
+        <div class="class_01" id="id_10">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_11">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_12">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+    </p>
+
+    <h1>Margin Collapse</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Margin collapse is a feature that <ins>only affects the top and bottom part</ins> and not the sides.</li>
+            <li>In this, if a container has bottom margin and the bottom container has top margin, instead of both margin being added, the larger margin is just applied ignoring the smaller one.</li>
+        </ul>
+
+        - Example :<br><br>
+
+        - margin-bottom: 20px (for upper para); <br>
+        - margin-top: 50px (for lower para);
+        <div class="class_01" id="id_13">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+        <div class="class_01" id="id_14">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt libero, beatae similique rerum earum itaque voluptas odit suscipit doloremque perspiciatis numquam. Modi exercitationem a nisi, illo rem impedit, quas officiis obcaecati blanditiis dicta consequuntur ipsa dolorem mollitia ab ea reprehenderit tempore necessitatibus quia praesentium dolores. Sapiente, dicta blanditiis. Aliquam, doloremque.
+            </p>
+        </div>
+    </p>
+</body>
+</html>

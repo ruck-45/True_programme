@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_units_support_03</title>
+
+    <style>
+        .border{
+            border: 1px solid blue;
+        }
+
+        #id_03{
+            height: 50vh;
+            width: 50vw;
+            font-size: 10vh;
+        }
+
+        #id_04{
+            height: 20vh;
+            width: 20vw;
+            font-size: 6vh;
+        }
+    </style>
+</head>
+<body>
+    <h1>vh and vm</h1> <hr>
+
+    <p>
+        <ul>
+            <li>vh and vm (viewport height and viewport width) provides measure relative to the viewport-size.</li>
+            <li>viewport is the current size of opened screen</li>
+            <li>since we can change viewport accordin to our requirement, this unit allocation is dynamic.</li>
+            <li>the size will change if we change the size of the window. (try it on this site)</li>
+
+            - Example : <br>
+
+            <li>Here is this setup : a div and a p-tag (paragraph tag) in it</li>
+            <li>the div and the p (paragraph) tag have their respective text to make them separate.</li> <br> <br>
+
+            <div id="id_01" class="border">
+                This is div text.
+                <p id="id_02" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+
+            <li>the size vh and vw assigns is in percentage to the visible viewport.</li>
+            <li>here we have used <b>50vh and 50vw</b> for height and width of div border <b>20vh and 20vw</b> for paragraph border <b>10vh and 6vh</b> for div and paragraph font-size resp.</li> <br> <br>
+
+            <div id="id_03" class="border">
+                This is div text.
+                <p id="id_04" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

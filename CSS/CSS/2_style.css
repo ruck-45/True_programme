@@ -1,0 +1,43 @@
+/* Example For Element Selector */
+p{
+    background-color: rosybrown;
+}
+
+/* Example For id Selector */
+#para_2{
+    background-color: yellow;
+}
+
+/* Example For class Selector */
+.aqua{
+    background-color: aqua;
+}
+
+#para_5{
+    background-color: yellow;
+}
+
+/* Example For priority of selectors*/
+p{
+    background-color: white;
+}
+
+#para_8{
+    background-color: thistle;
+}
+
+#heading_4{
+    text-decoration-line: underline;
+}
+
+.class_1{
+    background-color: tomato;
+}
+
+.class_2{
+    text-align-last: center;
+}
+
+.class_2{
+    background-color: darkslategrey;
+}

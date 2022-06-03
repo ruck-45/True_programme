@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resize</title>
+
+    <style>
+        #textarea_02{
+            width: 500px;
+            height: 200px;
+            resize: none;
+        }
+
+        #para_01{
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            overflow: auto;
+        }
+
+        #para_02{
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            overflow: auto;
+            resize: horizontal;
+        }
+
+        #para_03{
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            overflow: auto;
+            resize: vertical;
+        }
+
+        #para_04{
+            width: 300px;
+            height: 200px;
+            border: 2px solid;
+            overflow: auto;
+            resize: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>resizing a textarea</h1> <hr>
+
+    <p>
+        <ul>
+            <li>we have a text area below :</li>
+
+            <textarea name="" id="textarea_01" cols="30" rows="10" placeholder="Enter text here"></textarea>
+
+            <li>as we can see we can resize it freely however we like.</li>
+            <li>inorder to stop viewers resize the textarea, we use - resize: none;</li>
+
+            <textarea name="" id="textarea_02"></textarea>
+        </ul>
+    </p>
+
+    <h1>resizing a container</h1> <hr>
+
+    <p>
+        <ul>
+            <li>we have a paragraph below :</li>
+            <li>it has an overflow situation & the setting is set to either hide/scroll/auto.</li>
+
+            <p id="para_01">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur natus atque tempora ullam consectetur nemo dolores repudiandae soluta, sapiente dolorem perferendis adipisci sint cupiditate inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis natus in quaerat, fugiat ipsam tenetur reprehenderit iusto, voluptates impedit aperiam inventore ex molestiae excepturi dolorum provident ducimus recusandae perferendis quasi quam adipisci eaque nemo. Odit, quaerat, officiis dolor illum impedit porro quasi recusandae harum at quidem aperiam, fuga dicta!
+            </p>
+
+            <br> <br>
+
+            resize: horizontal;
+            <p id="para_02">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur natus atque tempora ullam consectetur nemo dolores repudiandae soluta, sapiente dolorem perferendis adipisci sint cupiditate inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis natus in quaerat, fugiat ipsam tenetur reprehenderit iusto, voluptates impedit aperiam inventore ex molestiae excepturi dolorum provident ducimus recusandae perferendis quasi quam adipisci eaque nemo. Odit, quaerat, officiis dolor illum impedit porro quasi recusandae harum at quidem aperiam, fuga dicta!
+            </p>
+
+            <br> <br>
+
+            resize: vertical;
+            <p id="para_03">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur natus atque tempora ullam consectetur nemo dolores repudiandae soluta, sapiente dolorem perferendis adipisci sint cupiditate inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis natus in quaerat, fugiat ipsam tenetur reprehenderit iusto, voluptates impedit aperiam inventore ex molestiae excepturi dolorum provident ducimus recusandae perferendis quasi quam adipisci eaque nemo. Odit, quaerat, officiis dolor illum impedit porro quasi recusandae harum at quidem aperiam, fuga dicta!
+            </p>
+
+            <br> <br>
+
+            resize: both;
+            <p id="para_04">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur natus atque tempora ullam consectetur nemo dolores repudiandae soluta, sapiente dolorem perferendis adipisci sint cupiditate inventore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis natus in quaerat, fugiat ipsam tenetur reprehenderit iusto, voluptates impedit aperiam inventore ex molestiae excepturi dolorum provident ducimus recusandae perferendis quasi quam adipisci eaque nemo. Odit, quaerat, officiis dolor illum impedit porro quasi recusandae harum at quidem aperiam, fuga dicta!
+            </p>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+
+    <h1>Table</h1> <hr>
+    <ul>
+        <li>(table-tag) is used to define a table object</li>
+        <li>(tr-tag) is used to define table rows</li>
+        <li>(td-tag) is used to define each individual data in that row</li>
+        <li>Table can include any data (taxt,image,hyperlink....etc)</li>
+        <li>(th-tag) is used to define table header
+            <ul>
+                <li>Becomes column headers if all declared in the first row.</li>
+                <li>Becomes row headers if defined one by one in each columns.</li>
+            </ul>
+        </li>
+        <li>(caption-tag) is used to give table name</li>
+        <li>Header, Body , Footer
+            <ul>
+                <li>Header : The topmost row [usually the one containing column names]</li>
+                <li>Body : The rest of the table excluding header and footer</li>
+                <li>Footer : If the table is too long that reaching bottom row hides header, we use another row at the end identifying the column names for information</li>
+                <br>
+                <li>We can seggragate our table into header, body, footer(if any). </li>
+                <li>This wont make any changes in UI, but will help browser understand our webpage better and makes use of CSS easier.</li>
+                <br>
+                <li>(thead-tag) is used to define header</li>
+                <li>(tbody-tag) is used to define body</li>
+                <li>(tfooter-tag) is used to define footer</li>
+            </ul>
+        </li>
+
+        <br>
+        <li>Attribute : border [give table a border of specified pixel]</li>
+    </ul>
+
+    <br>
+
+    <p>
+        Example : <br>
+        <table border="1">
+            <caption>Annual Marks</caption>
+            <thead style="color: blue;">
+                <tr>
+                    <th>Name/Sub</th>
+                    <th>Math</th>
+                    <th>Chemistry</th>
+                    <th>Physics</th>
+                    <th>Biology</th>
+                </tr>
+            </thead>
+            <tbody style="color: darkcyan;">
+                <tr>
+                    <th>Tom</th>
+                    <td>46</td>
+                    <td>54</td>
+                    <td>98</td>
+                    <td>56</td>
+                </tr>
+                <tr>
+                    <th>Ruck</th>
+                    <td>56</td>
+                    <td>62</td>
+                    <td>86</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th>Syndy</th>
+                    <td>56</td>
+                    <td>78</td>
+                    <td>26</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <th>Heath</th>
+                    <td>59</td>
+                    <td>76</td>
+                    <td>25</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <th>Rhiely</th>
+                    <td>89</td>
+                    <td>82</td>
+                    <td>18</td>
+                    <td>85</td>
+                </tr>
+            </tbody>
+            <tfoot style="color: crimson;">
+                <tr>
+                    <th>Name/Sub</th>
+                    <th>Math</th>
+                    <th>Chemistry</th>
+                    <th>Physics</th>
+                    <th>Biology</th>
+                </tr>
+            </tfoot>
+        </table>
+    </p>
+
+    <ul>
+        <li>We can merge rows and columns if we want to</li>
+        <li>(rowspan) attribute is used to join rows</li>
+        <li>(colspan) attribute is used to join columns</li>
+    </ul>
+
+    <p>
+        Example : <br>
+        <table border="1">
+            <caption>Annual Marks</caption>
+            <thead style="color: blue;">
+                <tr>
+                    <th colspan="5">Practical Marks</th>
+                </tr>
+            </thead>
+            <tbody style="color: darkcyan;">
+                <tr>
+                    <th rowspan="2">Tom</th>
+                    <td>46</td>
+                    <td>54</td>
+                    <td>98</td>
+                    <td>56</td>
+                </tr>
+                <tr>
+                    <td>56</td>
+                    <td>62</td>
+                    <td>86</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <th>Syndy</th>
+                    <td>56</td>
+                    <td>78</td>
+                    <td>26</td>
+                    <td>86</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">Heath</th>
+                    <td>59</td>
+                    <td>76</td>
+                    <td>25</td>
+                    <td>98</td>
+                </tr>
+                <tr>
+                    <td>89</td>
+                    <td>82</td>
+                    <td>18</td>
+                    <td>85</td>
+                </tr>
+            </tbody>
+            <tfoot style="color: crimson;">
+                <tr>
+                    <th>Name/Sub</th>
+                    <th>Math</th>
+                    <th>Chemistry</th>
+                    <th>Physics</th>
+                    <th>Biology</th>
+                </tr>
+            </tfoot>
+        </table>
+    </p>
+
+    <h1>Nested Table</h1> <hr>
+
+    <p>
+        Example: <br>
+
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Header column 1</th>
+                    <th>Header column 2</th>
+                    <th>Header column 3</th>
+                    <th>Header column 4</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Row 2 - Item 1</td>
+                    <td>Row 2 - Item 2</td>
+                    <td rowspan="2">
+                        <table border="1">
+                            <caption> <b>Row 2: Nested Table 1</b> </caption>
+                            <tbody>
+                                <tr>
+                                    <th>Row 1 Header</th>
+                                    <td>item</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Row 2 Header</th>
+                                    <td>item</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Row 2 Header</th>
+                                    <td>item</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>Row 2 - item 4 <br> A second line</td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <table border="1">
+                            <caption> <b>Row 3: Nested Table 2</b> </caption>
+                            <tbody>
+                                <tr>
+                                    <th>Row 1 Header</th>
+                                    <td>item</td>
+                                </tr>
+
+                                <tr>
+                                    <th>Row 2 Header</th>
+                                    <td>item</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+
+                    <td>Row 3 - Item 2</td>
+                    <td rowspan="2">Row 3 - Item 3</td>
+                </tr>
+
+                <tr>
+                    <td>Row 4 -Item 1</td>
+                    <td>Row 4 -Item 2</td>
+                    <td>Row 4 -Item 3</td>
+                </tr>
+
+                <tr>
+                    <td colspan="4">Row 5 - Last row of outer table</td>
+                </tr>
+            </tbody>
+        </table>
+    </p>
+</body>
+</html>

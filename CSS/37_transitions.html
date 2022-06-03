@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transitions</title>
+
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+        }
+
+        #id_01:hover{
+            width: 300px;
+        }
+        
+        #id_02{
+            transition-property: width;
+            transition-duration: 1s;
+        }
+
+        #id_02:hover{
+            width: 300px;
+        }
+
+        #id_03{
+            transition-property: width,background-color;
+            transition-duration: 3s,1s;
+        }
+
+        #id_03:hover{
+            width: 300px;
+            background-color: yellow;
+        }
+
+        #id_04{
+            transition-property: all;
+            transition-duration: 2s;
+        }
+
+        #id_04:hover{
+            width: 300px;
+            background-color: yellow;
+        }
+
+        #id_05{
+            transition-property: all;
+            transition-duration: 2s;
+            transition-delay: 2s;
+        }
+
+        #id_05:hover{
+            width: 300px;
+            height: 20px;
+            background-color: yellow;
+        }
+
+        #id_06{
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+        }
+
+        #id_06:hover{
+            width: 300px;
+            background-color: yellow;
+        }
+
+        #id_07{
+            transition: width 3s, background-color 1s ease-in-out;
+        }
+
+        #id_07:hover{
+            width: 300px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Transitions</h1> <hr>
+
+    <p>
+        <ul>
+            - we use transitions to make changes smoothly within a time limit.
+
+            <br> <br>
+
+            <li><b>transition-property: (property-name-1), (property-name-2), (property-name-2)...;</b>
+                <ul>
+                    <li>specify the property which is set to change and we want to apply transition to it.</li>
+                    <li>For multiple properties we can write them separated by comma.</li>
+                    <li>As a shortcut we can write "all" to include all changeable properties at once.</li>
+                    <li>If we decide to write "all", we cannot give custom duration to each property.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>transition-duration: (time in s or ms);</b>
+                <ul>
+                    <li>transition-time is used to specify the duration over the transition will take effect.</li>
+                    <li>for multiple transitions, we can specify different times using commas</li>
+                    <li>the time can be specified in seconds(s) or miliseconds(ms)</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>transition-delay: (time in s or ms);</b>
+                <ul>
+                    <li>It specifies the delay after which the transition will happen</li>
+                    <li>the time can be specified in seconds(s) or miliseconds(ms)</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>transition-timing-function</b>
+                <ul>
+                    <li>It specifies the way transition behaves.</li>
+                    <li>Default value is linear, where the speed is same throught the time.</li>
+                    <li>There are other varients as well like : ease-in(slow starting), ease-out(slow ending), ease-in-out(slow starting & ending but fast in middle).... etc</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>transition: (property) (time) (timing-function) (delay)</b>
+                <ul>
+                    <li>It is a shorthand for writing transition.</li>
+                    <li>for multiple entries provide values for one entry space separated and then start the values of next entry comma separated.</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <h1>Examples:</h1> <hr>
+
+            <p>
+                <ul>
+                    <li>Hover over boxes to see effects.</li>
+                    <li>the changed properties are applied to hover state & transition to base tag.</li>
+                    <br> <br>
+
+                    <li>Without Transition</li>
+                    <div id="id_01"></div>
+                    <br> <br>
+
+                    <li>With Transition</li> [transition-property: width; transition-duration: 1s;]
+                    <div id="id_02"></div>
+                    <br> <hr>
+
+                    <li>transition-property: width,background-color ; transition-duration: 3s,1s ; <b>Multiple property transition</b></li>
+                    <div id="id_03"></div>
+                    <br> <br>
+
+                    <li>transition-property: all; [width,background-color] transition-duration: 2s; <b>"all" in transition-property</b></li>
+                    <div id="id_04"></div>
+                    <br> <br>
+
+                    <li>transition-property: all; [width,height,background-color] transition-duration: 2s; transition-delay: 2s; <b>delay</b></li>
+                    <div id="id_05"></div>
+                    <br> <br>
+
+                    <li>transition-property: all; [width,background-color] transition-duration: 2s; transition-timing-function: ease-in-out; <b>timing-function</b></li>
+                    <div id="id_06"></div>
+                    <br> <br>
+
+                    <li>transition: width 3s, background-color 1s ease-in-out; <b>transition shorthand</b></li>
+                    <div id="id_07"></div>
+                </ul>
+            </p>
+        </ul>
+    </p>
+</body>
+</html>

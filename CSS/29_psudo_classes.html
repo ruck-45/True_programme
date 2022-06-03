@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo Classes</title>
+
+    <style>
+        #id_01{
+            white-space: pre;
+        }
+
+        input:focus{
+            border:5px dotted red;
+        }
+
+        #div_01 p:nth-child(3){
+            color: blue;
+        }
+
+        .border{
+            border: 1px solid;
+        }
+
+        #div_02 p:first-child i {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <h1>Psudo Classes</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Psudo classes is really helpful if the website is dynamic (content is dynamic).</li>
+            <li>There are veriety of psudo classes in CSS.</li>
+            <li>Psudo classes are various states of of a tag, like <b>anchor-tag</b> has states : hover, visited, active, link...</li>
+            <li>Syntax to use a psudo-class :</li>
+
+            <div id="id_01">
+                selector:psudo-class{
+                    CSS-code;
+                }
+            </div>
+
+            <br> <hr>
+
+            Examples : <br> <br>
+
+            <a href="./support files/29_psudo_classes_01.html" target="_blank">first-child</a> : first child<br>
+            <a href="./support files/29_psudo_classes_02.html" target="_blank">last-child</a> : last child<br>
+            <a href="./support files/29_psudo_classes_03.html" target="_blank">nth-child(even)</a> : for even pattern<br>
+            <a href="./support files/29_psudo_classes_04.html" target="_blank">nth-child(odd)</a> : for odd pattern<br>
+            <a href="./support files/29_psudo_classes_05.html" target="_blank">nth-child(3n)</a> : custom pattern<br>
+            <a href="./support files/29_psudo_classes_06.html" target="_blank">nth-child(3n+1)</a> : custom pattern<br>
+            <a href="./support files/29_psudo_classes_07.html" target="_blank">nth-child(4)</a> : directly select position<br>
+            <a href="./support files/29_psudo_classes_08.html" target="_blank">nth-last-child(2)</a>  : position starting from last child<br>
+            <br> <hr>
+
+            <li>This psudo-class is for input tag.</li>
+            <li>when we click on input box it gets highlighted, it's the focus stage of input tag, and we can customize it.</li>
+            <br>
+            Example: <br> <br>
+            input:focus{ border: 5px dotted red; } <br>
+            <input type="text" name="" id="">
+        </ul>
+    </p>
+
+    <p>
+        <hr>
+        NOTE : if we want to select tags inside a certain tag then we can specify both selectors one after another separated by sapce to select it.
+        <br> <br>
+        Example : <br> <br>
+        #div_01 p:nth-child(3){ color: blue; } [selects 3rd p tag inside the div tag]
+        <div id="div_01" class="border">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+        <br> <br>
+        <hr>
+        <br> <br>
+        #div_02 p:first-child i { color: crimson; } [select all itallic words in the first paragraph in div tag]
+        <div id="div_02" class="border">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i>Fugiat</i> nulla iste non architecto ea vero. Sit eaque sequi laborum numquam. Lorem ipsum, dolor sit amet <i>consectetur</i> adipisicing elit. <i>Vitae neque</i> sint deleniti! Natus a perferendis ducimus <i>excepturi,</i> porro voluptatibus quos culpa quae. In <i>fugiat deserunt</i> inventore facilis excepturi, laboriosam asperiores!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i>Fugiat</i> nulla iste non architecto ea vero. Sit eaque sequi laborum numquam. Lorem ipsum, dolor sit amet <i>consectetur</i> adipisicing elit. <i>Vitae neque</i> sint deleniti! Natus a perferendis ducimus <i>excepturi,</i> porro voluptatibus quos culpa quae. In <i>fugiat deserunt</i> inventore facilis excepturi, laboriosam asperiores!</p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <i>Fugiat</i> nulla iste non architecto ea vero. Sit eaque sequi laborum numquam. Lorem ipsum, dolor sit amet <i>consectetur</i> adipisicing elit. <i>Vitae neque</i> sint deleniti! Natus a perferendis ducimus <i>excepturi,</i> porro voluptatibus quos culpa quae. In <i>fugiat deserunt</i> inventore facilis excepturi, laboriosam asperiores!</p>
+        </div>
+    </p>
+</body>
+</html> 

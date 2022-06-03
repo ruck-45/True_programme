@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+
+    <style>
+        #id_01{
+            width: 30cm;
+        }
+
+        #id_02{
+            width: 30mm;
+        }
+
+        #id_03{
+            width: 30in;
+        }
+
+        #id_04{
+            width: 30px;
+        }
+
+        #id_05{
+            width: 30pt;
+        }
+
+        #id_06{
+            width: 30pc;
+        }
+
+        .class_01{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Units</h1> <hr>
+
+    <p>
+        <ul>
+            <li>we use length in : width, height, margin, padding, border, font-size etc... </li>
+            <li>There are two types of units in CSS to provide length: 
+                <ol>
+                    <li>Absolute Unit in CSS :
+                        <ol>
+                            <li>cm (centimeter)</li>
+                            <li>mm (milimeter)</li>
+                            <li>in (inch)</li>
+                            <li>px (pixel)</li>
+                            <li>pt</li>
+                            <li>pc</li>
+                        </ol>
+                    </li>
+
+                    <li>Realtive Unit in CSS :
+                        <ol>
+                            <li>em</li>
+                            <li>rem</li>
+                            <li>vh</li>
+                            <li>vw</li>
+                            <li>% (percentage)</li>
+                        </ol>
+                    </li>
+                </ol>
+            </li>
+        </ul>
+    </p>
+
+    <h1>Absolute Units</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>Among all absolute units only px (pixel) is mostly used.</b></li>
+            <li>Comparision of all absolute units : 
+                <ol>
+                    <li>cm (centimeter)</li>
+                    <li>mm (10 mm = 1 cm)</li>
+                    <li>in (inch)</li>
+                    <li>px (1 inch = 96 px)</li>
+                    <li>pt (1 inch = 72 pt)</li>
+                    <li>pc (1 pc = 12 pt)</li>
+                </ol>
+            </li>
+            <br> <br>
+
+            Example :- <br>
+
+            width: 30cm;
+            <p id="id_01" class="class_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus vero quod quis, aspernatur minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa at ut quisquam nisi eligendi, tenetur harum explicabo? Accusantium saepe suscipit minus nobis quia distinctio expedita neque, consequatur deserunt!
+            </p>
+
+            width: 30mm;
+            <p id="id_02" class="class_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus vero quod quis, aspernatur minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa at ut quisquam nisi eligendi, tenetur harum explicabo? Accusantium saepe suscipit minus nobis quia distinctio expedita neque, consequatur deserunt!
+            </p>
+
+            width: 30in;
+            <p id="id_03" class="class_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus vero quod quis, aspernatur minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa at ut quisquam nisi eligendi, tenetur harum explicabo? Accusantium saepe suscipit minus nobis quia distinctio expedita neque, consequatur deserunt!
+            </p>
+
+            width: 30px;
+            <p id="id_04" class="class_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus vero quod quis, aspernatur minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa at ut quisquam nisi eligendi, tenetur harum explicabo? Accusantium saepe suscipit minus nobis quia distinctio expedita neque, consequatur deserunt!
+            </p>
+
+            width: 30pt;
+            <p id="id_05" class="class_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus vero quod quis, aspernatur minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa at ut quisquam nisi eligendi, tenetur harum explicabo? Accusantium saepe suscipit minus nobis quia distinctio expedita neque, consequatur deserunt!
+            </p>
+
+            width: 30pc;
+            <p id="id_06" class="class_01">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil accusamus vero quod quis, aspernatur minima? Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore eaque ipsa at ut quisquam nisi eligendi, tenetur harum explicabo? Accusantium saepe suscipit minus nobis quia distinctio expedita neque, consequatur deserunt!
+            </p>
+        </ul>
+    </p>
+
+    <h1>Relative Units</h1> <hr>
+
+    <p>
+        <ul>
+            <li>All relative units : 
+                <ol>
+                    <li>em - (relative to size of its direct parent)</li>
+                    <li>rem - (relative to root [html tag] size)</li>
+                    <li>vh - (1% of view port height)</li>
+                    <li>vw - (1% of view port width)</li>
+                    <li>% - (relative to parent)</li>
+                </ol>
+            </li>
+            <br> <br>
+
+            Example :- <br>
+
+            <li><a target="_blank" href="./support files/13_CSS_units_01.html">em</a></li>
+            <li><a target="_blank" href="./support files/13_CSS_units_02.html">rem</a></li>
+            <li><a target="_blank" href="./support files/13_CSS_units_03.html">vh & vw</a></li>
+            <li><a target="_blank" href="./support files/13_CSS_units_04.html">% (percentage)</a></li>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_units_support_01</title>
+
+    <style>
+        .border{
+            border: 1px solid blue;
+        }
+
+        #id_03{
+            font-size: 20px;
+        }
+
+        #id_05{
+            font-size: 20px;
+        }
+
+        #id_06{
+            font-size: 0.5em;
+        }
+    </style>
+</head>
+<body>
+    <h1>em</h1> <hr>
+
+    <p>
+        <ul>
+            <li>em provides measure relative to the size of its direct parent.</li>
+
+            - Example : <br>
+
+            <li>Here is this setup : a div and a p-tag (paragraph tag) in it</li>
+            <li>the div and the p (paragraph) tag have their respective text to make them separate.</li> <br> <br>
+
+            <div id="id_01" class="border">
+                This is div text.
+                <p id="id_02" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+
+            <li>Suppose we want to increase the text size of div text to 20px</li>
+            <li>When we do that, the paragraph text also gets enlarged because , its the child of div.</li> <br> <br>
+
+            <div id="id_03" class="border">
+                This is div text.
+                <p id="id_04" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+
+            <li>if we want to make the size of paragraph half the size of div text (i.e - 10px) , we can use <b>em</b> here.</li>
+            <li>Since div is the immidiate parent of paragraph here, <b>em</b> is relative to div here.</li>
+            <br> <br>
+
+            font-size: 0.5em; (for paragraph / for half size)
+            <div id="id_05" class="border">
+                This is div text.
+                <p id="id_06" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embed PDF</title>
+</head>
+<body>
+    <h1>Embed pdf</h1> <hr>
+    We can embed PDF in 3 ways :
+    <br>
+    <ul>
+        <li>
+            <dl>
+                <dt><b>(embed-tag) :</b></dt>
+                <br>
+                <dd>Attributes : src [source] , type [document type], height & width [for dimention]</dd> <br>
+                <dd><embed src="./documents/document_01.pdf" type="application/pdf" height="500" width="800"></dd>
+            </dl>
+        </li>
+
+        <li>
+            <dl>
+                <dt><b>(iframe-tag) :</b></dt>
+                <br>
+                <dd>Attributes : src [source] ,  height & width [for dimention]</dd> <br>
+                <dd> <iframe src="./documents/document_01.pdf" frameborder="0" height="400" width="600"></iframe> </dd>
+            </dl>
+        </li>
+
+        <li>
+            <dl>
+                <dt><b>(object-tag) :</b></dt>
+                <br>
+                <dd>Attributes : data [source] , type [document type], height & width [for dimention]</dd> <br>
+                <dd><object data="./documents/document_01.pdf" type="application/pdf" height="600" width="900"></object></dd>
+            </dl>
+        </li>
+    </ul>
+
+</body>
+</html>

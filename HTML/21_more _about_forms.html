@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More about Forms</title>
+</head>
+<body>
+    <h1>&lt;textarea&gt; tag</h1> <hr>
+    <p>
+        - Provides a big text box to write description. <br>
+        - All other text related &lt;input&gt; attributes work fine here except : "value" , just write inside textarea-tag to compensate for this attribute and give default value for yout textbox. <br>
+        - 'cols' and 'rows' attribute set the dimention of (textarea). <br> <br>
+        <form action="">
+            <textarea name="" id="" cols="50" rows="5"> Sample Default Text</textarea>
+        </form>
+    </p>
+
+    <h1>&lt;input type = "image" &gt; [can make an image act as submit button]</h1> <hr>
+
+    <p>
+        - Submit button just refreshes the page and so does 'image' type here, so we can use it in case of submit. <br>
+        - 'height' and 'width' attributes are used to set the dimentions. <br> <br>
+
+        <form action="">
+            submit : <input type="image" src="https://www.pngitem.com/pimgs/m/208-2086994_green-submit-button-png-submit-button-png-green.png" height="40" width="120">
+        </form>
+    </p>
+
+    <h1>&lt;select&gt; tag [makes dropdown form]</h1> <hr>
+
+    <p>
+        - &lt;select&gt; tag is used to create dropdown list in form. <br>
+        - 'multiple' attribute lets user select multiple options at once. <br>
+        - we can use 'size' attribute to set how many options can a person see at a time. <br>
+        <br>
+        - Inside &lt;select&gt; tag we use &lt;option&gt; tag to make individual options. <br> 
+        - The name of the option that is displayed in the  drop down list to the user is written between the opening and closing of (option tag). <br>
+        -  The value of the option can be set different to te face value shoen, to set the value, we use 'values' attribute. <br>
+        - For example in form down below, one option is : &lt;option value="5"&gt; Botany &lt;/option&gt; , here the user sees and selects Botany, but the value backend receives is 5. <br>
+        - To make one of the option default value, use 'selected' attribute in thet option. (below statistics is choosen) <br> <br>
+        
+        - &lt;optgroup&gt; is used to make groups of options in the same dropdown list, to give group names use 'label' attribute. <br>
+        - the different subject groups below are made by &lt;optgroup&gt;.
+        <br> <br>
+
+        Example : <br>
+
+        <form action="" >
+            <select name="" id="">
+                <optgroup label="Science">
+                    <option value="1">Physics</option>
+                    <option value="2">Chemistry</option>
+                    <option value="3">Biology</option>
+                    <option value="4">Zoology</option>
+                    <option value="5">Botany</option>
+                </optgroup>
+
+                <optgroup label="Mathematics">
+                    <option value="6" selected>Statistics</option>
+                    <option value="7">Algebra</option>
+                    <option value="8">Reasoning</option>
+                    <option value="9">Calculus</option>
+                    <option value="10">Geometry</option>
+                </optgroup>
+
+                <optgroup label="Language">
+                    <option value="11">English</option>
+                    <option value="12">Sanscrit</option>
+                    <option value="13">Hindi</option>
+                    <option value="14">Odia</option>
+                </optgroup>
+            </select>
+        </form>
+
+        <br>
+
+        Example : size = '5', multiple selection enabled (use ctrl/shift to select multiple options) - <br> <br>
+
+        <form action="">
+            <select name="" id="" size="5" multiple>
+                <optgroup label="Science">
+                    <option value="1">Physics</option>
+                    <option value="2">Chemistry</option>
+                    <option value="3">Biology</option>
+                    <option value="4">Zoology</option>
+                    <option value="5">Botany</option>
+                </optgroup>
+
+                <optgroup label="Mathematics">
+                    <option value="6" selected>Statistics</option>
+                    <option value="7">Algebra</option>
+                    <option value="8">Reasoning</option>
+                    <option value="9">Calculus</option>
+                    <option value="10">Geometry</option>
+                </optgroup>
+
+                <optgroup label="Language">
+                    <option value="11">English</option>
+                    <option value="12">Sanscrit</option>
+                    <option value="13">Hindi</option>
+                    <option value="14">Odia</option>
+                </optgroup>
+            </select>
+        </form>
+    </p>
+
+    <h1>&lt;input type = "radio" &gt; [makes circular buttons]</h1> <hr>
+
+    <p>
+        - Radio Buttens are primariely used where only one option is needed to be chosen out of multiple choices.
+        <br> <br> <br>
+        - To specify the options buttons represent, just write it in the right side. <br>
+        - To group radio buttons such than only one of them is selectable, keep their 'name' attribute identical. <br>
+        - To make a 'radio button' already chosen at start by default, use 'checked' attribute. <br>
+        - Use 'value' attribute to pass required data to backend when that option is selected. <br> <br>
+
+        Example : <br>
+
+        <form action="">
+            Select Gender : <br> <input type="radio" name="Gender" id="" value="1" > Male
+                            <br> <input type="radio" name="Gender" id="" value="2" > Female 
+                            <br> <input type="radio" name="Gender" id="" value="3" checked> other
+
+            <br> <br>
+
+            Select Professsion : <br> <input type="radio" name="Profession" id="" value="1"> Teacher
+                            <br> <input type="radio" name="Profession" id="" value="2" checked> Student 
+                            <br> <input type="radio" name="Profession" id="" value="3"> Staff
+        </form>
+    </p>
+
+    <h1>&lt;input type = "checkbox" &gt; [makes square tickable buttons]</h1> <hr>
+
+    <p>
+        - checkboxes are primariely used where only multiple options can be chosen.
+        <br> <br> <br>
+        - It is exactly identical to (radio-buttons) but only difference is that - setting the 'name' attribute same still allows multiple options to be selected simultaneously. <br> <br>
+
+        Example : <br>
+
+        <form action="">
+            Hobbies : <br>
+            <input type="checkbox" value="1" name="hobby"> painting
+            <input type="checkbox" value="2" name="hobby"> swimming
+            <input type="checkbox" value="3" name="hobby"> dancing
+            <input type="checkbox" value="4" name="hobby"> singing
+            <input type="checkbox" value="5" name="hobby"> soccer
+            <input type="checkbox" value="6" name="hobby"> drumming
+            <input type="checkbox" value="7" name="hobby"> coding
+        </form>
+    </p>
+
+    <h1>Datalist</h1> <hr>
+
+    <p>
+        - When we write anything in google's search bar, it gives us recommendations based on our letters. <br>
+        - we can simulate this effect using datalist. <br>
+        - we can create a datalist using &lt;datalist&gt; tag. <br>
+        - inside datalist, we create our recommendations using &lt;option&gt; tag. [note donot close option tags here]. <br>
+        - Give the recommendation names as the 'value' attribute in &lt;option&gt; tag. <br>
+        - then create an id of this datalist using 'id' attribute inside &lt;datalist&gt; tag. <br>
+        - Now this datalist is ready to be used in any (text input -type). 
+        - To use this datalist , use "list" attribute inside the (input-tag) and provide the datalist id. <br>
+        - Datalist will recommend all words that has the letter(s) just typed in. <br>
+
+        <br> <br>
+
+        Example : <br>
+
+        <form action="">
+            Search Bar : <input type="text" name="" id="" list="search_datalist"> <input type="submit" name="" id="" value="Search">
+
+            <datalist id="search_datalist">
+                <option value="car">
+                <option value="bus">
+                <option value="truck">
+                <option value="frog">
+                <option value="apple">
+                <option value="mango">
+                <option value="papaya">
+                <option value="lemon">
+                <option value="donkey">
+                <option value="rabbit">
+                <option value="jackle">
+                <option value="orange">
+                <option value="ink">
+            </datalist>
+        </form>
+    </p>
+
+    <h1>label , fieldeset & legend</h1> <hr>
+
+    <h2>label : </h2>
+
+    <p>
+        - usually we write the name of a field in form just above it, but to browser it is represented as normal text. <br>
+
+        Example : 
+        <div>
+            <form action="">
+                Name : <input type="text">
+            </form>
+        </div>
+
+        <div>
+            <form action="">
+                Submit : <input type="submit">
+            </form>
+        </div>
+
+        <br>
+        - Hover over "Name/Submit" you will see a text curser, and also clicking on "Name/Submit" doesnt activate the field to write in.
+
+        <br> <br>
+        - label tag completely solved this problem. <br>
+        - before creating an input tag , use label tag to give its name. <br>
+        - To link the label to its corresponding (input tag) - give input tag an 'id' attribute and , in 'for' attribute of label provide that id. <br>
+
+        <br>
+        - Pros of using label : <br>
+        <ul>
+            <li>Readeable by browser as the tag for a form field</li>
+            <li>User can click on the label and activate the field</li>
+            <li>Programmer can also easily understand the label and its corresponding input by looking at code. [code is more readable]</li>
+        </ul>
+
+        Example [use of label] :
+        <br>
+        <div>
+            <form action="">
+                <label for="name">Name :</label><input type="text" id="name">
+            </form>
+        </div>
+
+        <div>
+            <form action="">
+                <label for="submit">Submit :</label><input type="submit" id="submit">
+            </form>
+        </div>
+    </p>
+
+    <h2>fieldset : </h2>
+
+    <p>
+        - fieldset is just a wrapper like &lt;div&gt; but it provides a fancy output.  <br>
+        - just like &lt;div&gt; its a block element. <br>
+        - Fieldset just provides a border to the area it wrapes up. <br> <br> <br>
+
+        Example : [Using &lt;div&gt;] <br>
+
+        <div>
+            <form action="">
+                <label for="name">Name :</label><input type="text" id="name">
+            </form>
+        </div>
+
+        <div>
+            <form action="">
+                <label for="submit">Submit :</label><input type="submit" id="submit">
+            </form>
+        </div>
+
+        <br>
+        Example : [Using &lt;fieldset&gt;] <br>
+
+        <fieldset>
+            <form action="">
+                <label for="name">Name :</label><input type="text" id="name">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <form action="">
+                <label for="submit">Submit :</label><input type="submit" id="submit">
+            </form>
+        </fieldset>
+    </p>
+
+    <h2>legend : </h2>
+
+    <p>
+        - it is usd to give name to the wrapper &lt;fieldset&gt; has created.
+        <br> <br> <br>
+
+        Example : [Using &lt;div&gt;] <br>
+
+        <fieldset>
+            <legend>Personal Info</legend>
+            <form action="">
+                <label for="f_name">First Name :</label><input type="text" id="f_name">
+                <label for="l_name">Last Name :</label><input type="text" id="l_name">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <Legend>Contact Info</Legend>
+            <form action="">
+                <label for="address">Address :</label><input type="text" id="address">
+                <label for="contact">Contact Number :</label><input type="text" id="comtact">
+            </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Submit Form</legend>
+            <form action="">
+                <label for="submit">Submit :</label><input type="submit" id="submit">
+            </form>
+        </fieldset>        
+    </p>
+
+</body>
+</html>

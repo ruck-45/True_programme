@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add CSS and JAVAscript to HTML</title>
+
+    <!-- METHOD 1/CSS -->
+    <!-- <style>
+        body{
+            background-color: cornflowerblue;
+        }
+    </style> -->
+
+    <!-- METHOD 2/CSS -->
+    <link rel="stylesheet" type="text/css" href="./CSS/style.css">
+
+    <!-- METHOD 1/JAVAScript -->
+    <!-- <script>
+        alert('WELCOME');
+    </script> -->
+
+    <!-- METHOD 2/JAVAScript -->
+    <script src="./JAVAScript/script.js"></script>
+
+    <noscript>Please enable javascript.</noscript>
+</head>
+<body>
+    <h1>Adding CSS</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Method 1 : [Using &lt;style&gt; tag]
+                <ul>
+                    <li>We can directly write CSS code inside &lt;style&gt; tag which is inside &lt;head&gt; tag</li>
+                    <li>Syntax (for this blue background): <br> &lt;style&gt;
+                        body{
+                            background-color: cornflowerblue;
+                        }
+                        &lt;/style&gt;</li>
+                </ul>
+            </li>
+            
+            <br>
+            <li>Method 2 : [linking a CSS file using &lt;link&gt; tag]
+                <ul>
+                    <li>We can instead link a css file in our directory using &lt;link&gt; tag</li>
+                    <li>Syntax (for this blue background): <br> &lt;link rel="stylesheet" type="text/css" href="./CSS/style.css"&gt;</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h1>Adding JavaScript</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Method 1 : [Using &lt;script&gt; tag]
+                <ul>
+                    <li>We can directly write JS code inside &lt;script&gt; tag which is inside &lt;head&gt; tag</li>
+                    <li>Syntax (for the alrt: 'WELCOME'): &lt;script&gt;
+                        alert('WELCOME');
+                        &lt;/script&gt;</li>
+                </ul>
+            </li>
+            
+            <br>
+            <li>Method 2 : [linking a JAVAScript file using &lt;script&gt; tag]
+                <ul>
+                    <li>We can instead link a JAVAScript file in our directory using the same &lt;script&gt; tag</li>
+                    <li>Syntax (for the alrt: 'WELCOME'): <br> &lt;script src="./JAVAScript/script.js"&gt;  &lt;/script&gt;</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h1>&lt;noscript&gt; tag</h1> <hr>
+
+    <p>
+        <ul>
+            <li>we use &lt;noscript&gt; tag to display a message when the script cannot load in a browser, or the browser has disabled javascript.</li>
+            <li>It is also present in head-tag</li>
+            <li>Syntax : &lt;noscript&gt;Please enable javascript.&lt;/noscript&gt;</li>
+        </ul>
+    
+</body>
+</html>

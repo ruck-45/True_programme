@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psudo Elements</title>
+
+    <style>
+        #para_01{
+            white-space: pre;
+        }
+
+        #para_02::first-letter{
+            font-size: 30px;
+            color: crimson;
+        }
+
+        #para_03::first-line{
+            font-size: 15px;
+            color: crimson;
+        }
+
+        #head_01::before{
+            content: url(./images/11.jpeg);
+        }
+
+        #head_02::after{
+            content: "( text added after )";
+        }
+
+        #para_06{
+            white-space: pre;
+        }
+
+        ::selection{
+            color: red;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Psudo Elements</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It is used like psudo classes if the content is dynamic.</li>
+            <li>Syntax:</li>
+
+            <p id="para_01">
+                selector::psudo-element{
+                    (CSS code);
+                }
+            </p>
+
+            <hr>
+
+            Different psudo-elements : <br> <br>
+
+            <li><b>first-letter</b> [selects first letter of the tag]</li>
+            <p>
+                Example : #para_02::first-letter{ font-size: 30px; color: crimson; } <br>
+                
+                <p id="para_02">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ut. Excepturi, architecto. Repudiandae debitis eum voluptates optio ex, modi, magni, ipsam sit maxime perspiciatis doloribus? Repudiandae quibusdam minima facilis aspernatur nisi quod error aut dignissimos sint ut nobis adipisci non, explicabo praesentium corporis natus dolore. Perspiciatis, in. Excepturi, autem iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus recusandae ea quam magnam voluptatibus sequi veniam et error quod!
+                </p>
+            </p>
+
+            <li><b>first-line</b> [selects first line of the tag]</li>
+
+            <p>
+                Example : #para_03::first-line{ font-size: 15px; color: crimson; } <br>
+                
+                <p id="para_03">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ut. Excepturi, architecto. Repudiandae debitis eum voluptates optio ex, modi, magni, ipsam sit maxime perspiciatis doloribus? Repudiandae quibusdam minima facilis aspernatur nisi quod error aut dignissimos sint ut nobis adipisci non, explicabo praesentium corporis natus dolore. Perspiciatis, in. Excepturi, autem iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto doloribus recusandae ea quam magnam voluptatibus sequi veniam et error quod!
+                </p>
+            </p>
+            <li><b>before</b> [ adds the element before the tag starts ]</li>
+
+            <p>
+                Example : #head_01::before{ content: url(./images/11.jpeg); } <br>
+                <h2 id="head_01">Heading</h2>
+                <p id="para_04">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ut. Excepturi, architecto. Repudiandae debitis eum voluptates optio ex, modi, magni, ipsam sit maxime perspiciatis doloribus? Repudiandae quibusdam minima facilis aspernatur voluptatibus sequi veniam et error quod!
+                </p> 
+            </p>
+
+            <li><b>after</b>[ adds the element after the tag starts ]</li>
+
+            <p>
+                Example : #head_01::before{ content: url(./images/11.jpeg); } <br>
+                <h2 id="head_02">Heading</h2>
+                <p id="para_05">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, ut. Excepturi, architecto. Repudiandae debitis eum voluptates optio ex, modi, magni, ipsam sit maxime perspiciatis doloribus? Repudiandae quibusdam minima facilis aspernatur voluptatibus sequi veniam et error quod!
+                </p> 
+            </p>
+
+            <li><b>selection</b> [customizes when we select texts/images etc.. on our website] </li>
+
+            <p>
+                <ul>
+                    <li>It is used on root of website, so no need to have a selector.</li>
+                    <li>Example :</li>
+
+                    <p id="para_06">
+                        ::selection{
+                            color: red;
+                            background-color: yellow;
+                        }
+                    </p>
+
+                    <li>Try selecting some texts to notice.</li>
+                </ul>
+            </p>
+        </ul>
+    </p>
+</body>
+</html>

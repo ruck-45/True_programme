@@ -1,0 +1,99 @@
+
+#clear the comand line prompt
+clear
+
+----------------------------------------------
+
+# view contents of a file
+cat {'File Path'}
+
+----------------------------------------------
+
+# List all Files
+ls
+
+----------------------------------------------
+
+# Innitialize Empty Local Repository
+git init
+
+----------------------------------------------
+
+# Connecting with a Github Repository
+git remote add origin {'HTTPS clone address of your repo'}
+
+----------------------------------------------
+
+# Pull containts of Repo to local Repo
+git pull origin {name of the branch we want to pull from}
+
+----------------------------------------------
+
+# Status of local Repo
+git status
+
+----------------------------------------------
+
+# Record of all commits to Local repo
+git log
+
+----------------------------------------------
+
+# Add Changes done to INDEX
+git add -A ( adds all changes done )
+
+----------------------------------------------
+
+# commit changes to Local Repo
+git commit -a -m {'commit message'}
+
+----------------------------------------------
+
+# creating a different branch from current branch
+git branch {branch name}
+
+----------------------------------------------
+
+# change to a different branch
+git checkout {branch name}
+
+----------------------------------------------
+
+# To merge a branch into another (Be in parent branch into which you want to merge)
+git merge {name of banch you want to merge into current branch}
+
+----------------------------------------------
+
+# To rebase a branch into another (Be in parent branch into which you want to rebase) {rebase does same as merge but linearly}
+git rebase {name of banch you want to merge into current branch}
+
+----------------------------------------------
+
+# To Push into the Remote Repo
+git push origin {branch name}
+
+----------------------------------------------
+----------------------------------------------
+
+# Reverting back changes on local Repo
+(first see the log by: git log)
+(copy the first 8 code after 'commit' in yellow color)
+
+code:
+git checkout {the first 8 code copied} {the file name you want to revert the change back to}
+
+----------------------------------------------
+----------------------------------------------
+
+
+### FOR FIRST TIME
+
+# Generating SSH Key
+ssh-keygen
+
+(See your public ssh key by doing : cat {'file path of the ssh key'} )
+( Create a new ssh key in github and add the ssh key above to it )
+----------------------------------------------
+
+# Activating the ssh key
+ssh -T git@github.com

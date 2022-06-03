@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+
+    <style>
+        .div_01{
+            display: inline-block;
+            margin-left: 85px;
+        }
+
+        .div_02{
+            display: inline-block;
+            border: 2px solid red;
+            height: 100px;
+            width: 100px;
+            margin-left: 150px;
+        }
+
+        #id_01 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            transform: perspective(10px) translate3d(10px,0px,0px);
+        }
+
+        #id_02 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            transform: perspective(10px) translate3d(0px,10px,0px);
+        }
+
+        #id_03 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            transform: perspective(10px) translate3d(0px,0px,-10px);
+        }
+
+        #id_04 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            transform: perspective(100px) rotate3d(10, 0, 0, 20deg);
+        }
+
+        #id_05 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            transform: perspective(100px) rotate3d(0, 10, 0, 20deg);
+        }
+
+        #id_06 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: yellowgreen;
+            transform: perspective(100px) rotate3d(0, 0, 10, 20deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Transforms (3D)</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>transform: perspective( value in px ) ...</b>
+                <ul>
+                    <li>perspective is the measure of depth of the converging line in 3D</li>
+                    <li>In 3d we get a cone like view where everything converges at a point, that depth is given by "perspective( )"</li>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>perspective-origin: x-coordinate(in %) y-coordinate(in %);</b>
+                <ul>
+                    <li>perspective-origin is the coordinate of the point where the perspective converges at.</li>
+                    <li>It is just like "transform-origin"</li>
+                </ul>
+            </li>
+            <br> <br>
+            
+            <li><b>transform: perspective( value in px ) translate3d(x-shift , y-shift , z-shift) [in px]</b>
+                <ul>
+                    <li>translate3d( ) lets us move element in 3D space.</li>
+                    <li>Example :</li> <br>
+
+                    <div class="div_01">
+                        <p>transform: perspective(10px) <br> translate3d(10px,0px,0px); <br> <b>x-axis</b> </p>
+                    </div>
+                    <div class="div_01">
+                        <p>transform: perspective(10px) <br> translate3d(0px,10px,0px); <br> <b>y-axis</b> </p>
+                    </div>
+                    <div class="div_01">
+                        <p>transform: perspective(10px) <br> translate3d(0px,0px,-10px); <br> <b>z-axis</b> ;</p>
+                    </div>
+
+                    <br> <br>
+
+                    <div id="id_01" class="div_02">
+                        <div></div>
+                    </div>
+                    <div id="id_02" class="div_02">
+                        <div></div>
+                    </div>
+                    <div id="id_03" class="div_02">
+                        <div></div>
+                    </div>
+                </ul>
+            </li>
+            <br> <br>
+
+            <li><b>transform: perspective( value in px ) rotate3d(x-shift , y-shift , z-shift , degrees-of-rotation) [shifts in px]</b>
+                <ul>
+                    <li>rotate3d( ) lets us rotate element in 3D space.</li>
+                    <li>Example :</li> <br>
+
+                    <div class="div_01">
+                        <p>transform: perspective(100px) <br> rotate3d(10, 0, 0, 20deg); <br> <b>x-axis</b> </p>
+                    </div>
+                    <div class="div_01">
+                        <p>transform: perspective(100px) <br> rotate3d(0, 10, 0, 20deg); <br> <b>y-axis</b> </p>
+                    </div>
+                    <div class="div_01">
+                        <p>transform: perspective(100px) <br> rotate3d(0, 0, 10, 20deg); <br> <b>z-axis</b> ;</p>
+                    </div>
+
+                    <br> <br>
+
+                    <div id="id_04" class="div_02">
+                        <div></div>
+                    </div>
+                    <div id="id_05" class="div_02">
+                        <div></div>
+                    </div>
+                    <div id="id_06" class="div_02">
+                        <div></div>
+                    </div>
+                </ul>
+            </li>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

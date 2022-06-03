@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box_Sizing</title>
+
+    <style>
+        .dimention{
+            height: 200px;
+            width: 600px;
+        }
+
+        #id_01{
+            background-color: tomato;   
+        }
+
+        #id_02{
+            background-color: violet;
+            padding: 50px;
+            border: 10px solid;
+        }
+
+        #id_03{
+            background-color: pink;
+            padding: 50px;
+            border: 10px solid;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Sizing</h1> <hr>
+
+    <p>
+        <ul>
+            <li>By default the height  and the width we provide is applicable to the content, not the container.</li>
+            <li>The margin, border, padding we provide are added over the height and width provided, thus it can make the container bigger than the specified height and width.</li>
+
+            Example : <br> <br>
+            box 1 : height: 200px; width: 600px;
+            <div id="id_01" class="dimention"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore labore ab voluptatum asperiores ut vitae accusamus aut soluta libero omnis repellendus iure doloribus quae suscipit quod minus tenetur ipsam officia eaque voluptatibus, velit harum. Laboriosam adipisci explicabo nulla ducimus cupiditate suscipit dolore saepe sed doloremque, minus laudantium fugit quasi illo.</div>
+            <hr>
+
+            box 2 : height: 200px; width: 600px; padding: 50px; border: 10px solid;
+            <div id="id_02" class="dimention">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi distinctio ad rerum voluptate sapiente dicta sint illo animi enim exercitationem deleniti reprehenderit quaerat veniam eos adipisci id maiores autem, nihil consequuntur. Nulla iusto aut consectetur quasi magnam. Eaque vel eius harum rerum accusantium in voluptates minima, quidem quas repudiandae.</div>
+            <br> <br>
+
+            <li>Here both the boxes have same height and width.</li>
+            <li>But the padding and the border in second one is added on top of the height and width making the box bigger.</li>
+            <li>This clears that the height and width we set are for the content and not for conatiner.</li>
+            <br> <hr> <br>
+
+            <li><b>box-sizing</b>  deals with this exact senario.</li>
+            <li>It allows us to apply the height and width to the container.</li>
+            <li>by default the value is - "content-box"</li>
+            Example :  <br> <br>
+
+            box 3 : height: 200px; width: 600px; padding: 50px; border: 10px solid; box-sizing: border-box;
+            <div id="id_03" class="dimention">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia quasi distinctio ad rerum voluptate sa Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum molestias nam perferendis recusandae iure consectetur ut sunt impedit doloribus eius.</div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

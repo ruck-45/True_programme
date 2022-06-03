@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colors in CSS</title>
+</head>
+<body>
+    <h1>Ways of Defining Colors in CSS</h1> <hr>
+
+    <p>
+        In CSS colours can be specified using:
+        <ul>
+            <li>Pre defined color names</li>
+            <li>RGB</li>
+            <li>RGBA</li>
+            <li>HEX</li>
+            <li>HSL</li>
+            <li>HSLA</li>
+        </ul>
+    </p>
+
+    <h2>Pre defined color names</h2> <hr>
+
+    <p>
+        <ul>
+            <li>Modern Browsers support 140 named colors.</li>
+            <li>These are predefined and can be recognised by compiler by name.</li>
+            <li>We can find the list in web.</li>
+            <img src="./images/02.jpg" alt="Predefined colors in CSS">
+        </ul>
+    </p>
+
+    <h2>RGB</h2> <hr>
+
+    <p>
+        <ul>
+            <li><b>rgb(red,green,blue)</b></li>
+            <li>We can also specify colors by its RGB Value.</li>
+            <li>Color value for each, ranges between 0 and 255.</li>
+            <br>
+            <li>Example :</li>
+            <ul>
+                <li>Black : rgb(0,0,0)</li>
+                <li>White : rgb(255,255,255)</li>
+                <li>Red : rgb(255,0,0)</li>
+                <li>Green : rgb(0,255,0)</li>
+                <li>Blue : rgb(0,0,255)</li>
+            </ul>
+        </ul>
+    </p>
+
+    <h2>RGBA</h2> <hr>
+
+    <p>
+        <ul>
+            <li><b>rgba(red,green,blue,<ins>alpha</ins>)</b></li>
+            <li>alpha value stands for transperency.</li>
+            <li>alpha ranges between 0.0 (fully transparent) and 1.0 (fully opaque)</li>
+        </ul>
+    </p>
+
+    <h2>HEX</h2> <hr>
+
+    <p>
+        <ul>
+            <li><b>#rrggbb</b></li>
+            <li>rr (red) , gg (green) , bb (blue)</li>
+            <li>Hexadecimal Values range between 00 and ff (same as decimal 0-255).</li>
+            <br>
+            <li>Example :</li>
+            <ul>
+                <li>Black : #000000</li>
+                <li>White : #ffffff</li>
+                <li>Red : #ff0000</li>
+                <li>Green : #00ff00</li>
+                <li>Blue : #0000ff</li>
+            </ul>
+        </ul>
+    </p>
+
+    <h2>HSL</h2> <hr>
+
+    <p>
+        <ul>
+            <li><b>hsl(hue,saturation,lightness)</b></li>
+            <li>hue : Degree on color wheel drom 0<sup>&deg;</sup>-360<sup>&deg;</sup>. (0<sup>&deg;</sup> = red, 120<sup>&deg;</sup> = green, 240<sup>&deg;</sup> = blue)</li>
+            <li>saturation : Percentage Value , 0% = shade of gray & 100% = full color</li>
+            <li>lightness : Percentage value ,  0% = black , 50% = neither light or dark & 100% = white</li>
+            <br>
+            <li>Example :</li>
+            <ul>
+                <li>Black : hsl(0,0%,0%)</li>
+                <li>White : hsl(0,0%,100%)</li>
+                <li>Red : hsl(0,100%,50%)</li>
+                <li>Green : hsl(120,100%,50%)</li>
+                <li>Blue : hsl(240,100%,50%)</li>
+            </ul>
+            <img src="./images/03.jpg" alt="HSL color wheel">
+        </ul>
+    </p>
+
+    <h2>HSLA</h2> <hr>
+
+    <p>
+        <ul>
+            <li><b>hlsa(hue,saturation,lightness,<ins>alpha</ins>)</b></li>
+            <li>alpha value stands for transperency.</li>
+            <li>alpha ranges between 0.0 (fully transparent) and 1.0 (fully opaque)</li>
+        </ul>
+    </p>    
+</body>
+</html>

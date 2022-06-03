@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opacity</title>
+
+    <style>
+        #color_box_01{
+            height: 300px;
+            width: 500px;
+            background-color: red;
+            opacity: 0.5;
+        }
+
+        img{
+            height: 300px;
+            width: 600px;
+            opacity: 0.5;
+        }
+
+        #color_box_02{
+            height: 300px;
+            width: 500px;
+            background-color: red;
+        }
+
+        #color_box_03{
+            height: 300px;
+            width: 500px;
+            background-color: green;
+            margin-top: -100px;
+        }
+
+        #color_box_04{
+            height: 300px;
+            width: 500px;
+            background-color: red;
+            opacity: .35;
+        }
+
+        #color_box_05{
+            height: 300px;
+            width: 500px;
+            background-color: green;
+            margin-top: -100px;
+            opacity: 0.35;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opacity</h1> <hr>
+
+    <p>
+        <ul>
+            <li>syntax-> <b>opacity : (value 0...1)</b> </li>
+            <li>0 = fully transperent</li>
+            <li>1 = Opaque</li> 
+            <br> <br>
+
+            - Example : (background-color), opacity: 0.5; background-color: red; <br>
+
+            <div id="color_box_01"></div>
+
+            <br> <br>
+
+            - Example : (image), opacity: 0.5;<br>
+
+            <img src="./images/05.jpg" alt="image_01">
+
+            <br> <br>
+
+            - Example : two color-boxes intersecting without any opacity settings:<br>
+
+            <div id="color_box_02"></div>
+            <div id="color_box_03"></div>
+
+            <br> <br>
+
+            - Example : two color-boxes intersecting with opacity settings set to 0.35:<br>
+
+            <div id="color_box_04"></div>
+            <div id="color_box_05"></div>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>40_responsive_web_design_support_03</title>
+
+    <style>
+        #div_01{
+            font-size: 80px;
+            background-color: blueviolet;
+            width: 70%;
+            float: left;
+        }
+
+        #div_02{
+            font-size: 80px;
+            background-color:cornflowerblue;
+            width: 30%;
+            float: left;
+        }
+
+        @media screen and (max-width: 650px){
+            #div_01{
+                width: 50%;
+            }
+
+            #div_02{
+                width: 50%;
+            }
+        }
+
+        @media screen and (max-width: 400px) and (min-width: 200px){
+            #div_01{
+                background-color: crimson;
+            }
+
+            #div_02{
+                background-color: darkblue;
+            }
+        }
+
+        p{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <div id="div_01">Div 1</div>
+    <div id="div_02">Div 2</div>
+
+    <br> <br> <br>
+    <ul>
+        <li>The Innitial width is set to be 70%, 30% beween Div - 1 and Div - 2.</li>
+        <li>Around 650px the Div - 2 box distorst its orientation to accomodate the large font size, so we changed the width to - 50%, 50% each.</li>
+        <li>We wanted to cahnage the backround-color for certain resolution, so we did that for 200px - 400px.</li> <br> <br>
+
+        Media Query code: <br>
+            <p>
+                @media screen and (max-width: 650px){
+                    #div_01{
+                        width: 50%;
+                    }
+        
+                    #div_02{
+                        width: 50%;
+                    }
+                }
+        
+                @media screen and (max-width: 400px) and (min-width: 200px){
+                    #div_01{
+                        background-color: crimson;
+                    }
+        
+                    #div_02{
+                        background-color: darkblue;
+                    }
+                }
+            </p>
+
+            <br> <br>
+
+            <li>min-width = all width above specified width (at least)</li>
+            <li>max-width = all width below specified width (at most)</li>
+            <li>we can use "and" , "or" to specify the range of resolution we want.</li>
+    </ul>
+</body>
+</html>

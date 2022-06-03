@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image maps</title>
+</head>
+<body>
+    <h1>Image Maps</h1> <hr>
+    <p>
+        Task : We have Following image (down) we want to make this image a hyperlink by parts.
+        <br>
+        <br>
+        Meaning : <br> If someone clicks on laptop pic, he will be directed to laptop page of amazon <br>
+                        If someone clicks on mouse pic, he will be directed to mouse page of amazon <br>
+                        If someone clicks on keyboard pic, he will be directed to keyboard page of amazon <br>
+                        If someone clicks on speaker pic, he will be directed to speaker page of amazon <br>
+    </p>
+
+    <img src="./images/03.jpg" height="600" width="800" usemap="#image-map">
+
+    <map name="image-map">
+        <area target="_blank" alt="Gaming Laptop" title="Gaming Laptop" href="https://www.amazon.in/s?k=gaming+laptop&amp;crid=3MZKMGPAKLX8Y&amp;sprefix=gaming+laptop%2Caps%2C600&amp;ref=nb_sb_noss" coords="238,134,493,392" shape="rect">
+        <area target="_blank" alt="Gaming Keyboard" title="Gaming Keyboard" href="https://www.amazon.in/s?k=gaming+keyboard&amp;crid=3HWQBL04IG5PH&amp;sprefix=gaming+key%2Caps%2C1078&amp;ref=nb_sb_noss" coords="172,422,534,533" shape="rect">
+        <area target="_blank" alt="Gaming Mouse" title="Gaming Mouse" href="https://www.amazon.in/s?k=gaming+mouse&amp;sprefix=gaming+mouse%2Caps%2C419&amp;ref=nb_sb_ss_ts-doa-p_2_12" coords="687,472,44" shape="circle">
+        <area target="_blank" alt="Gaming Headphones" title="Gaming Headphones" href="https://www.amazon.in/s?k=gaming+headphone%E0%A4%82&amp;sprefix=gaming+Head%2Caps%2C498&amp;ref=nb_sb_ss_ts-doa-p_1_11" coords="67,177,66" shape="circle">
+        <area target="_blank" alt="Gaming Spakers" title="Gaming Spakers" href="https://www.amazon.in/s?k=gaming+speakers&amp;sprefix=gaming+speak%2Caps%2C360&amp;ref=nb_sb_ss_ts-doa-p_1_12" coords="545,204,594,213,569,352,517,339" shape="poly">
+    </map>
+
+    <br> <br>
+
+    <ul>
+        <li>We use image mapping in this case.</li>
+        <li>Method 1 :
+            <ul>
+                <li>create a &lt;map> tag and give it a name.</li> <br> <br>
+                <li>inside the map tag, use &lt;area> tags and give shape and coords [coordinates] attribute to define your area of intrest, in herf attribute provide the hyperlink to the targated website.</li>
+                <li>coordinates can be different for different shapes, e.g, for rectangle we just need to give two coordinates of its corners. For a circle we need to provide coordinate of its centre and provide its radius. And for a polygon we need to provide all necessery coordinates.</li> <br><br>
+                <li>In &lt;img> tag we use an attribute usemap [provide the map name in it] to use the map we just defined. </li>
+            </ul>
+        </li>
+
+        <li>Method 2 :
+            <ul>
+                <li>Search image map generator in google, it will autometically generate code according to your requests</li>
+                <li>Just copy the code and paste in your html file.</li>
+                <li>Make sure to resize the image to correct resolution as in your html page and then upload to the image map editor.</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

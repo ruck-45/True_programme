@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Sprites</title>
+
+    <style>
+        #id_01{
+            width: 242px;
+            height: 162px;
+            background-image: url(./images/10.png);
+        }
+
+        #id_02{
+            width: 241px;
+            height: 160px;
+            background-image: url(./images/10.png);
+            margin-top: -162px;
+            margin-left: 500px;
+            background-position: -243px -1px;
+
+        }
+
+        #id_03{
+            background-image: url(./images/10.png);
+            margin-top: -162px;
+            margin-left: 1000px;
+            background-position: -488px -2px; 
+            width: 244px;
+            height: 171px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Image Sprites</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Image sprite is a large image containing a lot of individual tiny image.</li>
+            <li>Image sprites are used when we have a lot of small images in website and for loading that many small website we will have to deal with a lot of requsts, which slows the overal loading time of the website</li>
+            <li>Thus we use image sprite to load all the image as a single large image with a single request and then show individually</li>
+            <li>image sprites are mainly used with "background-image property". </li>
+            <li>Use "background-position" to specify position of the icon</li>
+
+            <br> <br>
+
+            NOTE : it is not advisable to use sprites for  all circumstances. Use it only when dealing with a large number of small images. If we start doing image sprites for large sized images, then it will make the whole sprite very big as a result it will take a lot of time to load that single sprite, thus it will not be helping us in terms of fast website loading. So use image sprites for small images only.
+        </ul>
+
+        Example : <br> <br>
+
+        - This is the original image sprite. <br>
+        - We must be aware of all the dimentions in which each image is starting so that we can show them as individual images when needed. 
+        <br> <br>
+
+        - Original sprite image.. <br>
+        <img src="./images/10.png" alt="img_01">
+
+        <br> <br>
+        - images displayed individually from sprites..
+        <div id="id_01"></div>
+        <div id="id_02"></div>
+        <div id="id_03"></div>
+    </p>
+</body>
+</html>
