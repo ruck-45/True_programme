@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter</title>
+
+    <style>
+        #id_01{
+            filter: blur(5px);
+        }
+
+        #id_02{
+            filter: brightness(50%);
+        }
+
+        #id_03{
+            filter: contrast(150%);
+        }
+
+        #id_04{
+            filter: drop-shadow(-5px 5px 4px blue) ;
+        }
+
+        #id_05{
+            filter: grayscale(80%) ;
+        }
+
+        #id_06{
+            filter: hue-rotate(180deg);
+        }
+
+        #id_07{
+            filter: invert(100%) ;
+        }
+
+        #id_08{
+            filter: opacity(20%);
+        }
+
+        #id_09{
+            filter: saturate(60%)
+        }
+
+        #id_10{
+            filter: sepia(70%);
+        }
+
+        #id_11{
+            filter: blur(10px) brightness(70%) hue-rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+    <h1>Filter</h1> <hr>
+
+    <p>
+        <ul>
+            <li>We use filters <b>on images</b> to transform them.</li>
+            <li>We can also use multiple filters simultaneously by separatin them with space -> filter: blur(10px) brightness(70%) hue-rotate(180deg);</li>
+
+            <br> <br>
+            
+            <li>Original image :</li>
+            <img src="./images/09.png" alt="original" id="original"> <br> <br>
+            <li>Some commonly used filters :</li>
+
+            <br> <br>
+
+            <li><b>filter: blur(5px);</b></li> <br>
+            <img src="./images/09.png" alt="image_01" id="id_01">
+
+            <br> <br>
+
+            <li><b>filter: brightness(50%);</b></li> (makes brightness half) <br>
+            <img src="./images/09.png" alt="image_02" id="id_02">
+
+            <br> <br>
+
+            <li><b>filter: contrast(150%);</b></li><br>
+            <img src="./images/09.png" alt="image_03" id="id_03">
+
+            <br> <br>
+
+            <li><b>filter: drop-shadow(-5px 5px 4px blue);</b></li> we can always use "box-shadow" for this.<br>
+            <img src="./images/09.png" alt="image_04" id="id_04">
+
+            <br> <br>
+
+            <li><b>filter: grayscale(80%) ;</b></li> turns into black and white<br>
+            <img src="./images/09.png" alt="image_05" id="id_05">
+
+            <br> <br>
+
+            <li><b>filter: hue-rotate(180deg);</b></li> rotates colors to specified degree in color wheel.<br>
+            <img src="./images/09.png" alt="image_06" id="id_06">
+
+            <br> <br>
+
+            <li><b>filter: invert(100%) ;</b></li><br>
+            <img src="./images/09.png" alt="image_07" id="id_07">
+
+            <br> <br>
+
+            <li><b>filter: opacity(20%);</b></li><br>
+            <img src="./images/09.png" alt="image_08" id="id_08">
+
+            <br> <br>
+
+            <li><b>filter: saturate(60%);</b></li><br>
+            <img src="./images/09.png" alt="image_09" id="id_09">
+
+            <br> <br>
+
+            <li><b>filter: opacity(70%);</b></li> gives a yellow brown appearence.<br>
+            <img src="./images/09.png" alt="image_10" id="id_10">
+
+            <br> <br>
+
+            <li><b>filter: blur(10px) brightness(70%) hue-rotate(180deg);</b></li><br>
+            <img src="./images/09.png" alt="image_11" id="id_11">
+        </ul>
+    </p>
+</body>
+</html>

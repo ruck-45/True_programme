@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>responsive_web_design</title>
+</head>
+<body>
+    <h1>Responsive Web Design</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Earlier when mobile phones were not able to use internet, websites were only accessible only by PCs.</li>
+            <li>So websites were only developed for desktops.</li>
+            <li>But as more and more devices got access to internet, and website has to be displayed in multiple aspect ratios , thus there went a need to make the website responsive, such that they become readable in maximum devices possible.</li>
+            <li>At first companies started making separate website for smartphones starting domain with "m.website.com".</li>
+            <li>But Responsive website is much more economical way.</li>
+            <li>Some companies still dont have responsive wesite to promote their mobile apps and other products.</li>
+        </ul>
+    </p>
+
+    <h1>viewport meta tag</h1> <hr>
+
+    <p>
+        <ul>
+            <li>it is one of the fundamental methods of making website responsive.</li>
+            <li>syntax: &lt; meta name="viewport" content="width=device-width, initial-scale=1.0" &gt; </li>
+            <li>Here name="viewport" , suggests we are assingning some changes to the viewport of the device. Viewport is besically the visible screen of a device.</li>
+            <li>width=device-width , tells browser to not assume all devices as desktop and take the device width as actual width in consideration.</li>
+            <li>initial-scale=1.0 , restricts browser to zoom out thinking the width of device is of a desktop, and allows proper size implementation on other devices.</li>
+
+            <br>
+
+            Example: [tap inspect after right click to compare different devices]<br> <br>
+
+            <li>Without viewport-meta tag : <a href="./support files/40_responsive_web_design_01.html" target="_blank">Click Here</a></li>
+            <li>With viewport-meta tag : <a href="./support files/40_responsive_web_design_02.html" target="_blank">Click Here</a></li>
+        </ul>
+    </p>
+
+    <h1>media queries</h1> <hr>
+
+    <p>
+        <ul>
+            <li>We can use media queries to give custom CSS to different aspect ratio situations.</li>
+            <li>Suppose the basic responsive settings is causing some trouble in some aspect ratios, we can hardcode the correct CSS using media queries.</li>
+            <br>
+            Example : [here we have given 3 different Css settings for 3 different aspect ratios]<br> <br>
+
+            Webpage: <a href="./support files/40_responsive_web_design_03.html" target="_blank">Click Here</a> <br> <br>
+
+            <li>Use "Inspect" in web browser to see effects.</li>
+            <li>Use "my browser size" online to find out the exact size of viewport you want media query to use.</li>
+        </ul>
+    </p>
+</body>
+</html>

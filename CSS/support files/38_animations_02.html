@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>38_animations_support_02</title>
+
+    <style>
+        div{
+            height: 200px;
+            width: 200px;
+            margin: 40px;
+            border: 2px solid;
+            animation-name: color_change;
+            animation-duration: 3s;
+            background-color: orangered;
+        }
+
+        @keyframes color_change{
+            0%{
+                background-color: orangered;
+            }
+
+            25%{
+                background-color: orchid;
+            }
+
+            50%{
+                background-color: peru;
+            }
+
+            75%{
+                background-color: red;
+            }
+
+            100%{
+                background-color: royalblue;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+
+    <br>
+
+    <p>Refresh to see change</p>
+</body>
+</html>

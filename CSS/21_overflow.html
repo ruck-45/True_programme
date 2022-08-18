@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+
+    <style>
+        .container{
+            width: 500px;
+            height: 200px;
+            background-color: burlywood;
+            border: 2px solid;
+        }
+
+        #id_01{
+            margin-bottom: 50px;
+        }
+
+        #id_02{
+            overflow: hidden;
+        }
+
+        #id_03{
+            overflow:scroll;
+        }
+
+        #id_04{
+            overflow-y: scroll;
+        }
+
+        #id_05{
+            overflow: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow</h1> <hr>
+
+    <p>
+        <ul>
+            <li>it is used when the content (text/image) is more than the container.</li>
+            <li>instead of compromizing our container size, we can add a scrollbar or hide the extra content. That is what overflow does.</li>
+            <li>by default it is visible, it lets contet clip through the container.</li>
+            <br> <br>
+            Example: <br> <br>
+
+            without overflow: <br> <br>
+            <div id="id_01" class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda deleniti eos, voluptates odio quae distinctio? Incidunt, delectus sint nulla aspernatur, repudiandae suscipit tempore quia rem sunt porro pariatur officiis sed magnam ducimus voluptatibus cumque ut blanditiis ad sapiente cum quae possimus quibusdam? Commodi ipsam inventore nemo? Velit, voluptatem excepturi? lorm200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores architecto sit est quo voluptas quos in omnis excepturi voluptates aliquam necessitatibus velit, explicabo expedita ipsam adipisci assumenda itaque sapiente facilis modi delectus dicta? Rerum voluptatem temporibus quam quos, alias nemo dolores itaque quae, at dolore ipsa quas natus ad ratione repudiandae excepturi rem harum duci Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel itaque recusandae temporibus dolor vero possimus error dolores est quaerat!
+                </p>
+            </div>
+
+            <br> <br>
+
+            overflow: hidden; [hides extra content] <br> <br>
+            <div id="id_02" class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda deleniti eos, voluptates odio quae distinctio? Incidunt, delectus sint nulla aspernatur, repudiandae suscipit tempore quia rem sunt porro pariatur officiis sed magnam ducimus voluptatibus cumque ut blanditiis ad sapiente cum quae possimus quibusdam? Commodi ipsam inventore nemo? Velit, voluptatem excepturi? lorm200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores architecto sit est quo voluptas quos in omnis excepturi voluptates aliquam necessitatibus velit, explicabo expedita ipsam adipisci assumenda itaque sapiente facilis modi delectus dicta? Rerum voluptatem temporibus quam quos, alias nemo dolores itaque quae, at dolore ipsa quas natus ad ratione repudiandae excepturi rem harum duci Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel itaque recusandae temporibus dolor vero possimus error dolores est quaerat!
+                </p>
+            </div>
+
+            <br> <br>
+
+            overflow: scroll; [adds scrollbar to both axes] <br> <br>
+            <div id="id_03" class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda deleniti eos, voluptates odio quae distinctio? Incidunt, delectus sint nulla aspernatur, repudiandae suscipit tempore quia rem sunt porro pariatur officiis sed magnam ducimus voluptatibus cumque ut blanditiis ad sapiente cum quae possimus quibusdam? Commodi ipsam inventore nemo? Velit, voluptatem excepturi? lorm200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores architecto sit est quo voluptas quos in omnis excepturi voluptates aliquam necessitatibus velit, explicabo expedita ipsam adipisci assumenda itaque sapiente facilis modi delectus dicta? Rerum voluptatem temporibus quam quos, alias nemo dolores itaque quae, at dolore ipsa quas natus ad ratione repudiandae excepturi rem harum duci Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel itaque recusandae temporibus dolor vero possimus error dolores est quaerat!
+                </p>
+            </div>
+
+            <br> <br>
+
+            overflow-y: scroll; [adds scrollbar to a specified axes] <br> <br>
+            <div id="id_04" class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda deleniti eos, voluptates odio quae distinctio? Incidunt, delectus sint nulla aspernatur, repudiandae suscipit tempore quia rem sunt porro pariatur officiis sed magnam ducimus voluptatibus cumque ut blanditiis ad sapiente cum quae possimus quibusdam? Commodi ipsam inventore nemo? Velit, voluptatem excepturi? lorm200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores architecto sit est quo voluptas quos in omnis excepturi voluptates aliquam necessitatibus velit, explicabo expedita ipsam adipisci assumenda itaque sapiente facilis modi delectus dicta? Rerum voluptatem temporibus quam quos, alias nemo dolores itaque quae, at dolore ipsa quas natus ad ratione repudiandae excepturi rem harum duci Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel itaque recusandae temporibus dolor vero possimus error dolores est quaerat!
+                </p>
+            </div>
+
+            <br> <br>
+
+            overflow-y: scroll; [adds scrollbar to a specified axis] <br> <br>
+            <div id="id_04" class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda deleniti eos, voluptates odio quae distinctio? Incidunt, delectus sint nulla aspernatur, repudiandae suscipit tempore quia rem sunt porro pariatur officiis sed magnam ducimus voluptatibus cumque ut blanditiis ad sapiente cum quae possimus quibusdam? Commodi ipsam inventore nemo? Velit, voluptatem excepturi? lorm200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores architecto sit est quo voluptas quos in omnis excepturi voluptates aliquam necessitatibus velit, explicabo expedita ipsam adipisci assumenda itaque sapiente facilis modi delectus dicta? Rerum voluptatem temporibus quam quos, alias nemo dolores itaque quae, at dolore ipsa quas natus ad ratione repudiandae excepturi rem harum duci Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel itaque recusandae temporibus dolor vero possimus error dolores est quaerat!
+                </p>
+            </div>
+
+            <br> <br>
+
+            overflow: auto; [dynamically adds scroll acording to change] (it is most recommended to use)<br> <br>
+            <div id="id_04" class="container">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda deleniti eos, voluptates odio quae distinctio? Incidunt, delectus sint nulla aspernatur, repudiandae suscipit tempore quia rem sunt porro pariatur officiis sed magnam ducimus voluptatibus cumque ut blanditiis ad sapiente cum quae possimus quibusdam? Commodi ipsam inventore nemo? Velit, voluptatem excepturi? lorm200 Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea maiores architecto sit est quo voluptas quos in omnis excepturi voluptates aliquam necessitatibus velit, explicabo expedita ipsam adipisci assumenda itaque sapiente facilis modi delectus dicta? Rerum voluptatem temporibus quam quos, alias nemo dolores itaque quae, at dolore ipsa quas natus ad ratione repudiandae excepturi rem harum duci Lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque vel itaque recusandae temporibus dolor vero possimus error dolores est quaerat!
+                </p>
+            </div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,171 @@
+.parent{
+    background-color: brown;
+    display: flex;
+}
+
+.child{
+    background-color: cornsilk;
+    margin: 20px;
+    padding: 15px;
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.height_01{
+    height: 400px;
+}
+
+.height_02{
+    height: 200px;
+}
+
+#parent_01{
+    flex-direction: row;
+}
+
+#parent_02{
+    flex-direction: row-reverse;
+}
+
+#parent_03{
+    flex-direction: column;
+}
+
+#parent_04{
+    flex-direction: column-reverse;
+}
+
+#parent_05{
+    flex-wrap: nowrap;
+}
+
+#parent_06{
+    flex-wrap: wrap;
+}
+
+#parent_07{
+    flex-wrap: wrap-reverse;
+}
+
+#parent_08{
+    flex-flow: row-reverse wrap;
+}
+
+#parent_09{
+    justify-content: flex-start;
+}
+
+#parent_10{
+    justify-content: flex-end;
+}
+
+#parent_11{
+    justify-content: center;
+}
+
+#parent_12{
+    justify-content: space-around;
+}
+
+#parent_13{
+    justify-content: space-between;
+}
+
+#parent_14{
+    flex-wrap: wrap;
+    align-content: stretch;
+}
+
+#parent_15{
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#parent_16{
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#parent_17{
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+#parent_18{
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+#parent_19{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+#parent_20{
+    align-items: stretch;
+}
+
+#parent_21{
+    align-items: flex-start;
+}
+
+#parent_22{
+    align-items: flex-end;
+}
+
+#parent_23{
+    align-items: center;
+}
+
+#parent_25 div:first-child{
+    order: 2;
+}
+
+#parent_25 div:nth-child(2){
+    order: 3;
+}
+
+#parent_25 div:last-child{
+    order: 1;
+}
+
+#parent_27 div:first-child{
+    flex-grow: 1;
+}
+
+#parent_27 div:nth-child(2){
+    flex-grow: 3;
+}
+
+#parent_27 div:last-child{
+    flex-grow: 1;
+}
+
+#parent_29 div:first-child{
+    flex-shrink: 3;
+}
+
+#parent_29 div:nth-child(2){
+    flex-shrink: 2;
+}
+
+#parent_29 div:nth-child(3){
+    flex-shrink: 0;
+}
+
+#parent_30 div:first-child{
+    align-self: flex-start;
+}
+
+#parent_30 div:nth-child(2){
+    align-self: center;
+}
+
+#parent_30 div:last-child{
+    align-self: flex-end;
+}
+
+#parent_31 div:nth-child(2){
+    flex-basis: 300px;
+}

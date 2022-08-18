@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists</title>
+</head>
+<body>
+
+    <h1>Lists</h1> <hr>
+    <p>
+        There are 3 types of lists in html : <br>
+        1. Ordered list <br>
+        2. Unordered list <br>
+        3. Description List
+
+        <br><br>
+
+        Note : Lists can be nested
+    </p>
+
+    <h2>Ordered List</h2> <hr>
+    <p>
+        - (ol-tag) used for ordered list. Represents collection of datas having a perticular order. <br>
+        - (li-tag) is used to make each individual list element.
+        - Attributes :  <br>
+        1. type [specifies which type of numbering, 1 - numerical , A/a - alphabetical(big/small), I/i - roman(big/small)] <br>
+        2. start [specifies the starting value of that number , e.g we can start counting frpm 100, instead of 1] <br> <br>
+
+        Example : <br>
+        <ol type = 'i' start = 3 >
+            <li>Coffee</li>
+            <li>Chocolates
+                <ol type = 'a'>
+                    <li>Choco pie</li>
+                    <li>Hajmola</li>
+                    <li>Ecliers</li>
+                    <li>Center Fruit</li>
+                </ol>
+            </li>
+            <li>Biscuits
+                <ol type = '1'>
+                    <li>Good Day</li>
+                    <li>Chaska Maska</li>
+                </ol>
+            </li>
+            <li>Salted Cashew</li>
+            <li>Peanut Butter</li>
+        </ol>
+    </p>
+
+    <h2>Unordered List</h2> <hr>
+    <p>
+        - (ul-tag) used for unordered list. Represents collection of datas not having a perticular order. <br>
+        - (li-tag) is used to make each individual list element. <br>
+        - Attribute : style [used to specify the type of symbol used for list] <br> <br>
+        Example : <br>
+        <ul style = 'list-style-type: disc;' >
+            <li>Coffee</li>
+            <li>Chocolates
+                <ul style="list-style-type: square;">
+                    <li>Choco pie</li>
+                    <li>Hajmola</li>
+                    <li>Ecliers</li>
+                    <li>Center Fruit</li>
+                </ul>
+            </li>
+            <li>Biscuits
+                <ul style="list-style-type: none;">
+                    <li>Good Day</li>
+                    <li>Chaska Maska</li>
+                </ul>
+            </li>
+            <li>Salted Cashew</li>
+            <li>Peanut Butter</li>
+        </ul>
+    </p>
+
+    <h2>Description List</h2> <hr>
+    <p> 
+        - (dl-tag) used for Description list. Represents data having a title and a description. <br>
+        - (dt-tag) is used to make each individual list element. <br>
+        - (dd-tag) is used to give description about each individual list element. <br>
+        - Attribute : style [used to specify the type of symbol used for list] <br> <br>
+        Example : <br>
+       <dl>
+           <dt>Coffee</dt>
+                <dd>: a hot black liquid</dd>
+            <dt>Milk</dt>
+                <dd>: a white liquid</dd>
+       </dl>
+    </p>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float & Clear</title>
+
+    <style>
+        img{
+            width: 150px;
+            height: auto;
+        }
+
+        .border{
+            border: 1px solid ;
+        }
+
+        #para_02 img{
+            float: right;
+        }
+
+        #para_03 img{
+            float: right;
+        }
+
+        #para_03{
+            overflow: auto;
+        }
+
+        #para_04{
+            overflow: auto;
+        }
+
+        #para_04 img{
+            float: right;
+        }
+
+        #para_05{
+            overflow: auto;
+        }
+
+        #img_02{
+            float: right;
+            clear: right;
+        }
+
+        #img_01{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Float</h1> <hr>
+    
+    <p>
+        <ul>
+            <li>here is a senario :</li>
+        </ul>
+        
+        <br>
+        <p id="para_01" class="border">
+            Lorem ipsum dolor sit <img src="./images/04.png" alt="image_01"> amet consectetur adipisicing elit. Deleniti aperiam repellendus, debitis quisquam veniam ab inventore amet. Deserunt, atque officia eveniet nesciunt ratione blanditiis. Aperiam sequi cum voluptates aliquid earum explicabo! Nostrum in labore unde quo tempore provident iusto aliquam voluptatem, suscipit quisquam nihil quibusdam, voluptatibus repudiandae corrupti dolores ad asperiores. Natus aperiam hic assumenda sapiente enim nihil autem deleniti ullam iure delectus fugit, numquam ipsum earum? Quia, corrupti? Sapiente commodi magni adipisci, nesciunt exercitationem quia recusandae laudantium mollitia veritatis eum cupiditate ab officia voluptatum beatae at corporis molestias vero, accusantium id neque inventore ut deserunt nulla vel? Dolor, beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, enim atque totam blanditiis rerum ratione cupiditate maiores, magnam veritatis nam obcaecati sunt placeat at ea necessitatibus facere maxime. Officia, nesciunt quam dolore veritatis id at labore possimus cum praesentium modi eos veniam aperiam repellendus laudantium, repellat consequatur neque, fugit totam.
+        </p>
+        <br>
+
+        <ul>
+            <li>we want the image to be to the right and the text to the left without interfering each other (like in newspaper)</li>
+            <li>so here we use "float: right;" on the image.</li>
+        </ul>
+
+        <br>
+        <p id="para_02" class="border">
+            Lorem ipsum dolor sit <img src="./images/04.png" alt="image_02"> amet consectetur adipisicing elit. Deleniti aperiam repellendus, debitis quisquam veniam ab inventore amet. Deserunt, atque officia eveniet nesciunt ratione blanditiis. Aperiam sequi cum voluptates aliquid earum explicabo! Nostrum in labore unde quo tempore provident iusto aliquam voluptatem, suscipit quisquam nihil quibusdam, voluptatibus repudiandae corrupti dolores ad asperiores. Natus aperiam hic assumenda sapiente enim nihil autem deleniti ullam iure delectus fugit, numquam ipsum earum? Quia, corrupti? Sapiente commodi magni adipisci, nesciunt exercitationem quia recusandae laudantium mollitia veritatis eum cupiditate ab officia voluptatum beatae at corporis molestias vero, accusantium id neque inventore ut deserunt nulla vel? Dolor, beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cumque excepturi iusto totam quo. Amet inventore rem commodi ea magni voluptatibus eos reiciendis quibusdam alias tempora necessitatibus nobis unde perferendis, nihil pariatur sequi animi molestiae, fuga, non voluptate tempore odit soluta. Eius quo nulla doloribus quis voluptatum, accusantium nostrum quia.
+        </p>
+        <br>
+
+        <ul>
+            <li>As we can see, float did take out the image out of the container it was with the text.</li>
+            <li>This can be a problem in quite a few areas.</li>
+            <li>To tackle this we use - "overflow: auto;" in the container box.</li>
+        </ul>
+        
+        <br>
+        <p id="para_03" class="border">
+            Lorem ipsum dolor sit <img src="./images/04.png" alt="image_03"> amet consectetur adipisicing elit. Deleniti aperiam repellendus, debitis quisquam veniam ab inventore amet. Deserunt, atque officia eveniet nesciunt ratione blanditiis. Aperiam sequi cum voluptates aliquid earum explicabo! Nostrum in labore unde quo tempore provident iusto aliquam voluptatem, suscipit quisquam nihil quibusdam, voluptatibus repudiandae corrupti dolores ad asperiores. Natus aperiam hic assumenda sapiente enim nihil autem deleniti ullam iure delectus fugit, numquam ipsum earum? Quia, corrupti? Sapiente commodi magni adipisci, nesciunt exercitationem quia recusandae laudantium mollitia veritatis eum cupiditate ab officia voluptatum beatae at corporis molestias vero, accusantium id neque inventore ut deserunt nulla vel? Dolor, beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos cumque excepturi iusto totam quo. Amet inventore rem commodi ea magni voluptatibus eos reiciendis quibusdam alias tempora necessitatibus nobis unde perferendis, nihil pariatur sequi animi molestiae, fuga, non voluptate tempore odit soluta. Eius quo nulla doloribus quis voluptatum, accusantium nostrum quia.
+        </p>
+        <br>
+
+        <ul>
+            <li>We use float in quite a lot of places .</li>
+            <li>Like making a navigation bar : <a href="./support files/34_float_&_clear_01.html" target="_blank">Example</a></li>
+        </ul>
+    </p>
+
+    <h1>Clear</h1> <hr>
+
+    <p>
+        <ul>
+            <li>here is a senario :</li>
+        </ul>
+        
+        <br>
+        <p id="para_04" class="border">
+            Lorem ipsum dolor sit <img src="./images/06.jpeg" alt="image_04"> amet consectetur <img src="./images/07.jpeg" alt="image_05">adipisicing elit. Deleniti aperiam repellendus, debitis quisquam veniam ab inventore amet. Deserunt, atque officia eveniet nesciunt ratione blanditiis. Aperiam sequi cum voluptates aliquid earum explicabo! Nostrum in labore unde quo tempore provident iusto aliquam voluptatem, suscipit quisquam nihil quibusdam, voluptatibus repudiandae corrupti dolores ad asperiores. Natus aperiam hic assumenda sapiente enim nihil autem deleniti ullam iure delectus fugit, numquam ipsum earum? Quia, corrupti? Sapiente commodi magni adipisci, nesciunt exercitationem quia recusandae laudantium mollitia veritatis eum cupiditate ab officia voluptatum beatae at corporis molestias vero, accusantium id neque inventore ut deserunt nulla vel? Dolor, beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, enim atque totam blanditiis rerum ratione cupiditate maiores, magnam veritatis nam obcaecati sunt placeat at ea necessitatibus facere maxime. Officia, nesciunt quam dolore veritatis id at labore possimus cum praesentium modi eos veniam aperiam repellendus laudantium, repellat consequatur neque, fugit totam.
+        </p>
+        <br>
+
+        <ul>
+            <li>we did "float:right;" for both the images.</li>
+            <li>but we donot want them to be side by side, instead in a vertical manner.</li>
+            <li>For this reason we use clear.</li>
+            <li>clear can be use on both "float and non-float elements" but it will take action in the presence of a "float element" only.</li>
+            <li>like : 
+                <ul>
+                    <li> clear:left; - will not allow the selected element to exist on the left side of a floated element.</li>
+                    <li> clear:right; - will not allow the selected element to exist on the right side of a floated element.</li>
+                    <li> clear:both; - will not allow the selected element to exist on the left or the right side of a floated element.</li>
+                </ul>
+            </li>
+            <li> we used "clear:right;" on the flower image to bring it down.</li>
+        </ul>
+
+        <br>
+        <p id="para_05" class="border">
+            Lorem ipsum dolor sit <img src="./images/06.jpeg" alt="image_06" id="img_01"> amet consectetur <img src="./images/07.jpeg" alt="image_07" id="img_02">adipisicing elit. Deleniti aperiam repellendus, debitis quisquam veniam ab inventore amet. Deserunt, atque officia eveniet nesciunt ratione blanditiis. Aperiam sequi cum voluptates aliquid earum explicabo! Nostrum in labore unde quo tempore provident iusto aliquam voluptatem, suscipit quisquam nihil quibusdam, voluptatibus repudiandae corrupti dolores ad asperiores. Natus aperiam hic assumenda sapiente enim nihil autem deleniti ullam iure delectus fugit, numquam ipsum earum? Quia, corrupti? Sapiente commodi magni adipisci, nesciunt exercitationem quia recusandae laudantium mollitia veritatis eum cupiditate ab officia voluptatum beatae at corporis molestias vero, accusantium id neque inventore ut deserunt nulla vel? Dolor, beatae. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab, enim atque totam blanditiis rerum ratione cupiditate maiores, magnam veritatis nam obcaecati sunt placeat at ea necessitatibus facere maxime. Officia, nesciunt quam dolore veritatis id at labore possimus cum praesentium modi eos veniam aperiam repellendus laudantium, repellat consequatur neque, fugit totam.
+        </p>
+        <br>
+
+        <ul>
+            <li>Here is a typical example of a website having navigation, body, sidebar and footer : <a href="./support files/34_float_&_clear_02.html" target="_blank">Example</a></li>
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+
+    <style>
+        #id_02{
+            margin-top: -147px;
+            margin-left: 200px;
+        }
+
+        #id_03{
+            margin-top: -115px;
+            margin-left: 400px;
+        }
+
+        #ul_01{
+            list-style-type: disc;
+        }
+
+        #ul_02{
+            list-style-type: circle;
+        }
+
+        #ul_03{
+            list-style-type: square;
+        }
+
+        #id_05{
+            margin-top: -147px;
+            margin-left: 200px;
+        }
+
+        #id_06{
+            margin-top: -108px;
+            margin-left: 400px;
+        }
+
+        #id_07{
+            margin-top: -110px;
+            margin-left: 620px;
+        }
+
+        #id_08{
+            margin-top: -120px;
+            margin-left: 800px;
+        }
+
+        #id_09{
+            margin-top: -110px;
+            margin-left: 1000px;
+        }
+
+        #ol_01{
+            list-style-type: upper-alpha;
+        }
+
+        #ol_02{
+            list-style-type: lower-greek;
+        }
+
+        #ol_03{
+            list-style-type: lower-roman;
+        }
+
+        #ol_04{
+            list-style-type: georgian;
+        }
+
+        #ol_05{
+            list-style-type: decimal;
+        }
+
+        #ol_06{
+            list-style-type: decimal-leading-zero;
+        }
+
+        #ul_04{
+            list-style-image: url(./images/11.jpeg);
+        }
+
+        #ul_06{
+            list-style-position: inside;
+        }
+
+        .border{
+            border: 1px solid;
+        }
+    </style>
+</head>
+<body>
+    <h1>list styling</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>list-style-type: (style_type)</b></li>
+            - sets the style of list numbering
+            <br> <br>
+            - Unordered List <br>
+
+            <div id="id_01">
+                <ul id="ul_01">list-style-type: disc;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ul>
+            </div>
+
+            <br> <br>
+
+            <div id="id_02">
+                <ul id="ul_02">list-style-type: circle;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ul>
+            </div>
+
+            <div id="id_03">
+                <ul id="ul_03">list-style-type: square;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ul>
+            </div>
+
+            <br> <br>
+            - Ordered List <br>
+
+            <div id="id_04">
+                <ol id="ol_01">list-style-type: upper-alpha;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ol>
+            </div>
+
+            <br> <br>
+
+            <div id="id_05">
+                <ol id="ol_02">list-style-type: lower-greek;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ol>
+            </div>
+
+            <div id="id_06">
+                <ol id="ol_03">list-style-type: lower-roman;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ol>
+            </div>
+
+            <div id="id_07">
+                <ol id="ol_04">list-style-type: georgian;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ol>
+            </div>
+
+            <div id="id_08">
+                <ol id="ol_05">list-style-type: decimal;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ol>
+            </div>
+
+            <div id="id_09">
+                <ol id="ol_06">list-style-type: decimal-leading-zero;
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                    <li>content</li>
+                </ol>
+            </div>
+
+            <br> <br>
+
+            <li><b>list-style-image: url('image address');</b></li>
+            - we use it to provide an image in place of predefined list numbering.
+
+            <br> <br>
+
+            <ul id="ul_04"> Example :
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+                <li>content</li>
+            </ul>
+
+            <br> <br>
+
+            <li><b>list-style-position: (position) ;</b></li>
+            - the default position of predefined numbering is : outside. <br>
+            - we can change that to inside if we want.
+
+            <br> <br>
+
+            <ul id="ul_05"> Example :
+                <li class="border">content</li>
+                <li class="border">content</li>
+                <li class="border">content</li>
+                <li class="border">content</li>
+                <li class="border">content</li>
+            </ul>
+
+            <br> <br>
+
+            <ul id="ul_06"> Example :
+                <li class="border">content</li>
+                <li class="border">content</li>
+                <li class="border">content</li>
+                <li class="border">content</li>
+                <li class="border">content</li>
+            </ul>
+        </ul>
+    </p>
+</body>
+</html>

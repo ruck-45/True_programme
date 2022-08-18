@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+
+    <style>
+        #id_01{
+            text-decoration: none;
+        }
+
+        #id_02{
+            text-decoration: none;
+        }
+
+        #id_02:link{
+            color: gold;
+        }
+
+        #id_02:visited{
+            color: green;
+        }
+
+        #id_02:hover{
+            color: red;
+        }
+
+        #id_02:active{
+            color: saddlebrown;
+        }
+    </style>
+</head>
+<body>
+    <h1>States of a hyper-link</h1> <hr>
+
+    <p>
+        <ul>
+            <li>There are 4 stages of a hyper-link
+                <ol>
+                    <li>link : unvisited stage. By default it is blue color with a underline.</li>
+                    <li>visited : when the site has been visited once ever in your browser, it goes into visited state. by default, in this state Hyper-link remains violet color with an underline</li>
+                    <li>hover : when curser is hovered on the hyperlink. By default hover state is defined with no style.</li>
+                    <li>active : when the hyper-link is clicked, it enters active state. By default, for the brief moment it is clicked, it turns into red color and retains its underline.</li>
+                </ol>
+            </li>
+            <br> <br>
+
+            <li>We can modify the look of our hyperlink using css.</li>
+            <li>The way to access each state of hyperlink is :
+                <ul>
+                    <li>#id_name:state_name { CSS code }</li>
+                    <li>.class_name:state_name { CSS code }</li>
+                </ul> 
+            </li>
+            <br>
+
+            Example - (NOTE : keep the order mentioned below, do not write one state over other except the mentioned order.)<br>
+
+            #id_01:link { ..... } <br>
+            #id_01:visited { ..... } <br>
+            #id_01:hover { ..... } <br>
+            #id_01:active { ..... } <br>
+            <br>
+
+            <li>We can remove the default underline of links by setting {text-decoration : none;}</li>
+            <br>
+            Example -
+            <a href="https://www.google.com/" target="_blank" id="id_01"> Google</a>
+
+            <br>
+            Example of Css on all states -
+            <a href="https://www.google.com/" target="_blank" title="Search Engine" id="id_02"> Google</a>
+
+        </ul>
+    </p>
+</body>
+</html>

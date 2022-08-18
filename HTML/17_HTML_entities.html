@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Entities</title>
+</head>
+<body>
+    <h1>Html Entities</h1> <hr>
+    <ul>
+        <li>There are some special symbol reserved in html as keywords such that we cant use them freely as text.</li>
+        Example: we cant write (<)table(>) without the parenthesis because < > is used to declare a tag & the moment we take off the parenthesis they make table a tag.
+        <li>To use html entities as regular symbols we can do 2 things :
+            <ol>
+                <li>By name: <br>
+                    <ul>
+                        <li>syntax : &name;</li> <br>
+                        Example: &lt;table&gt; or &lt;table>
+                        <br> <br>
+                        [lt = less than] <br>
+                        [gt = greater than] 
+                    </ul>
+                </li>
+
+                <li>By number: <br>
+                    <ul>
+                        <li>syntax : &#number;</li> <br>
+                        Example: &#60;table&#62; or &#60;table>
+                        <br> <br>
+                        [#60 = less than] <br>
+                        [#62 = greater than] 
+                    </ul>
+                </li>
+            </ol>
+        </li>
+        <br>
+        <li>We can look up names/numbers of html entities on the internet for use.</li>
+    </ul>
+
+    <h1>Non Breaking Space (nbsp)</h1> <hr>
+
+    <ul>
+        <li>Non Breaking Space is actually a html entity.</li>
+        <li>Html usually overrites all extra spaces and new lines in text.</li>
+        <li>we have a fix for new line using &lt;br> tag .</li>
+        <li>The fix for extra spaces is Non Braking Space (nbsp)</li>
+        <li>Put (nbsp) in By name syntax of Html entities to use it.</li>
+        <br> <br>
+        Example : <br>
+
+        <li>This    line    has    four    spaces    between    every    word    but    HTML    has    overridden    it.</li>
+        <br> <br>
+        <li>This &nbsp;&nbsp;&nbsp;&nbsp;line &nbsp;&nbsp;&nbsp;&nbsp;has &nbsp;&nbsp;&nbsp;&nbsp;four &nbsp;&nbsp;&nbsp;&nbsp;spaces &nbsp;&nbsp;&nbsp;&nbsp;between &nbsp;&nbsp;&nbsp;&nbsp;every &nbsp;&nbsp;&nbsp;&nbsp;word &nbsp;&nbsp;&nbsp;&nbsp;using &nbsp;&nbsp;&nbsp;&nbsp;nbsp &nbsp;&nbsp;&nbsp;&nbsp;entity.</li>
+    </ul>
+
+    <h1>Html Symbols</h1> <hr>
+
+    <ul>
+        <li>We can use html entity syntax to access many different types of symbols unavailable to us in our keyboard.</li>
+        <li>Their names and numbers can also be found easily on internet by searching html symbols</li>
+        <br> <br>
+        Example :
+        <br>
+        <ul>
+            <li>Copyright symbol : &copy;</li>
+            <li>Pi symbol : &pi;</li>
+        </ul>
+    </ul>
+
+    <h1>Emojis in HTML</h1> <hr>
+
+    <ul>
+        <li>Just like symbols we can use html entity syntax to access many different types of Emojies.</li>
+        <li>Their names and numbers can also be found easily on internet by searching emojis in html</li>
+        <br> <br>
+        Example :
+        <br>
+        <li>smily emoji : &#128516;</li>
+    </ul>
+</body>
+</html>

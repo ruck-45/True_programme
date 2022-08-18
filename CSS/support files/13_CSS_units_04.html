@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_units_support_04</title>
+
+    <style>
+        .border{
+            border: 1px solid blue;
+        }
+
+        #id_03{
+            height: 700px;
+        }
+
+        #id_04{
+            height: 20%;
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>% (percentage)</h1> <hr>
+
+    <p>
+        <ul>
+            <li>percentage assigns percentage of the immidiate parent.</li>
+
+            - Example : <br>
+
+            <li>Here is this setup : a div and a p-tag (paragraph tag) in it</li>
+            <li>the div and the p (paragraph) tag have their respective text to make them separate.</li> <br> <br>
+
+            <div id="id_01" class="border">
+                This is div text.
+                <p id="id_02" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+
+            <li>here the height and width of paragraph is taken 20% and 50% height and width of div container.</li>
+            <br> <br>
+
+            <div id="id_03" class="border">
+                This is div text.
+                <p id="id_04" class="border">
+                    This is paragraph text.
+                </p>
+            </div>
+            <br> <br>
+        </ul>
+    </p>
+</body>
+</html>

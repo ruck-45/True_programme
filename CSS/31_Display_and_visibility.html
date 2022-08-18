@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display And Visibility</title>
+
+    <style>
+        .border{
+            border: 2px solid crimson;
+            height: 100px;
+            width: 100px;
+        }
+        #div_03{
+            display: inline;
+        }
+
+        #div_04{
+            display: inline;
+        }
+
+        #div_05{
+            display: inline-block;
+        }
+
+        #div_06{
+            display: inline-block;
+        }
+
+        #div_07{
+            display: none;
+        }
+
+        #div_09{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types of display property</h1> <hr>
+
+    <p>
+        <ul>
+            <li>Every element in HTML has a display property associated with it.</li>
+            <li>Four main Display Properties are :
+                <ul>
+                    <li>block</li>
+                    <li>inline</li>
+                    <li>inline-block</li>
+                    <li>none</li>
+                </ul>
+            </li>
+            <li>By default, HTML elements are either : Block Element or Inline Element.</li>
+            <li>Inline-Block and None type are custom display properties used by us.</li>
+        </ul>
+    </p>
+
+    <h1>Charecteristics of various Display Properties</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>block</b> :
+                <ul>
+                    <li>It takes full width of viewport.</li>
+                    <li>block elements start in new lines.</li>
+                    <li>height and width can be customized using CSS.</li>
+                </ul>
+            </li>
+            <br>
+            <li><b>inline</b> :
+                <ul>
+                    <li>It takes width that is required by the content.</li>
+                    <li>inline elements donot start in new lines.</li>
+                    <li>height and width cannot be customized using CSS.</li>
+                </ul>
+            </li>
+            <br>
+            <li><b>inline-block</b> : [it is besically inline element whose height and width is customizable]
+                <ul>
+                    <li>It takes width that is required by the content.</li>
+                    <li>inline elements donot start in new lines.</li>
+                    <li>height and width can be customized using CSS.</li>
+                </ul>
+            </li>
+        </ul>
+    </p>
+
+    <h1>'display' Property</h1> <hr>
+
+    <p>
+        <ul>
+            <li>'display' property allows us to change the display of an HTML element.</li>
+            <li>we can change a block element to inline or inline-block and vice versa using 'display'</li>
+            <br>
+            Example : <br> <br>
+
+            - default block display. [height and width = 100px]
+            <div id="div_01" class="border">This is upper box (div)</div>
+            <div id="div_02" class="border">This is lower box (div)</div>
+            <br> <br>
+
+            - display: inline; for both boxes (div). [height and width = 100px,  but height and width is not customizable in inline] <br>
+            <div id="div_03" class="border">This is upper box (div)</div>
+            <div id="div_04" class="border">This is lower box (div)</div>
+            <br> <br>
+
+            - display: inline-block; for both boxes (div). [height and width = 100px,  height and width is customizable in inline-block] <br>
+            <div id="div_05" class="border">This is upper box (div)</div>
+            <div id="div_06" class="border">This is lower box (div)</div>
+        </ul>
+    </p>
+
+    <h1>display: none; VS visibility: hidden;</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>display: none;</b></li>
+            - it will completely remove the element and the space occupied by it from the webpage.
+            <br> <br>
+            Example: <br> <br>
+
+            - display: none; for upper box (div). [it completely removes upper box] <br>
+            <div id="div_07" class="border">This is upper box (div)</div>
+            <div id="div_08" class="border">This is lower box (div)</div>
+            <br> <br>
+
+            <li><b>visibility: hidden;</b></li>
+            - it will just hide the element and the space occupied will remain in the webpage.
+            <br> <br>
+            Example: <br> <br>
+            - visibility: hidden; for upper box (div). [it just hides the upper box] <br>
+            <div id="div_09" class="border">This is upper box (div)</div>
+            <div id="div_10" class="border">This is lower box (div)</div>
+        </ul>
+    </p>
+</body>
+</html>

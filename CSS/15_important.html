@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>!important</title>
+
+    <link rel="stylesheet" type="text/css" href="./CSS/15_style.css">
+</head>
+<body>
+    <h1>"!important" property</h1> <hr>
+
+    <p>
+        <ul>
+            <li>"!important" property is used to set priorities.</li>
+            <li>it is used to override the priorities of 'inline' over 'id' over 'class' over 'elemental' CSS.</li>
+            <li>it is not recommended to use it in CSS.</li>
+            <li>it is used to quickly fix a CSS document if it is difficult to find the root css code.</li>
+            <br> <br>
+
+            - Example : <br>
+
+            <div id="id_01" class="class_01" style="font-size: 40px; font-weight: bold; font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; color: blueviolet;">
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse magnam quaerat consequatur minus maiores, sapiente praesentium recusandae nam veritatis expedita beatae, voluptas unde architecto aperiam. Eos corporis pariatur fuga harum? Odit saepe accusantium nemo consequuntur deserunt, unde nisi animi ad quaerat sunt repudiandae autem numquam cupiditate earum aperiam dolorem necessitatibus!
+                </p>
+            </div>
+
+            <p>
+                <ul>
+                    <li>Here we have all kinds of css styling on same div container (inline, id, class, elemental) etc.</li>
+                    <li>Every single one have their own font-size, font-color and font-family.</li>
+                    <li>Since there is presence of inline CSS, there is no way others are getting applied</li>
+                    <li>But after writing "!impotant " after a property in any low tier CSS definition, it overrides the priority.</li>
+                    <br> <br>
+                    NOTE : "!important" only works on a single line of code, not entire block of code. 
+
+                    <br> <br>
+                    <li>To demonstrate that we have included font-color: from elemental, font-size: from class, font-family: from id. </li>
+
+                    <br> <br>
+
+                    NOTE : if there are presence of multiple "!important" on same element of same property, then the priority rule from before kicks in.
+                </ul>
+            </p>
+        </ul>
+    </p>
+</body>
+</html>
