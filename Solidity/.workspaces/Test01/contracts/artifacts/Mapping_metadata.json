@@ -1,0 +1,140 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "Survey",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "profit_percent",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "customer_satisfaction",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "roll_number",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "name",
+						"type": "string"
+					}
+				],
+				"name": "setter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "students",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "comp_id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "comp_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "comp_profit",
+						"type": "uint256"
+					},
+					{
+						"internalType": "string",
+						"name": "comp_feedback",
+						"type": "string"
+					}
+				],
+				"name": "survey_setter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/15_Mapping.sol": "Mapping"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/15_Mapping.sol": {
+			"keccak256": "0x11c8e7e42eddaffefb5950b5140237682d895361b9be84430a65a0e6d42a3046",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://d86dc0c7cb80a4dfe69557e84db794e2607f707f6b0312bec91437b33f7a79ae",
+				"dweb:/ipfs/QmQ6S1iKcEx45sHgivo8KP2z1riYckntpKxee2Keq1DgBc"
+			]
+		}
+	},
+	"version": 1
+}

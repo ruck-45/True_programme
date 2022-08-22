@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "new_num",
+						"type": "int256"
+					}
+				],
+				"name": "change_num",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "int256",
+						"name": "new_num",
+						"type": "int256"
+					}
+				],
+				"name": "check_with_num",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "num",
+				"outputs": [
+					{
+						"internalType": "int256",
+						"name": "",
+						"type": "int256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/12_If_else_if_else.sol": "condition"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/12_If_else_if_else.sol": {
+			"keccak256": "0x381c1d880c56b19679e84abf80c3d90d883af3ca6656e78366246d09bc69375a",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://0315a783bc50748619caef0d1cce76b992f173359fbfa93b8a4a3df61e8fcebe",
+				"dweb:/ipfs/Qmf9VSkbddAJ3Vc8qnvG2ivKy5214XxizVuWcEchXwYEPp"
+			]
+		}
+	},
+	"version": 1
+}

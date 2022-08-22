@@ -1,0 +1,91 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "arr",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "new_c",
+						"type": "string"
+					}
+				],
+				"name": "setter_memory",
+				"outputs": [],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "new_c",
+						"type": "string"
+					}
+				],
+				"name": "setter_storage",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/16_Storage_Vs_Memory.sol": "Storage_Vs_Memory"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/16_Storage_Vs_Memory.sol": {
+			"keccak256": "0x917c1cf931a8097f623172c0890eecc3c0ddf57df313b5dc30d14906c6d58161",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://23e5e7c318a1be8f1acd987920d2f2d651c252695910730d11b883943aa5dea1",
+				"dweb:/ipfs/QmTnPG952CPCPXHbitr3qMX8XnUpgBX5GSNwvXKXwCGsVE"
+			]
+		}
+	},
+	"version": 1
+}

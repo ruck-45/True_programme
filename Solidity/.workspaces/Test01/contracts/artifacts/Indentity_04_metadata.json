@@ -1,0 +1,90 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "age",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "get_Name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "new_name",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "new_age",
+						"type": "uint256"
+					}
+				],
+				"name": "setter",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/04_Functions.sol": "Indentity_04"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/04_Functions.sol": {
+			"keccak256": "0x658f570ebce3f348dfb93246770d4825a8f7e4d0d6b77c18cf21bee17f1d872b",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://c09fb73e55567f94dd42548dc3032cfd2f06c1b69c8268e751f26190076b661f",
+				"dweb:/ipfs/QmVKHhRKgsKzJNXqW7RafDc4kENt5LdAAqPBvZnYyWHXsc"
+			]
+		}
+	},
+	"version": 1
+}
