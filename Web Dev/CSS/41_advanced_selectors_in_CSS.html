@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Selectors In CSS</title>
+
+    <style>
+        .pre{
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Selectors In CSS</h1> <hr>
+
+    <p>
+        <ul>
+            <li><b>Element / Type-Selector</b>:
+                <ul>
+                    <li>selects the base tag.</li>
+                    <li>all elements belonging to the selected ta in HTML file is affected.</li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    h1{
+                        CSS code;
+                    }
+                    
+                    p{
+                        CSS code;
+                    }
+
+                    div{
+                        CSS code;
+                    }
+                </p>
+            </li> <br>
+
+            <li><b>id-Selector</b>:
+                <ul>
+                    <li>unique id is given to tags.</li>
+                    <li>id is selected through - "#" (hash).</li>
+                    <li>By convention no two elements should have same id in an HTML.</li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    #id{
+                        CSS code;
+                    }
+                </p>
+            </li> <br>
+
+            <li><b>class-Selector</b>:
+                <ul>
+                    <li>tags are associated with one or more class.</li>
+                    <li>class is selected through - "." (dot).</li>
+                    <li>By convention elements could belong to two or more class in an HTML [separated by space] .</li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    .class{
+                        CSS code;
+                    }
+                </p>
+            </li> <br>
+
+            <li><b>psudo class & psudo element-Selector</b>:
+                <ul>
+                    <li>they can be used to select specific portion of tags.</li>
+                    <li>useful psudo class : first-child, last-child, nth-child etc...</li>
+                    <li>useful psudo elements : first-letter, first-line, selection, before, after etc...</li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    a:first-child{
+                        CSS code;
+                    }
+
+                    div:nth-child(4){
+                        CSS code;
+                    }
+
+                    p::first-line{
+                        CSS code;
+                    }
+                </p>
+            </li> <br>
+
+            <li><b>Attribute-Selector</b>:
+                <ul>
+                    <li>they select the tags who have the attribute mentioned here.</li>
+                    <li>it can be used in case of tags who have various versions depending upon their attribute, like: "input-tag"</li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    input[type="text"]{
+                        CSS code;
+                    }
+
+                    input[type="button"]{
+                        CSS code;
+                    }
+
+                    a[href="https://www.google.com"]{
+                        CSS code;
+                    }
+                </p>
+
+                <ul>
+                    <li>in first example : that input-tag will be selected which has the type attribute as "text".</li>
+                    <li>similarly in second example : that input-tag will be selected which has the type attribute as "button".</li>
+                    <li>in the third example, the anchor tag whch has its address set to google search engine will be selected.</li>
+                </ul>
+            </li> <br>
+
+            <li><b>Universal-Selector</b>:
+                <ul>
+                    <li>"*" (star) is used to select each and every tag in HTML file.</li>
+                    <li>It is not much used except the debug phase.</li>
+                    <li>We mainly use it to give every element a border to see element collisions and spacing issues if any.</li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    *{
+                        CSS code;
+                    }
+                </p>
+            </li> <br>
+
+            <li><b>Combinator-Selector</b>:
+                <ul>
+                    <li>There are many different types of combinator selectors.</li>
+                    <li>They are : <br> <br>
+                        <ul>
+                            <li><b>Descendant combinatory selector: (child at any stage)</b>
+                            <ul>
+                                <li>the selectors are written space separated.</li>
+                                <li>every selector to the right represents the child of the selector in the left at any stage. (the child can be immidiate or more levels down)</li>
+                                <br>
+                                Example :
+                                <p class="pre">
+                                    #id_01 p{
+                                        CSS code;
+                                    }
+                                </p>                                
+                            </ul>
+                            </li> <br>
+
+                            <li><b>Child combinatory selector: (Direct Child)</b>
+                            <ul>
+                                <li>the selectors are written separated by "&gt;".</li>
+                                <li>every selector to the right represents the immidiate child (just one level below) of the selector in the left.</li>
+                                <br>
+                                Example :
+                                <p class="pre">
+                                    #id_01>p{
+                                        CSS code;
+                                    }
+                                </p>                                
+                            </ul>
+                            </li> <br>
+
+                            <li><b>Adjacent combinatory selector: (Immidiate Sibling)</b>
+                            <ul>
+                                <li>the selectors are written separated by "+".</li>
+                                <li>every selector to the right represents the immidiate sibling (on the same level and just neighbouring) of the selector in the left.</li>
+                                <br>
+                                Example :
+                                <p class="pre">
+                                    #id_01+p{
+                                        CSS code;
+                                    }
+                                </p>                                
+                            </ul>
+                            </li> <br>
+
+                            <li><b>General Sibling combinatory selector: (General Sibling)</b>
+                            <ul>
+                                <li>the selectors are written separated by "~".</li>
+                                <li>every selector to the right represents the general sibling (on the same level but may or may not be neighbours) of the selector in the left.</li>
+                                <br>
+                                Example :
+                                <p class="pre">
+                                    #id_01~p{
+                                        CSS code;
+                                    }
+                                </p>                                
+                            </ul>
+                            </li> <br>
+                        </ul>
+                    </li>
+                </ul>
+            </li> <br>
+
+            <li><b>Add-Selector</b>:
+                <ul>
+                    <li>multiple selectors can be given same CSS code using this.</li>
+                    <li>selectors are separated by "," (commas) </li>
+                </ul>
+                <br>
+                Example :
+                <p class="pre">
+                    .class_01,a,p{
+                        CSS code;
+                    }
+                </p>
+            </li> <br>
+        </ul>
+    </p>
+</body>
+</html>

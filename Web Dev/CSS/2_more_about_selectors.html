@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Selectors</title>
+
+    <link rel="stylesheet" href="./CSS/2_style.css" type="text/css">
+</head>
+<body>
+    <h1>Requirement of different types of selectors</h1> <hr>
+
+    <p>
+        <ul>
+            <h3>Element Selector</h3> <hr>
+            <li>Initially we had <mark>"Element Selector"</mark> , we specified the tag name and added the style to it.</li>
+
+            <br>
+            Example : we used syntax - tag{ CSS code }
+
+            <h1 id="heading_1">Heading</h1>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <li>The main disadvantage is that all the paragraphs are applied with same style. To make a specific part of HTML styled a perticular way, (say we want the middle paragraph to be yellow) <mark>"id Selector"</mark> was needed. </li>
+
+            <h3>id Selector</h3> <hr>
+            <li>Here we specify the tag we want to stylize with a unique id.</li>
+            <li>We access that tag using the id we gave in css document using (Hashtag-#).</li>
+            <li>An id is a unique identity of a tag, so no two tags can have same id.</li>
+            <li>Also a single tag cannot have more than one id.</li>
+            
+            <br>
+            Example : we used syntax - #id{ CSS code }
+
+            <h1 id="heading_2">Heading</h1>
+
+            <p id="para_1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p id="para_2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p id="para_3">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <li>Now suppose we have to make Both the heading and the paragraph-1 and paragraph-3 aqua, dowe have to wtrite the same code 3 times mentioning their "id"? isnt it redundant?</li>
+            <li>Thats why <mark>"class Selector"</mark> came into use.</li>
+
+            <h3>class Selector</h3> <hr>
+            <li>We can group together different tags under same class using 'class' attribute. The benifit of this is that we can apply same style to all of them simultaneously without the need to write code for them individually.</li>
+            <li>We access that tag using the class we defined for it in css document using (dot .)</li>
+            
+            <br>
+            Example : we used syntax - .class{ CSS code }
+
+            <h1 id="heading_3" class="aqua">Heading</h1>
+
+            <p id="para_4" class="aqua">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p id="para_5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p id="para_6" class="aqua">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+        </ul>
+    </p>
+
+    <p>
+        <ul>
+            Note : a single tag can have its own "id" and stil belong to one or more classes. To make a tag belong to more than one classes , just write all class names separated by "space" in class-attribute. 
+            <br>
+            like : class = "class_1 class_2 class_3 class_4"
+        </ul>
+    </p>
+
+    <h1>Priority Of different Selectors</h1>
+
+    <p>
+        <ul>
+            <li>As we already know that the priority of inline CSS is the highest and between internal CSS and external CSS the one who came later takes the priority. [ If the style is done on same tag ]</li>
+            <li>The above rule is valid only for individual selectors.</li>
+            Meaning :
+            <li>If we modify a pararaph using multiple 'id - selectors' then the one who comes at the bottom will be implemented. (same for others if used individually)</li>
+
+            <br> <br>
+
+            <li>If we use multiple selectors on the sme tag, priority is set as : <mark>"id-Selector" &gt; "class-Selector" &gt; "element-Selector"</mark>, regardless of their position in the code.</li>
+            <br>
+            Example : (see css file to see the priority difference)
+
+            <h1 id="heading_4" class="class_1 class_2">Heading</h1>
+
+            <p id="para_7" class="class_1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p id="para_8" class="class_2">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+            <p id="para_9" class="class_1">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur debitis molestias tempore illum dolorem minima et impedit eveniet facilis ipsum.
+            </p>
+
+        </ul>
+    </p>
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    <link rel="stylesheet" href="./CSS/24_style.css" type="text/css">
+</head>
+<body>
+    <h1>table</h1> <hr>
+
+    <p>
+        <ul>
+            <li>This is a normal table, table heading, table caption and table body.</li> <br> <br>
+            <table id="table_01">
+
+                <caption>Table</caption>
+
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br> <br>
+
+            <li>Applying border to every part of this table.</li> <br>
+
+
+            <table id="table_02" class="border">
+
+                <caption>Table [Border on table-tag]</caption>
+
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_03"> 
+                <caption class="border">Table [Border on caption-tag]</caption>
+                <thead>
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_04">
+
+                <caption>Table [Border on td/th-tag]</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_05">
+
+                <caption>Table [Border on thead/tbody/tr-tag] (they are besically wrappers)</caption>
+
+                <thead class="border">
+                    <tr>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                        <th>Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody class="border">
+                    <tr class="border">
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr class="border">
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr class="border">
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr class="border">
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                    <tr class="border">
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                        <td>content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br> <br>
+
+            <li><b>border-collapse: collapse; [on table-tag]</b></li> <br>
+            - when we give all order it is seen separated, border-collapse helps to join those border. <br>
+            - by default the value is separate. <br> <br>
+
+            <table id="table_06" class="border">
+
+                <caption class="border">Table (separate)</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_07" class="border">
+
+                <caption class="border">Table (collapse)</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br> <br>
+
+            <li><b>height, width, text-align, vertical-align, padding with: [th/td]</b></li> <br> <br>
+
+            <table id="table_08" class="border">
+
+                <caption class="border">Table <br> height: 45px; width: 100px; <br> padding: 5px;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border padding th">Heading</th>
+                        <th class="border padding th">Heading</th>
+                        <th class="border padding th">Heading</th>
+                        <th class="border padding th">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                        <td class="border padding tr">content</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_09" class="border">
+
+                <caption class="border">Table <br> height: 45px; width: 100px; <br> text-align: right; vertical-align: top;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border th">Heading</th>
+                        <th class="border th">Heading</th>
+                        <th class="border th">Heading</th>
+                        <th class="border th">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                        <td class="border align tr">content</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br> <br>
+
+            <li><b>border-spacing: 10px; (on table-tag)</b></li> <br> <br>
+            - adds border spacing if the border are separate. <br>
+            - we can give one / two / four values just like padding. <br> <br>
+
+            <table id="table_10" class="border">
+
+                <caption class="border">Table <br> border-spacing: 10px 5px;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br> <br>
+
+            <li><b>caption-side: bottom; (on table-tag)</b></li> <br>
+            - shifts caption to bottom <br> <br>
+
+            <table id="table_11" class="border">
+
+                <caption class="border">Table <br> caption-side: bottom;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br> <br>
+
+            <li><b>empty-cells: hide;</b></li> <br>
+            - hides empty cells <br> <br>
+
+            <table id="table_12" class="border">
+
+                <caption class="border">Table <br> empty-cells: show;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_13" class="border">
+
+                <caption class="border">Table <br> empty-cells: hide;
+                </caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br> <br>
+
+            <li><b>table-layout: fixed; (on table-tag)</b></li> <br>
+            - 'auto' mode makes distribution visually stable <br>
+            - 'fixed' mode makes distribution equal for each element , compromizing the visual stability.<br> <br>
+
+            <table id="table_14" class="border">
+
+                <caption class="border">Table <br> table-layout: auto;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading two demo basic</th>
+                        <th class="border">Heading three</th>
+                        <th class="border">Heading four demo basic again</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content (demo text Lorem ipsum dolor sit, amet consectetur.)</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content (lorem10)</td>
+                        <td class="border">content ( Lorem ipsum dolor sit amet consectetur adipisicing. )</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table id="table_15" class="border">
+
+                <caption class="border">Table <br> table-layout: fixed;</caption>
+
+                <thead>
+                    <tr>
+                        <th class="border">Heading</th>
+                        <th class="border">Heading two demo basic</th>
+                        <th class="border">Heading three</th>
+                        <th class="border">Heading four demo basic again</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content (demo text Lorem ipsum dolor sit, amet consectetur.)</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content (lorem10)</td>
+                        <td class="border">content ( Lorem ipsum dolor sit amet consectetur adipisicing. )</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                    </tr>
+                    <tr>
+                        <td class="border">content</td>
+                        <td class="border">content</td>
+                        <td class="border"></td>
+                        <td class="border"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </ul>
+    </p>
+</body>
+</html>

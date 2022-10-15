@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+
+    <style>
+        .border{
+            border:2px solid brown;    
+        }
+
+        #div_01{
+            width: 25%;
+        }
+
+        #div_01 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #div_01 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+        }
+
+        #div_01 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+        }
+
+        #div_02{
+            width: 25%;
+        }
+
+        #div_02 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #div_02 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+            position: relative;
+            top: 5px;
+            left: 250px;
+        }
+
+        #div_02 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+        }
+
+        #div_03{
+            width: 25%;
+        }
+
+        #div_03 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #div_03 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+            position: absolute;
+            top: 1270px;
+            left: 450px;
+        }
+
+        #div_03 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+        }
+
+        #div_04{
+            width: 25%;
+            position: relative;
+        }
+
+        #div_04 div:first-child{
+            height: 100px;
+            width: 100px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        #div_04 div:nth-child(2){
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            display: inline-block;
+            position: absolute;
+            top: 5px;
+            left: 250px;
+        }
+
+        #div_04 div:last-child{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            display: inline-block;
+        }
+
+        #div_05{
+            height: 100px;
+            width: 100px;
+            background-color: orangered;
+            border: 5px solid black;
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Types Of Position</h1> <hr>
+
+    <p>
+        - There are 4 type of position:
+        <ol>
+            <li>static</li>
+            <li>relative</li>
+            <li>absolute</li>
+            <li>fixed</li>
+        </ol>
+
+        - There are four properties that help us define the position in webpage :
+        <ol>
+            <li>top</li>
+            <li>bottom</li>
+            <li>left</li>
+            <li>right</li>
+        </ol>
+
+        Note : the top, bottom, right and left properties can only be applied if the element is positioned, i.e, if the element has position set to : relative/asolute/fixed. They cant be applied to static.
+    </p>
+
+    <h1>position: static;</h1> <hr>
+
+    <p>
+        <ul>
+            <li>By default position is set to static.</li>
+            <li>It is the default position of elements predefined by CSS.</li>
+        </ul>
+    </p>
+
+    <h1>position: relative;</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It allows us to move the element relative to its current position.</li>
+            <li>top, bottom, left, right can be used to provide the position.</li>
+            <li>Note : The preview of the element might move,but the position it initially held will still be occupied by it.</li>
+            <br>
+            Example : <br> <br>
+
+            - setup : <br>
+            <div id="div_01" class="border">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br> <br>
+
+            - position: relative; top: 5px; left: 250px; [see how the original position of orange block is still unocuppied]<br>
+            <div id="div_02" class="border">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </ul>
+    </p>
+
+    <h1>position: absolute;</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It allows us to move the element relative to position of its nearest positioned parent.</li>
+            <li>When an element is positioned is absolute, it checkes its parent to be positioned (either relative/absolute/fixed).</li>
+            <li>If the parent is not found positioned then it looks at its parent's parent and the cycle goes on until it finds a positioned parent or reaches the "body" as the final parent.</li>
+            <li>top, bottom, left, right can be used to provide position.</li>
+            <li>Note : The element will no longer occupy its former space.</li>
+            <br>
+            Example : <br> <br>
+
+            - position: absolute; top: 1270px; left: 450px; [the div container was not positioned so the top and left are relative to 'body']<br>
+            <div id="div_03" class="border">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <br> <br>
+
+            - position: absolute; top: 5px; left: 250px; [here the div container is positioned]<br>
+            <div id="div_04" class="border">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </ul>
+    </p>
+
+    <h1>position: fixed;</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It fixes the element in the viewport and the element doesnt move even when scrolled up or down.</li>
+            <li>top, bottom, left, right can be used to provide position.</li>
+            <li>The position is fixed wrt. viewport.</li>
+            <li>Note : The element will no longer occupy its former space.</li>
+            <br>
+            Example : <br> <br>
+
+            - position: fixed; bottom: 10px; right: 10px;<br>
+            <div id="div_05"></div>
+
+            <li>The hovering orange cube at right bottem is the example created here.</li>
+            <li>The hovering help/chatbox in website have fixed positions.</li>
+        </ul>
+    </p>
+</body>
+</html>

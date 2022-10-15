@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow</title>
+
+    <style>
+        #boxshadow_01{
+            border: 2px solid;
+            padding: 10px;
+            width: 50vw;
+            box-shadow: 5px 5px 4px 2px blue;
+        }
+
+        #boxshadow_02{
+            border: 2px solid;
+            padding: 10px;
+            width: 50vw;
+            box-shadow: 5px 5px 4px 2px gray inset;
+        }
+
+        #boxshadow_03{
+            border: 2px solid;
+            padding: 10px;
+            width: 50vw;
+            box-shadow: 5px 5px 4px 2px gray, -5px 5px 4px 2px blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Box Shadow</h1> <hr>
+
+    <p>
+        <ul>
+            <li>It is used to provide shadow to container.</li>
+            <li>Syntax -> <b>box-shadow: horizontal-shift vertical-shift bloom-radius spread-radius color ;</b></li>
+            <li>horizontal-shift & vertical-shift set the offset of shadow. Its value can be given in negetive to represent the offset in the opposite direction.</li>
+            <li>bloom-radius sets the blurryness of shadow.</li>
+            <li>spread-radius sets the spread of shadow.</li>
+            <br>
+            - Example : <br> <br>
+
+            <p id="boxshadow_01">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque reprehenderit iusto, temporibus nulla saepe eveniet tenetur hic praesentium obcaecati nemo corrupti tempora fugiat iure aspernatur odit inventore numquam deleniti! Maiores totam esse voluptatibus ex ducimus laudantium praesentium asperiores maxime voluptatem?
+            </p>
+
+            <li>We can also give shadow inside the box by writing - "inset" at the end.</li>
+
+            <p id="boxshadow_02">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque reprehenderit iusto, temporibus nulla saepe eveniet tenetur hic praesentium obcaecati nemo corrupti tempora fugiat iure aspernatur odit inventore numquam deleniti! Maiores totam esse voluptatibus ex ducimus laudantium praesentium asperiores maxime voluptatem?
+            </p>
+
+            <li>We can also give multiple shadows, by writing properties of other shadows separated by comma.</li>
+
+            Example : box-shadow: 5px 5px 4px 2px gray, -5px 5px 4px 2px blue;
+            
+            <p id="boxshadow_03">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque reprehenderit iusto, temporibus nulla saepe eveniet tenetur hic praesentium obcaecati nemo corrupti tempora fugiat iure aspernatur odit inventore numquam deleniti! Maiores totam esse voluptatibus ex ducimus laudantium praesentium asperiores maxime voluptatem?
+            </p>
+        </ul>
+    </p>
+</body>
+</html>

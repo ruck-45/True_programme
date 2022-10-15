@@ -1,0 +1,50 @@
+*{
+    margin:0px;
+    padding: 0px;
+    /* border: 2px solid red; */
+}
+
+img{
+    height: 495px;
+    width: 880px;
+}
+
+#slider-wrapper{
+    width: 100vw;
+    height: 65vh;
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+}
+
+#slider{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    left: -545px;
+    animation: slide 12s ease-in-out 0s infinite  alternate;
+}
+
+@keyframes slide {
+    0%{
+        left: -545px;
+    }
+    16.66%{
+        left: -1445px;
+    }
+    33.33%{
+        left: -2345px;
+    }
+    50%{
+        left: -3245px;
+    }
+    66.66%{
+        left: -4145px;
+    }
+    83.33%{
+        left: -5045px;
+    }
+    100%{
+        left: -5945px;
+    }
+}

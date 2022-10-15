@@ -1,0 +1,372 @@
+{
+	"id": "88de75ecebf0953d8e39d14017a6db9f",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.17",
+	"solcLongVersion": "0.5.17+commit.d19bba13",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"lottery_contract.sol": {
+				"content": "// SPDX-License-Identifier: GPL-3.0\r\n\r\npragma solidity >= 0.5.0 < 0.9.0;\r\n\r\ncontract Lottery\r\n{\r\n    address manager;\r\n    address payable participants;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"lottery_contract.sol": {
+				"Lottery": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"lottery_contract.sol\":76:155  contract Lottery\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x00\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"lottery_contract.sol\":76:155  contract Lottery\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"lottery_contract.sol\":76:155  contract Lottery\r... */\n      mstore(0x40, 0x80)\n      0x00\n      dup1\n      revert\n\n    auxdata: 0xa265627a7a72315820943f3e49809c62b508fcecb690d5d8dfa5d07924b209c780d3c845f328557d5064736f6c63430005110032\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603e80601d6000396000f3fe6080604052600080fdfea265627a7a72315820943f3e49809c62b508fcecb690d5d8dfa5d07924b209c780d3c845f328557d5064736f6c63430005110032",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3E DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 SWAP5 EXTCODEHASH RETURNDATACOPY 0x49 DUP1 SWAP13 PUSH3 0xB508FC 0xEC 0xB6 SWAP1 0xD5 0xD8 0xDF 0xA5 0xD0 PUSH26 0x24B209C780D3C845F328557D5064736F6C634300051100320000 ",
+							"sourceMap": "76:79:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;76:79:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea265627a7a72315820943f3e49809c62b508fcecb690d5d8dfa5d07924b209c780d3c845f328557d5064736f6c63430005110032",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH6 0x627A7A723158 KECCAK256 SWAP5 EXTCODEHASH RETURNDATACOPY 0x49 DUP1 SWAP13 PUSH3 0xB508FC 0xEC 0xB6 SWAP1 0xD5 0xD8 0xDF 0xA5 0xD0 PUSH26 0x24B209C780D3C845F328557D5064736F6C634300051100320000 ",
+							"sourceMap": "76:79:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12400",
+								"executionCost": "66",
+								"totalCost": "12466"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "POP"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "DUP1"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 76,
+									"end": 155,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a265627a7a72315820943f3e49809c62b508fcecb690d5d8dfa5d07924b209c780d3c845f328557d5064736f6c63430005110032",
+									".code": [
+										{
+											"begin": 76,
+											"end": 155,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 76,
+											"end": 155,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 76,
+											"end": 155,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 76,
+											"end": 155,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 76,
+											"end": 155,
+											"name": "DUP1"
+										},
+										{
+											"begin": 76,
+											"end": 155,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.5.17+commit.d19bba13\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"lottery_contract.sol\":\"Lottery\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"lottery_contract.sol\":{\"keccak256\":\"0x9ef070d123bfba840166a952d3db6f914d316945a861dc4f0e16b5aee7280f14\",\"urls\":[\"bzz-raw://22af4a36d5fe2df401250f3618e7d351f76d57961164d565657c07a3d06e77b5\",\"dweb:/ipfs/QmYTPcUAKZzsovgDXy222FDwG2V6g9hPGrroCccyKddNLy\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "lottery_contract.sol:Lottery",
+								"label": "manager",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_address"
+							},
+							{
+								"astId": 5,
+								"contract": "lottery_contract.sol:Lottery",
+								"label": "participants",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_address_payable"
+							}
+						],
+						"types": {
+							"t_address": {
+								"encoding": "inplace",
+								"label": "address",
+								"numberOfBytes": "20"
+							},
+							"t_address_payable": {
+								"encoding": "inplace",
+								"label": "address payable",
+								"numberOfBytes": "20"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"lottery_contract.sol": {
+				"ast": {
+					"absolutePath": "lottery_contract.sol",
+					"exportedSymbols": {
+						"Lottery": [
+							6
+						]
+					},
+					"id": 7,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.5",
+								".0",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "39:33:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 6,
+							"linearizedBaseContracts": [
+								6
+							],
+							"name": "Lottery",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"name": "manager",
+									"nodeType": "VariableDeclaration",
+									"scope": 6,
+									"src": "101:15:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address",
+										"typeString": "address"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "101:7:0",
+										"stateMutability": "nonpayable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address",
+											"typeString": "address"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 5,
+									"name": "participants",
+									"nodeType": "VariableDeclaration",
+									"scope": 6,
+									"src": "123:28:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_address_payable",
+										"typeString": "address payable"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "address",
+										"nodeType": "ElementaryTypeName",
+										"src": "123:15:0",
+										"stateMutability": "payable",
+										"typeDescriptions": {
+											"typeIdentifier": "t_address_payable",
+											"typeString": "address payable"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								}
+							],
+							"scope": 7,
+							"src": "76:79:0"
+						}
+					],
+					"src": "39:116:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

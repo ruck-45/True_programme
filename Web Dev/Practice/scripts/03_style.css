@@ -1,0 +1,124 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* border: 0.5px solid red; */
+}
+
+/* Home Page background */
+
+#Top_bar{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(rgba(0,0,0,0.6) 20%,rgba(0,0,0,0.5)), url('../resource/images/Img\ \(7\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Navigation Bar */
+
+nav{
+    overflow: auto;
+}
+
+nav ul{
+    padding-top: 15px;
+    padding-right: 75px;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li:last-child a{
+    border: 1.5px solid whitesmoke;
+    color: white;
+}
+
+nav ul li a:hover{
+    border: 1.5px solid whitesmoke;
+    background-color: rgba(255,255,255,0.03);
+    color: white;
+}
+
+nav ul li a{
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    font-size: 17px;
+    font-weight: 500;
+    border: 1.5px solid transparent;
+    margin: 5px;
+    margin-top: 35px;
+    padding: 7px 27px;
+}
+
+
+/* Logo */
+
+#logo{
+    width: 75px;
+    height: 75px;
+    opacity: 0.7;
+    float: left;
+    padding: 15px;
+}
+
+/* Question */
+
+#Question{
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    top: 365px;
+}
+
+#Question p{
+    color: antiquewhite;
+    font-size: 75px;
+    font-weight: 500;
+    text-align: center;
+    word-spacing: 25px;
+    text-shadow: 0px 1px 20px rgba(0,0,0,0.3);
+}
+
+/* Button */
+
+#button{
+    position: absolute;
+    display: flex;
+    position: relative;
+    top: 360px;
+    justify-content: space-around;
+    padding: 0px 500px;
+}
+
+#button div{
+    width: 230px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 2px solid antiquewhite;
+}
+
+#button div:first-child{
+    background-color: orange;
+    border: 2px solid white;
+}
+
+#button a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    text-shadow: 0px 1px 20px rgba(0,0,0,0.3);
+}
+
+#button div:hover{
+    background-color: orange;
+    border: 2px solid white;
+}
+
