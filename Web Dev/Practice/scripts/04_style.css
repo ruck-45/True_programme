@@ -1,35 +1,199 @@
 *{
     padding:0px;
     margin: 0px;
-    /* border: 1px solid transparent; */
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
 }
 
 body{
+    width: 100vw;
     height: 100vh;
     background-image: linear-gradient(rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.4)),url('../resource/images/Img\ \(8\).jpg');
     background-size: cover;
     background-position: center left;
     background-repeat: no-repeat;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 /* Nav bar */
 
 nav{
-    height: 12vh;
+    position: absolute;
+    width: 100vw;
     background: rgba(255,255,255,0.3);
     backdrop-filter: blur(2px);
     box-shadow: 0px 2px 50px rgba(0,0,0,0.1);
+    overflow: auto;
+    padding: 15px;
+}
+
+/* Logo */
+
+nav a{
+    display: inline-block;
 }
 
 #logo{
-    display: inline-block;
-    margin: 13px;
+    width: 65px;
+    height: 65px;
     padding: 10px;
-    width: 55px;
-    height: 55px;
-    background-image: linear-gradient(rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.4)), url('../resource/svg/spoons.png');
-    border-radius: 100%;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
+#logo div{
+    height: 100%;
+    width: 100%;
+    background-image: url('../resource/svg/spoons.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+/* Menu */
+#menu{
+    display: inline-block;
+    margin-left: 70vw;
+}
+
+#menu a{
+    text-decoration: none;
+    color:#353437;
+    font-weight: 700;
+    font-size: 17px;
+}
+
+#menu ul{
+    display: inline-block;
+}
+
+#menu li{
+    float: right;
+    list-style: None;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+#menu div{
+    background-color: black;
+    height: 3px;
+    border-radius: 20px;
+}
+
+#menu li:hover div{
+    display: block;
+    animation: expanding_underline 0.1s forwards;
+}
+
+#menu li:hover a{
+    color: black;
+}
+
+#menu li:last-child a{
+    color: black;
+}
+
+#menu li:last-child div{
+    animation: expanding_underline 0.5s forwards;
+}
+
+@keyframes expanding_underline{
+    0%{
+        width: 1%;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+/* Dumpling Banner */
+
+#dumpling_banner{
+    height: 48vh;
+    width: 100vw;
+    background: rgba(255,255,255,0.3);
+    position: absolute;
+    top: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+#dumpling_banner img{
+    height: 85%;
+    transform: rotate(-15deg);
+    border: 7px solid #E5DFD6;
+    border-radius: 10px;
+}
+
+#dumpling_banner img:hover{
+    transform: rotate(-16deg);
+}
+
+#dumpling_banner div{
+    width: 70vw;
+    margin-left: 70px;
+}
+
+#dumpling_banner p{
+    color: #E5DFD6;
+    font-weight: 500;
+    margin: 20px;
+    text-shadow: 0px 1px 50px gray;
+}
+
+#dumpling_banner p:first-child{
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 60px;
+    text-shadow: 0px 1px 30px gray;
+}
+
+#dumpling_banner div a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 16px;
+    font-weight: 800;
+    border: 20px;
+}
+
+#dumpling_banner div div{
+    width: 150px;
+    height: 30px;
+    background-color: red;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 25px;
+    padding-top: 12px;
+}
+
+#dumpling_banner div div:hover{
+    transform: translateY(-1px);
+}
+
+/* Social Media */
+
+#social_media{
+    padding: 10px;
+    height: 45px;
+    position: fixed;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#social_media i{
+    transform: scale(200%);
+    margin: 15px;
+}
+
+#social_media i:hover{
+    transform: rotate(20deg),scale(200%);
+}
+
+#social_media a{
+    color: black;
 }
