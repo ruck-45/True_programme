@@ -19,7 +19,7 @@
         // Example :  
 
             document.getElementById("id_01").innerHTML = 5+6;
-            // ( here Js will replace the contents in the heading tag having the id = “head_01” with “Hello world” )
+            // ( here Js will replace the contents in the heading tag having the id = “head_01” with “11” )
 
 
     // document.write( message );  // used for testing purpose

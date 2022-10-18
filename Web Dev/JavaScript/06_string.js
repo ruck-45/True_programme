@@ -30,3 +30,15 @@
             // str.substr( start_index , slice-length );
                 // it is similar to .slice( ); , but second parameter takes the length of the extracted-part.
     
+
+    // String Operations
+
+        // + : concatinates string
+    
+    // String Methods
+
+        // let s = 'HARSH';
+
+        // s.length : length of the string
+        // s.concat(a,b,c) : concatinates strings
+        s.substr(start_index,length) : returns a substring in the string

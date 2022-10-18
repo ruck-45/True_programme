@@ -44,7 +44,7 @@ nav a{
 #logo div{
     height: 100%;
     width: 100%;
-    background-image: url('../resource/svg/spoons.png');
+    background-image: url('../resource/icons/spoons.png');
     background-size: contain;
     background-repeat: no-repeat;
 }
