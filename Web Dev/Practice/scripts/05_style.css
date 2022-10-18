@@ -1,0 +1,147 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid red; */
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)),url(../resource/images/Img\ \(10\).jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#login{
+    height: 75vh;
+    width: 24vw;
+    background: rgba(0,0,0,0.9);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 0px 40px;
+}
+
+#login form{
+    width: 100%;
+    margin-top: 30px;
+}
+
+#login form *{
+    display: block;
+}
+
+#login img{
+    height: 100px;
+    position: absolute;
+    top: 40px;
+    border: 5px solid white;
+    border-bottom: 0px;
+    border-radius: 100px;
+}
+
+.login_message{
+    color: whitesmoke;
+    font-size: large;
+}
+
+#login p:first-child{
+    margin-top: 55px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 27px;
+}
+
+.heading{
+    margin: 40px 0px 10px 0px;
+    color: whitesmoke;
+    font-size: 17px;
+    overflow: auto;
+}
+
+.heading *{
+    float: left;
+    margin: 0px  2px;
+}
+
+#forgot{
+    margin-top: -20px;
+}
+
+#forgot a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 5px 0px;
+    font-size: 14px;
+}
+
+#forgot a:hover{
+    color: red;
+}
+
+#login input[type="text"], input[type="password"]{
+    background: transparent;
+    border: None;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    width: 100%;
+    outline: none;
+    color: white;
+}
+
+#login input[type="submit"]{
+    margin: 40px 0px;
+    width: 80%;
+    height: 10%;
+    border-radius: 50px;
+    background-color: red;
+    color: whitesmoke;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 30px;
+    border: 2px solid whitesmoke;
+}
+
+#login input[type="submit"]:hover{
+    cursor: pointer;
+    background: #ff3800;
+}
+
+/* Social */
+
+#social{
+    position: absolute;
+    top: 77vh;
+    color: wheat;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#social a{
+    width: 100%;
+    text-align: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 5px 0px;
+}
+
+#social a:first-child:hover{
+    color: red;
+}
+
+#social a:nth-child(2):hover{
+    color:  #4267B2;
+}
+
+#social a:nth-child(3):hover{
+    color:  #1DA1F2;
+}

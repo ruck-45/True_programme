@@ -91,7 +91,7 @@
             // const can be used to declare constant numbers, strings, arrays, objects etc..
             // in case of numbers, strings  the value cannot be changed further in code.
             // In case of constant arrays, the elements can be changed , added , removed , but the array cannot be redeclared.
-            // Same goes for constant objects,  the properties can be changed but the object cnnot be redeclared again.
+            // Same goes for constant objects,  the properties can be changed but the object cannot be redeclared again.
             // The scope of “const” is same as “let”, block level scope.
             // We cant initialize before declaration like var.
 
@@ -148,7 +148,7 @@
 
         // == : equal ( converts both side to string and then compares, 5 == ‘5’ will return true here )
         // === : equal in value and type ( its strict comparison )
-        // != : not equal
+        // != : not equal ( converts to string and then compares )
         // !== : not equal value or not equal type
         // > : greater then
         // < : less than
