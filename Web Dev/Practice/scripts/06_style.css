@@ -1,0 +1,271 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid red; */
+}
+
+body{
+    overflow: hidden;
+}
+
+/* Video Background */
+
+#video{
+    height: 100vh;
+    overflow: hidden;
+}
+
+#layer{
+    position: absolute;
+    background: rgba(0,0,0,0.1);
+    width: 100vw;
+    height: 100vh;
+    top: 0px;
+}
+
+/* Navbar */
+
+nav{
+    position: absolute;
+    top:0px;
+    width: 100vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+nav div{
+    display: inline-block;
+}
+
+
+/* Logo */
+
+#logo{
+    height: 100%;
+}
+
+#logo img{
+    height: 70px;
+    margin: 10px;
+    border: 10px solid rgba(0,0,0,0.3);
+}
+
+/* Menu */
+
+nav ul{
+    margin-right: 100px;
+}
+
+nav li{
+    width: 100px;
+    height: 35px;
+    text-align: center;
+    list-style: none;
+    float: right;
+    margin: 0px 20px;
+    color: rgba(0,0,0,0.5);
+    font-weight: 700;
+    font-size: 16px;
+    border: 3px solid rgba(0,0,0,0.5);
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+nav li:hover{
+    background-color: rgba(0,0,0,0.5);
+    color: wheat;
+    border: 3px solid wheat;
+    transition: 0.2s;
+}
+
+nav a:last-child li{
+    background-color: rgba(0,0,0,0.5);
+    color: wheat;
+    border: 3px solid wheat;
+}
+
+
+/* Banner */
+
+#pointer{
+    position: absolute;
+    border-radius: 100% 100% 100% 0%;
+    background-color: rgba(0,0,0,0.5);
+    height: 460px;
+    width: 460px;
+    transform: rotate(-45deg);
+    top: 140px;
+    left: 50px;
+}
+
+#rotor{
+    width: 420px;
+    height: 420px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(rgba(210, 216, 214, 1) 0 175px,rgba(0,0,0,0.3) 0 225px,rgba(210, 216, 214, 1) 0);
+    border-radius: 100%;
+    animation: rotate 20s ease-in-out 0s infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+
+    12.5%{
+        transform: rotate(45deg);
+    }
+
+    25%{
+        transform: rotate(90deg);
+    }
+
+    37.5%{
+        transform: rotate(135deg);
+    }
+
+    50%{
+        transform: rotate(180deg);
+    }
+
+    62.5%{
+        transform: rotate(225deg);
+    }
+
+    75%{
+        transform: rotate(270deg);
+    }
+
+    87.5%{
+        transform: rotate(315deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#image{
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-lumn-167684.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    box-sizing: border-box;
+    z-index: 100;
+    transform: rotate(45deg);
+    animation: rotate_img 20s ease-in-out 0s infinite;
+}
+
+@keyframes rotate_img{
+    0%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-lumn-167684.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    12.5%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-stephan-seeber-1428787.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    25%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-rifqi-ramadhan-1115487.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    37.5%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-rido-alwarno-1034887.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    50%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-pixabay-314860.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    62.5%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-mateusz-sałaciak-4275885.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    75%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-errin-casano-2356059.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    87.5%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-eberhard-grossgasteiger-691569.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    100%{
+        background: linear-gradient(rgba(0,0,0,0.1) 15%,rgba(0,0,0,0.2)), url('../resource/images/pexels-lumn-167684.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+#banner{
+    position: absolute;
+    top: 300px;
+    width: 50vw;
+    left: 600px;
+}
+
+#banner p{
+    margin: 25px 0px;
+    color: white;
+}
+
+#banner p:first-child{
+    font-size: 45px;
+    font-weight: 900;
+}
+
+#banner a{
+    text-decoration: none;
+}
+
+#banner a div{
+    width: 170px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    background: rgb(221, 6, 6);
+    box-sizing: border-box;
+    border-radius: 40px;
+    border: 2px solid wheat;
+}
+
+#banner a div:hover{
+    background: red;
+    transition: 0.5s;
+}
