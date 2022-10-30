@@ -108,7 +108,7 @@ nav a:last-child li{
     left: 20px;
     background: linear-gradient(rgba(210, 216, 214, 1) 0 175px,rgba(0,0,0,0.3) 0 225px,rgba(210, 216, 214, 1) 0);
     border-radius: 100%;
-    animation: rotate 20s ease-in-out 0s infinite;
+    animation: rotate 20s linear 0s infinite;
 }
 
 @keyframes rotate{
