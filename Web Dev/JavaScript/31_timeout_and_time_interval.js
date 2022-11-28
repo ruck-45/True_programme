@@ -19,7 +19,7 @@
 
 // Interval
     // if we want an action to be performed again and again after an interval we use Interval
-    // it wrks same as timeout
+    // it works same as timeout
 
     let I = setInterval(fun2,2000); // will be repeated every 2 seconds
                                     // I will hold the interval object so that we can terminate it freely

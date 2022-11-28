@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BrokenConverter</title>
+
+    <!-- Css file -->
+    <link rel="stylesheet" type="text/css" href="./stylesheet/07_style.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script defer type="text/javascript" src="./script/particles.js"></script>
+    <script defer type="text/javascript" src="./script/app.js"></script>
+
+    <script defer type="text/javascript" src="./script/07_script.js"></script>
+
+</head>
+<body>
+    <!-- Menu Card -->
+    <div id="Menu-card">
+        <div id="particles-js"></div>
+        <div id="Nav">
+            <div>
+                <p>The</p>
+                <p>Broken - Converter</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contents Page -->
+    <div id="contents">
+        <img src="./resource/icons/Forest.svg" alt="contents_pic">
+        <div id="line"></div>
+        <div id="cnvt_types">
+            <p>Choose Your Converter</p>
+            
+            <div>
+                <input class = 'Radio_btn' type="radio" name="type" value="0" checked> <p>Temperature Converter</p>
+                <br><input class = 'Radio_btn' type="radio" name="type" value="1"> <p>Weight Converter</p>
+                <br><input class = 'Radio_btn' type="radio" name="type" value="2"> <p>Distance Converter</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Converter Pages -->
+
+    <!-- Temperature -->
+    <div id="temperature" name = 'converter' class="conv_box">
+        <div>
+            <p>Temperature Converter</p>
+            <input type="number" value="0" placeholder="Enter value">
+            <div class="selection">
+                <p class="p_hover">Celsius</p>
+                <ul>
+                    <li class="li_hover">Celsius</li>
+                    <li class="li_hover">Fahrenheit</li>
+                    <li class="li_hover">Kelvin</li>
+                </ul>
+            </div>
+            <input type="number" value="32" placeholder="Enter value">
+            <div class="selection">
+                <p class="p_hover">Fahrenheit</p>
+                <ul>
+                    <li class="li_hover">Celsius</li>
+                    <li class="li_hover">Fahrenheit</li>
+                    <li class="li_hover">Kelvin</li>
+                </ul>
+            </div>
+        </div>
+        <img src="./resource/icons/undraw_xmas_snowman_k-7-yf.svg" alt="Snowman">
+    </div>
+
+    <!-- Weight -->
+    <div id="weight" name = 'converter' class="conv_box">
+        <div>
+            <p>Weight Converter</p>
+            <input type="number" value="1" placeholder="Enter value">
+            <div class="selection">
+                <p class="p_hover">Kg</p>
+                <ul>
+                    <li class="li_hover">Kg</li>
+                    <li class="li_hover">g</li>
+                    <li class="li_hover">Stone</li>
+                    <li class="li_hover">lb</li>
+                    <li class="li_hover">Ounce</li>
+                    <li class="li_hover">Tonne</li>
+                </ul>
+            </div>
+            <input type="number" value="1000" placeholder="Enter value">
+            <div class="selection">
+                <p class="p_hover">g</p>
+                <ul>
+                    <li class="li_hover">Kg</li>
+                    <li class="li_hover">g</li>
+                    <li class="li_hover">Stone</li>
+                    <li class="li_hover">lb</li>
+                    <li class="li_hover">Ounce</li>
+                    <li class="li_hover">Tonne</li>
+                </ul>
+            </div>
+        </div>
+        <img src="./resource/icons/Air conditioner leakage.svg" alt="Weight">
+    </div>
+
+
+    <!-- Distance -->
+    <div id="distance" name = 'converter' class="conv_box">
+        <div>
+            <p>Distance Converter</p>
+            <input type="number" value="1" placeholder="Enter value">
+            <div class="selection">
+                <p class="p_hover">Km</p>
+                <ul>
+                    <li class="li_hover">Km</li>
+                    <li class="li_hover">m</li>
+                    <li class="li_hover">Mile</li>
+                    <li class="li_hover">Yard</li>
+                    <li class="li_hover">Foot</li>
+                    <li class="li_hover">Inch</li>
+                </ul>
+            </div>
+            <input type="number" value="1000" placeholder="Enter value">
+            <div class="selection">
+                <p class="p_hover">m</p>
+                <ul>
+                    <li class="li_hover">Km</li>
+                    <li class="li_hover">m</li>
+                    <li class="li_hover">Mile</li>
+                    <li class="li_hover">Yard</li>
+                    <li class="li_hover">Foot</li>
+                    <li class="li_hover">Inch</li>
+                </ul>
+            </div>
+        </div>
+        <img src="./resource/icons/Woman running.svg" alt="Distance">
+    </div>
+</body>
+</html>
