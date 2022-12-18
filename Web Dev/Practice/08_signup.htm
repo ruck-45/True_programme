@@ -15,25 +15,45 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
 
     <link href="https://fonts.cdnfonts.com/css/gilroy-bold?styles=20876,20877,20878,20879,20880" rel="stylesheet">
+
+    <!-- Font awesome CDN link-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Javascript -->
+    <script defer type="text/javascript" src="./script/08_script.js"></script>
 </head>
 <body>
     <div id="signup">
         <div class="signup_form">
             <p>Sign Up</p>
-            <form action="">
-                <input class="signup_input" type="text" name="Username" placeholder="Username">
-                <input class="signup_input" type="email" name="Email" placeholder="Email">
-                <input class="signup_input" type="password" name="Password" placeholder="Password">
-                <input class="signup_input" type="password" name="Retype_password" placeholder="Confirm Password">
-                <button>Sign Up</button>
+            <form id="frm" action="" onsubmit="return form_validate()">
+                <div>
+                    <input class="signup_input" type="text" name="Username" placeholder="Username">
+                </div>
+                <p class="error" ></p>
+                <div>
+                    <input class="signup_input" type="email" name="Email" placeholder="Email">
+                </div>
+                <p class="error" ></p>
+                <div class="eye_div">
+                    <input class="signup_input pasw" type="password" name="Password" placeholder="Password">
+                    <i class="fa fa-eye"></i>
+                </div>
+                <p class="error" ></p>
+                <div class="eye_div">
+                    <input class="signup_input pasw" type="password" name="Retype_password" placeholder="Confirm Password" onpaste = 'return false'>
+                    <i  class="fa fa-eye"></i>
+                </div>
+                <p class="error" ></p>
+                <button id="submit_btn" class="form_submit" >Sign Up</button>
             </form>
         </div>
         <div class="or">or</div>
         <div class="signup_through">
             <div>
-                <button>Sign In with Facebook</button>
-                <button>Sign In with Google</button>
-                <button>Sign In with Twitter</button>
+                <button class="sign_thru_btn" >Sign In with Facebook</button>
+                <button class="sign_thru_btn" >Sign In with Google</button>
+                <button class="sign_thru_btn" >Sign In with Twitter</button>
             </div>
         </div>
     </div>

@@ -38,9 +38,13 @@ body{
     margin-right: 1px;
 }
 
-.signup_form p{
+.signup_form>p{
     margin-bottom: 45px;
     font-size: 35px;
+}
+
+.signup_form>div{
+    margin: 17px 0px;
 }
 
 .signup_input{
@@ -49,7 +53,6 @@ body{
     display: block;
     outline: none;
     border: none;
-    margin: 18px 0px;
     background: transparent;
     border-bottom: 1px solid black;
     transition: 0.2s;
@@ -66,22 +69,57 @@ body{
     transition: 0.2s;
 }
 
-.signup_form button{
-    box-sizing: border-box;
+.form_submit{
     width: 25%;
     padding: 10px;
     margin-top: 20px;
     border: none;
     color: white;
-    background: #FE0944;
+    background: rgba(254, 9, 68, 1);
     border-radius: 3px;
     font-size: 15px;
     cursor: pointer;
+    box-sizing: border-box;
 }
 
-.signup_form button:hover{
-    background: #f22952;
+.form_submit:hover{
+    background: rgba(254, 9, 68, 0.96);
 }
+
+
+/* Password toggeler eye */
+
+.eye_div{
+    display: flex;
+    align-items: center;
+}
+
+.eye_div i{
+    position: relative;
+    top: 0%;
+    right: 30px;
+    padding: 10px;
+    box-sizing: border-box;
+    color: gray;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.eye_div i:hover{
+    color: #282C35;
+}
+
+
+/* Error */
+
+.error{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-size: 12px;
+    padding: 3px 10px;
+    color: red;
+}
+
 
 /* or */
 .or{
@@ -119,7 +157,7 @@ body{
     padding-left: 70px;
 }
 
-.signup_through div button{
+.sign_thru_btn{
     display: block;
     width: 100%;
     margin: 15px 0px;
@@ -135,30 +173,28 @@ body{
 
 .signup_through div button:first-child{
     background: #4d4dff;
-    transition: 0.3s;
 }
 
 .signup_through div button:nth-child(2){
     background: #FE0944;
-    transition: 0.3s;
 }
 
 .signup_through div button:nth-child(3){
     background: #00bfff;
-    transition: 0.3s;
 }
 
 .signup_through div button:first-child:hover{
     background: #6a5acd;
-    transition: 0.3s;
 }
 
 .signup_through div button:nth-child(2):hover{
     background: #f22952;
-    transition: 0.3s;
 }
 
 .signup_through div button:nth-child(3):hover{
     background: #1fcecb;
-    transition: 0.3s;
+}
+
+.sign_thru_btn_mousedown{
+    border: 0.5px solid gray;
 }

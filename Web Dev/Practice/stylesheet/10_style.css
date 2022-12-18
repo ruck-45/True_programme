@@ -1,0 +1,48 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 2px solid red; */
+}
+
+
+
+
+/* Font */
+@font-face {
+    font-family: 'anydore';
+    src: url('../resource/fonts/Anydore.otf');
+}
+
+
+
+
+
+/* Picture-Box Above Navbar */
+
+#picture_box{
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+#picture_box div{
+    height: inherit;
+    background: linear-gradient(rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.3)), url('../resource/images/ultrawide-minimalist-oqtjbvcq3vyb8ljf.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    line-height: 100vh;
+    letter-spacing: 10px;
+    font-size: 140px;
+    color: floralwhite;
+    font-family: 'anydore';
+    transition: 1s;
+}
+
+#picture_box div:hover{
+    background: linear-gradient(rgba(0,0,0,0.2) 20%,rgba(0,0,0,0.3)), url('../resource/images/Img\ \(0\).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    transition: 1s;
+}
