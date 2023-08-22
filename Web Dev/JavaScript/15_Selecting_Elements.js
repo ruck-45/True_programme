@@ -2,7 +2,7 @@
 // So, any change needs to be done, will be done through Document
 
 // We can access whatever writtten inside an HTML tag ( could be text, another tag , or an entire HTML code ) by using property : innerHTML
-// And By the help of :innerHTML, we can change the inner contents too (has t be provided in form of string)
+// And By the help of :innerHTML, we can change the inner contents too (has ot be provided in form of string)
 
 
 // Direct Selections

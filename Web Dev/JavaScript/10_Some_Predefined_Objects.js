@@ -24,7 +24,7 @@
 
         Math.random(); // provides a random number between 0 to 0.9999..
                        // formula to generate random number between a range : 
-                       Math.floor(Math.random() * (lower_limit - upper_limit)) + lower_limit;
+                       Math.floor(Math.random() * (upper_limit - lower_limit)) + lower_limit;
                        Example : Math.floor(Math.random() * (25-15)) + 15; // between 15 to 25
 
     

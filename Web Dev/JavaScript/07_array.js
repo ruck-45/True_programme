@@ -2,10 +2,10 @@
 
 // Declaring / initializing array :
     
-    let arr = new Array();  // :  blank array declaration
+    let arr1 = new Array();  // :  blank array declaration
     
-    let arr = new Array(1,2,3,4,5,6); // : normal initialization
-    let arr = [1,2,3,4,5,6];  // : normal initialization
+    let arr2 = new Array(1,2,3,4,5,6); // : normal initialization
+    let arr3 = [1,2,3,4,5,6];  // : normal initialization
 
     let arr = [1,2,3,'hen', 5.12 , 'frog']; // : can contain multiple datatypes
 

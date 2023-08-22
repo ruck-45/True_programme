@@ -1,4 +1,4 @@
-// If a child and parent share same event then if the child evnet is called , it autometically triggers the parent
+// If a child and parent share same event then if the child event is called , it automatically triggers the parent
 // This can cascadically applie to entire DOM tree
 // By default Event Bubbling happens
 
@@ -46,7 +46,7 @@
 
 
 // Event Capturing : Event Capturing is the opposite of Event Bubbbling
-                    // through Event capturing we can manually alter the sequence of executin of cascading events
+                    // through Event capturing we can manually alter the sequence of execution of cascading events
                     //.addEventListener(Event , Function, Event_Capture) : .addEventListener has three parameters
                     // The Event_Capture parameter is by default set to False
                     // If we make it "true" then it will activate Event_Capture
@@ -69,7 +69,7 @@
 // .stopPropagation : To completely stop Event Cascading
                     // stops cascading at the level activated
                     // written inside the function called during an event
-                    // the function needs a parameter to be passsed t capture the event to apply the property
+                    // the function needs a parameter to be passsed to capture the event to apply the property
 
     let div_03 = document.getElementById('id_03');
     let button_03 = div_03.firstElementChild;

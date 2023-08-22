@@ -65,14 +65,15 @@
 // Return
 
     // We can write return to return values out of functions
-    E.g : return arr;
+    //E.g : 
+    return arr;
 
     // If nothing is returned , then 'undefined' is returned by default.
 
 
 // Anonymus Function : function with no name
 
-    // If we dont provide funtion name in normal situations it will throw an error
+    // If we don't provide funtion name in normal situations it will throw an error
     // But Anonymus functions can be of use in some cases
 
     // Example : 
@@ -135,7 +136,7 @@
         // suppose we have included some 3rd party codes in our script
         // But we are unaware about what identifiers they have used
         // If accidently we use the same identifier it will raise an error
-        // Also most of the time we dont go through thousands of lines of codes of third party
+        // Also most of the time we don't go through thousands of lines of codes of third party
         // So a solution is immidiately invoked function
 
 
@@ -144,7 +145,7 @@
             console.log(message);
 
         // Our code : 
-            let message = 'welcome back'; # will create conflict
+            let message = 'welcome back'; // will create conflict
             console.log(message);
 
         // Solution :  immidiately invoked functions 

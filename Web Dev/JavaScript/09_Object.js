@@ -4,7 +4,7 @@
         // 1. properties / charecteristics
         // 2. Methods / Functions
 
-// Declarin an object 
+// Declaring an object 
 
     let Person = {
         first_name : 'Henry',  // Properties
@@ -120,7 +120,7 @@
             }
         }
 
-        // We can also alternatively write it by using the oject name as well
+        // We can also alternatively write it by using the object name as well
         
         let Student = {
             name : 'Jonnathon',

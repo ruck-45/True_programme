@@ -1,12 +1,12 @@
 // BOM : Browser Object Model
-    // In BOM we will see that hw to interact with the browser
+    // In BOM we will see that how to interact with the browser
 
 
 // Window Object 
     // window object represents the window of the browser
     // using window object, we can monitor/modify various browser properties
 
-    // All global functions, variables and javascript objects autometically become member/property of window object
+    // All global functions, variables and javascript objects automatically become member/property of window object
     // Note : 
         // only the global variables become member of window object
         // only variables declared using var keyword can be member of window object
@@ -17,7 +17,7 @@
         let y = 50;
 
         console.log(window.x); // same as console.log(x) 
-        console.log(window.y); // will utput : undefined as y is declaed using let and is not a member of window object
+        console.log(window.y); // will output : undefined as y is declaed using let and is not a member of window object
 
 
         // example of functions : 

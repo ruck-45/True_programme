@@ -1,7 +1,7 @@
 // HTML attributes are special words used inside the opening tag to control the element's behaviour.
 // Like id, class, name, type, src, href, style etc....
 
-// we can dynamically mdify these attributes using Js (add, remove, replace, etc..)
+// we can dynamically mOdify these attributes using Js (add, remove, replace, etc..)
 
 
 // .getAttribute() : takes the name of attribute and returns the value of that attribute

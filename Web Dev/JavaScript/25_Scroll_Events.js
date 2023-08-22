@@ -35,7 +35,7 @@
     window.addEventListener('scroll',fun);
 
     function fun(){
-        if(window.pageYOffset > 200){  // measures distance in pixels , same goes for .pageXOffset for horizontal shifts
+        if(window.scrollY > 200){  // measures distance in pixels , same goes for .scrollX for horizontal shifts
             document.body.style.background = 'green';
         }
         else{

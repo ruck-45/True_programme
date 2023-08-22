@@ -22,10 +22,10 @@
 
 
 // We can respond to HTML events trrough javascript
-// For that we need t capture the event occuring
+// For that we need to capture the event occuring
 // we can do that two ways
     // inline : add 'on' before any event name to turn it an attribute
-                // then we can pass it the function we neec to execute
+                // then we can pass it the function we need to execute
     // addEventListener() property : it takes the event name and function name to apply the function when the event occures
 
 
@@ -59,10 +59,10 @@
     })
 
 
-    ele.removeEventListener('mouseover',mouse_over_fun); // removes event listener (can be used with conitional statement)
-    ele.removeEventListener('click',click_fun); // cant remove inline event
+    ele.removeEventListener('mouseover',mouse_over_fun); // removes event listener (can be used with conditional statement)
+    ele.removeEventListener('click',click_fun); // can't remove inline event
 
 
-    ele.removeEventListener('mouseover',function(){  // cant remove events having anonymus functions
+    ele.removeEventListener('mouseover',function(){  // can't remove events having anonymus functions
         console.log('mouseover _03');
     });

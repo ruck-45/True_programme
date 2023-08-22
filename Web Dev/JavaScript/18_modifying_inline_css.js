@@ -46,7 +46,7 @@
 
     // console.log(css_data);
 
-    // We can also access individua CSS property like : 
+    // We can also access individual CSS property like : 
     console.log(css_data.background);
     console.log(css_data.color);
     console.log(css_data.textAlign);

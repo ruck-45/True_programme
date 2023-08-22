@@ -2,13 +2,13 @@
 
     // java script is an only language supporting Hoisting
     // Hoisting is a technique through which we can use undeclared identifiers like (variables, functions, objects) before declaring it
-    // Through hoisting the intrepreter of javascript autometically lifts up variable declaration to the top of the program (maintaining same scope)
+    // Through hoisting the interpreter of javascript automatically lifts up variable declaration to the top of the program (maintaining same scope)
 
     // it is generally not advised to use hoisting as it can create unnecessery bugs
 
     // Example 1: 
 
-        hello(); // wont throw error, because of hoisting
+        hello(); // won't throw error, because of hoisting
 
         function hello(){
             console.log('Hello World');
