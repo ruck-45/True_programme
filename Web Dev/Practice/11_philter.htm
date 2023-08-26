@@ -18,7 +18,7 @@
     <!-- Header -->
     <header>
         <div id="logo">
-            <div id="P">`P</div>
+            <div>`P</div>
             <div>H</div>
             <div>I</div>
             <div>L</div>
@@ -27,7 +27,7 @@
             <div>R</div>
         </div>
         <Nav>
-            <a id="Login" href="">Log In</a>
+            <a id="login" href="">Log In</a>
             <a  id="pro" href="">Upgrade To PRO</a>
         </Nav>
     </header>
@@ -45,31 +45,131 @@
                         </label>
                     </div>
                 </div>
-                <p>Untitled.png</p>
+                <div id="ImgName"><p>Original Image</p></div>
             </div>
 
             <!-- preferences -->
             <div id="preferences">
-                <div id="prefHead"></div>
+                <p id="prefHead">FILTERS</p>
                 <div id="pref">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <!-- Blur -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-droplet"></i>
+                            <p>Blur</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value="0" min="0" max="1000" step="1" name="Blur">
+                        </div>
+                    </div>
+                    
+                    <!-- Brigntness -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-sun"></i>
+                            <p>Brigntness</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = 500 min="0" max="2000" step="1" name="Brigntness">
+                        </div>
+                    </div>
+
+                    <!-- Contrast -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                            <p>Contrast</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = "500" min="0" max="2000" step="1" name="Contrast">
+                        </div>
+                    </div>
+
+                    <!-- Grayscale -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-film"></i>
+                            <p>Grayscale</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = "0" min="0" max="1000" step="1" name="Grayscale">
+                        </div>
+                    </div>
+
+                    <!-- Hue -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <p>Hue</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = "0" min="0" max="3600" step="1" name="Hue">
+                        </div>
+                    </div>
+
+                    <!-- Invert -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-circle-dot"></i>
+                            <p>Invert</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = "0" min="0" max="1000" step="1" name="Invert">
+                        </div>
+                    </div>
+
+                    <!-- Opacity -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-cube"></i>
+                            <p>Opacity</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = "1000" min="0" max="1000" step="1" name="Opacity">
+                        </div>
+                    </div>
+
+                    <!-- Saturate -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-fill-drip"></i>
+                            <p>Saturate</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = 500 min="0" max="2000" step="1" name="Saturate">
+                        </div>
+                    </div>
+
+                    <!-- Sepia -->
+                    <div>
+                        <div class="effect">
+                            <i class="fa-solid fa-brush"></i>
+                            <p>Sepia</p>
+                        </div>
+                        <div class="effectRange">
+                            <input type="range" value = '0' min="0" max="1000" step="1" name="Sepia">
+                        </div>
+                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
 
         <!-- Preview -->
-        <div id="preview"></div>
+        <div id="previewWindow">
+            <div id="previewBackground">
+                <div id="preview"></div>
+            </div>
+        </div>
     </div>
     
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+    </footer>
 </body>
 </html>

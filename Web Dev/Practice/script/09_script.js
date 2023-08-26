@@ -13,7 +13,7 @@ let values = document.getElementsByClassName('value');
 
 
 
-// Copy from clipboard funcntion
+// Copy from clipboard function
 
 copy_btn.addEventListener('mousedown', function(){ // stylig mousedown on the button
     copy_btn.classList.add('copy_border_mousedown');
