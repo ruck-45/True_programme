@@ -111,7 +111,7 @@
         Person1.nationality = 'American';
         Person2.job = 'Sanitation Engineers';
 
-    // We can't add features like above to the constructor, it will be invlid
+    // We can't add features like above to the constructor, it will be invalid
     // We have to directly change in function declaration
 
         Person.nationality = 'Indian'; // : Wrong

@@ -1,0 +1,13 @@
+{
+    "name" : "Raily",
+    "age" : 21,
+    "sex" : "M",
+    "is_working" : true,
+    "position" : "SDE",
+    "skills" : ["c++","Python","Java","Front End","DBMS"],
+    "address" : {
+        "country" : "India",
+        "state" : "Odisha",
+        "pin": 124657
+    }
+}
