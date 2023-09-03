@@ -2,7 +2,11 @@
 
     // JSON stands for : JavaScript Object Notation
     // Json is primarily used in web-applications & APIs to send and receive data
-    // Also Json is sued to store config files in projects
+    // Also Json is used to store config files in projects
+
+    // Before JSON, XML was used in its place, for data transfer and storage
+    // But reading/comprehensing XML file is a little difficult
+    // XML stores in an HTMl fashion : in Tags, Each key is a tag and its value inside the tag
 
     // JSON is not language specific, i.e, it is supported by all major programming language
 

@@ -31,13 +31,18 @@
                                     // here since publication3 has no value from arr1 so it will be 'ScholarStick'
 
 
+        let[bookName4, seriesName4, ,pages4, price4] = arr1 ;
+                                    // If we skip a variable in the middle, then the destructuring will skip it too
+                                    // Here after seriesName , author is skipped
+
+
         // Multidimentional array Destructuring
 
         // We can destructure multidimentional arrays too. We have to set up the variables the same way the array is structured.
 
         let arr2 = ['Ghoosebumps', 'Horrorlands', 'R.L.Stine', 180, 250, ['Scholastic',2001]];
 
-        let[bookName4, seriesName4, author4, pages4, price4, [publication, year]] = arr2;
+        let[bookName5, seriesName5, author5, pages5, price5, [publication, year]] = arr2;
                                         // Here publication --> 'Scholastic' and year --> 2001
 
 

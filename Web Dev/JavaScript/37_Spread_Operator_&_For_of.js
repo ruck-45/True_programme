@@ -9,6 +9,20 @@
     let arr4 = [1,2,...arr1,4,5]; // [1,2,1,2,3,4,5]
     let arr5 = [8,9,10,...arr2]; // [8,9,10,4,5,6]
 
+    // We can also use spread operators in objects as well
+
+    let employee1 = {
+        fname : 'Henry',
+        age : 56,
+        prof : 'Actor',
+        films : ['Man Of Still', 'BVS', 'MI:Fallout', 'Josstice League']
+    }
+
+    let employee2 = {
+        lname : 'Cavill',
+        recent : 'Witcher',
+        ...employee1 // spreads (copies) employee1 data into employee to
+    }
 
 // For of Loop
 
