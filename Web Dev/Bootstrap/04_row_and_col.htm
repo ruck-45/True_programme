@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rows and Cols</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Grid-system : row</strong>
+        - It is a class that divides the block into 12 equal grids/columns
+        - The Row takes 100% width of its parent
+        - Don't put content (img, text, video, audio, etc...) inside row, content should be inside columns always
+    </pre>
+
+    - The bordered box is here the container, and colored box is row
+    - Row takes up 100% width of its parent
+
+    <div class="container-fluid" style="height: 100px; border: 2px solid;">
+      <div class="row bg-primary text-white" style="height: 50px;">
+        row
+      </div>
+    </div>
+
+    <br>
+
+    <pre>
+        <strong style="font-size: large;">Grid-system : col</strong>
+        - It is a "class" defined by Bootstrap that defines the parts occupied by the "div" inside a row
+        - rows are divided into 12 grids/columns, if we don't utilize all, it will lwave spaces for unutilized columns
+    </pre>
+
+    <div class="container-fluid" style="height: 100px; border: 2px solid;">
+      <div class="row bg-primary text-white" style="height: 50px;">
+          <div class="col-4 bg-success">col-4</div>
+          <div class="col-2 bg-black">col-2</div>
+          <div class="col-3 bg-danger">col-3</div>
+      </div>
+    </div>
+
+    <br>
+
+    <pre>
+      - If we assign more columns than allowed, it will shifts the extra element below to adjust
+      - But is adjusts the hight too
+      - If we give col-(>12) then it will simply fill the element 100%
+    </pre> 
+
+    <div class="container-fluid" style="height: 100px; border: 2px solid;">
+      <div class="row bg-primary text-white" style="height: 50px;">
+          <div class="col-4 bg-success">col-4</div>
+          <div class="col-6 bg-black">col-6</div>
+          <div class="col-4 bg-danger">col-4</div>
+      </div>
+    </div>
+
+    <br>
+
+    <pre>
+      <strong style="font-size: large;">Grid-system : Nesting</strong>
+      - If we want to nest it must follow the pattern : container > row > col > row > col > row > ..... > col > content
+      - A row can be child of a container/column
+      - A column will always be child of a row
+      - Content will always appear inside a column
+    </pre> 
+
+    <div class="container-fluid" style="height: 200px; border: 2px solid;">
+      <div class="row bg-primary text-white" style="height: 170px;">
+          <div class="col-7 bg-success">
+            <div class="row" style="height: 100px">
+              <div class="col-3 bg-primary">col-3</div>
+              <div class="col-6 bg-danger">col-6</div>
+              <div class="col-3 bg-secondary">col-3</div>
+            </div>
+          </div>
+          <div class="col-5 bg-black">col-5</div>
+      </div>
+    </div>
+
+    <br>
+
+    <pre>
+        <strong style="font-size: large;">Bootstrap Flow</strong>
+        - "container" > "row" > "column" > content  ( text , images , ...)
+    </pre>
+    
+  </body>
+</html>

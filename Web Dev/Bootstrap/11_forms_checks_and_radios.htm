@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Forms : checks & radio</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    
+  </head>
+  <body>
+
+    <pre>
+        <strong style="font-size: large;">.form-check (wrapper)</strong>
+        - Class that wraps checkboxes and radio buttons
+        - For every wrapper (div) of checkboxes and radio buttions use  : .form-check
+        - it is advised to have each radio button and check box inside a different wrapper to vertically stack them
+    </pre>
+
+    <pre>
+        <strong style="font-size: large;">.form-check-input (important)</strong>
+        - customizes check buttons and radio buttons
+    </pre>
+
+    <pre>
+        <strong style="font-size: large;">.form-check-label</strong>
+        - customizes check labels and radio lables
+    </pre>
+  
+    <div class="container">
+        <div class="row" >
+            <div class="col-5">
+                <div class="">
+                    <input class="" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="" for="flexCheckDefault">
+                        Default checkbox
+                    </label>
+                    <input class="" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="" for="flexRadioDefault1">
+                        Default radio
+                    </label>
+                </div>
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        customized checkbox
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        customized radio
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <pre>
+        <strong style="font-size: large;">.form-switch (wrapper)</strong>
+        - Add .form-switch to the wrapper to convert a checkbox to a switch
+    </pre>
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-5">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        customized checkbox to switch
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <pre>
+        <strong style="font-size: large;">.form-check-inline (wrapper)</strong>
+        - To avoid stacking of check boxes/radio buttons/switches
+        - It shows them in same line
+        - applied on the wrapper
+        - use it along with .form-check
+    </pre>
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-5">
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        one
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        two
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" value="" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        three
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+
+    <pre>
+        <strong style="font-size: large;">.form-check-reverse (wrapper)</strong>
+        - to put checkboxes, radios, and switches on the opposite side
+        - applied on the wrapper
+        - use it along with .form-check
+    </pre>
+
+    <div class="container">
+        <div class="row" >
+            <div class="col-5">
+                <div class="form-check form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        one
+                    </label>
+                </div>
+                <div class="form-check form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        two
+                    </label>
+                </div>
+                <div class="form-check form-check-reverse">
+                    <input class="form-check-input" type="checkbox" value="" name="flexRadioDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        three
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>

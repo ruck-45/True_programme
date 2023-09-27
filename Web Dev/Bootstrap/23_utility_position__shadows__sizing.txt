@@ -1,0 +1,37 @@
+Position Class
+
+    - .position-static
+    - .position-fixed
+    - .position-absolute
+    - .position-relative
+    - .position-sticky
+
+
+Arrangement Class
+
+    - top-[0/50/100]
+    - bottom-[0/50/100]
+    - start-[0/50/100]
+    - end-[0/50/100]
+
+    - translate-middle (used with top/bottom/start/end)
+    - translate-middle-[x/y]
+
+
+Shadow Class
+
+    - .shadow-none
+    - .shadow
+    - .shadow-sm
+    - .shadow-lg
+
+
+Sizing : 
+
+    Height : .h-[25/50/75/100/auto] (in percentage)
+    Width : .w-[25/50/75/100/auto] (in percentage)
+
+    max-Height : .mh-[25/50/75/100/auto] (in percentage)
+    max-Width : .mw-[25/50/75/100/auto] (in percentage)
+
+

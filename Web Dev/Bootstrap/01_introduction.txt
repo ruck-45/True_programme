@@ -1,0 +1,15 @@
+Bootstrap
+
+    - It was developed by developers at twitter
+    - It is an opensource css framework that allows us to easily implement Responsiveness and style to our website
+
+
+How to include bootstrap in HTML :
+(Recommended)
+
+    Use official CDN provided by jsDeliverin bootstrap website
+
+
+Two main usages of Bootstrap : 
+    - Grid System (helps us create responsive websites)
+    - Components and classes (Helps us create frontend easier)

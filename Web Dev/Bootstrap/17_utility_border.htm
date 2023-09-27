@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Utility : Border</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+    <!-- css -->
+    <style>
+      div{
+        font-size: small;
+      }
+    </style>
+  
+  </head>
+  <body>
+
+    <pre>
+        <strong style="font-size: large;">.border-*</strong>
+        - Adds border to all or specified side
+      </pre>
+  
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="border text-center" style="height: 100px; width: 100px;">border</div>
+          </div>
+          <div class="col-auto">
+            <div class="border-top text-center" style="height: 100px; width: 100px;">border-top</div>
+          </div>
+          <div class="col-auto">
+            <div class="border-bottom text-center" style="height: 100px; width: 100px;">border-bottom</div>
+          </div>
+          <div class="col-auto">
+            <div class="border-start text-center" style="height: 100px; width: 100px;">border-start</div>
+          </div>
+          <div class="col-auto">
+            <div class="border-end text-center" style="height: 100px; width: 100px;">border-end</div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">.border .border-*-0</strong>
+        - We can subtract the side we don't want border to
+        - if we do .border .border-0 it removes border from all sides
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="border border-0 text-center" style="height: 125px; width: 125px;">border-0</div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-top-0 text-center" style="height: 125px; width: 125px;">border-top-0</div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-bottom-0 text-center" style="height: 125px; width: 125px;">border-bottom-0</div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-start-0 text-center" style="height: 125px; width: 125px;">border-start-0</div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-end-0 text-center" style="height: 125px; width: 125px;">border-end-0</div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">.border .border-(color)</strong>
+        - gives border color
+        - supports all bootstrap color codes
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="border border-primary" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-secondary" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-danger" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-warning" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-info" style="height: 100px; width: 100px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">.border .border-(width)</strong>
+        - gives border width, width spans from (1-5)
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="border border-1" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-2" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-3" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-4" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="border border-5" style="height: 100px; width: 100px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">.rounded-*</strong>
+        - controls border radius
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded" style="height: 100px; width: 100px;"><p>rounded</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded-top" style="height: 100px; width: 100px;"><p>rounded-top</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded-bottom" style="height: 100px; width: 100px;"><p>rounded-bottom</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded-start" style="height: 100px; width: 100px;"><p>rounded-start</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded-end" style="height: 100px; width: 100px;"><p>rounded-end</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded-circle" style="height: 100px; width: 100px;"><p>rounded-circle</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex align-items-center justify-content-center bg-secondary rounded-pill" style="height: 100px; width: 200px;"><p>rounded-pill</p></div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">.rounded-(value)</strong>
+        - controls border radius, value varies from (1-5)
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="bg-secondary rounded-1" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="bg-secondary rounded-2" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="bg-secondary rounded-3" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="bg-secondary rounded-4" style="height: 100px; width: 100px;"></div>
+          </div>
+          <div class="col-auto">
+            <div class="bg-secondary rounded-5" style="height: 100px; width: 100px;"></div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">Misc</strong>
+        - We can mix and match rounded class
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-auto">
+            <div class="d-flex justify-content-center align-items-center bg-secondary rounded-start-pill" style="height: 100px; width: 100px;"><p style="font-size: x-small;">rounded-start-pill</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex justify-content-center align-items-center bg-secondary rounded-top-circle" style="height: 100px; width: 100px;"><p style="font-size: x-small;">rounded-top-circle</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex justify-content-center align-items-center bg-secondary rounded-bottom-5" style="height: 100px; width: 100px;"><p style="font-size: x-small;">rounded-bottom-5</p></div>
+          </div>
+          <div class="col-auto">
+            <div class="d-flex justify-content-center align-items-center bg-secondary rounded-5 rounded-top-0" style="height: 100px; width: 100px;"><p style="font-size: x-small;">rounded-5 <br> rounded-top-0</p></div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+  </body>
+</html>

@@ -1,0 +1,35 @@
+margin and padding
+
+    margin : m
+    Padding : p
+
+
+    top: t
+    bottom : b
+    start : s
+    end : e
+
+    Both left and right : x
+    both top and bottom : y
+
+
+    Sizes : [1-5]/auto
+
+    Eamples : 
+
+        mt-2
+        pb-3
+        ms-1
+        pe-5
+
+        px-4
+        my-1
+
+
+gap (flex and grid):
+
+    - gap-[0-5]
+
+    - gap-0 row-gap-[0-5]
+    - gap-0 column-gap-[0-5]
+

@@ -1,0 +1,89 @@
+Grid System : 
+
+    Bootstrap's Grid system is based on following concepts:
+        - Breakpoints
+        - Container
+        - Row
+        - Column
+
+
+
+
+
+Breakpoints: 
+
+    These are ranges of screen width defined to make the webiste responsive.
+    We can apply specific layouts/configurations to each specific breakpoints to change website how it looks in wide roster of devices.
+
+    The metric used by breakpoints by bootstrap is : 
+
+        Breakpoint          Class infix             Dimensions (Width)
+
+        X-Small             -                       0 - 575 px
+        Small               sm                      576 - 767 px
+        Medium              md                      768 - 991 px
+        Large               lg                      992 - 1199 px
+        X-Large             xl                      1200 - 1399 px
+        XX-Large            xxl                     >=1400 px
+
+
+
+
+
+container : 
+
+    It is a "class" defined by Bootstrap to make the contents inside the container Responsive
+    Usually the whole website is wrapped inside a "div" of "container" class to make it responsive
+
+    rows and columns are accessories used inside Container class to tune the responsive behaviour
+
+
+
+row : 
+    
+    It is a "class" defined by Bootstrap that divides the "div" (in which it is attached to) into 12 equal parts
+    Then we can define "col" inside it to form desired grids 
+
+    Ex : 
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2"></div>
+            <div class="col-7"></div>
+        </div>
+
+        --row 1-- --row 2-- --row 3--    --row 4-- --row 5--   --row 6-- --row 7-- --row 8-- --row 9-- --row 10-- --row 11-- --row 12--
+        --col 1-- --col 1-- --col 1-- // --col 2-- --col 2-- //  --col 3-- --col 3-- --col 3-- --col 3-- --col 3-- --col 3-- --col 3--
+
+
+    In above example row is divided into 12 equal parts.
+    It has 3 columns who take up 3 , 2 , 7 parts respectively
+
+
+col : 
+
+    It is a "class" defined by Bootstrap that defines the parts occupied by the "div" inside a row
+    If the sum of parts assigned exceeds 12 - It moves them below to adjust
+
+
+
+Note : 
+    A "col" should be DIRECTLY inside a "row".
+    A "col" cannot be a child if "col", as "col" cannot be divided.
+    To divide a "col", make a "row" inside the "col" and then divide it.
+
+    Example : 
+
+        <div class="row">
+            <div class="col-3"></div>
+            <div class="col-2"></div>
+            <div class="col-7"> 
+                <div class="row"> // To divide the col-7 we made a row inside it (which makes it 12 parts)
+                    <div class="col-6"></div>
+                    <div class="col-6"></div>
+                </div>
+            </div>
+        </div>
+
+
+

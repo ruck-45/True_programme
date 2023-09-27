@@ -1,0 +1,50 @@
+Pointer Event Classes (used in case of anchor class to allow interaction or not )
+    
+    - .pe-auto
+    - .pe-none 
+
+
+Link Color : 
+
+    - .link-primary
+    - .link-secondary
+    - .link-warning
+    - .link-danger
+    - .link-success
+    - .link-info
+    - .link-dark
+
+    etc..
+
+
+Link Opacity : 
+
+    - link-opacity-[10/25/50/75/100]
+
+
+Link Underline Color : 
+
+    - .link-underline-primary
+    - .link-underline-secondary
+    - .link-underline-warning
+    - .link-underline-danger
+    - .link-underline-success
+    - .link-underline-info
+    - .link-underline-dark
+
+    etc..
+
+
+Link Underline Opacity : 
+
+    -.link-underline .link-underline-opacity-[0/10/25/50/75/100]
+
+
+Link Underline Offset : 
+
+    - .link-offset-[1-3]
+
+
+-Hover Varient : 
+
+    - We can attach "-hover" to any of the above classes to make them applicable for hover

@@ -1,0 +1,10 @@
+Visibility : 
+
+    - .visible
+    - .invisible
+
+
+Z-index :
+
+    - z-[0-3]
+    - z-n1 (sends all thet way back)

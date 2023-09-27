@@ -1,0 +1,93 @@
+Text Color : 
+
+    - .text-primary
+    - .text-secondary
+    - .text-warning
+    - .text-danger
+    - .text-success
+    - .text-info
+    - .text-dark
+
+    -.text-reset (resets color)
+
+    etc..
+
+
+Text Alignment: 
+
+    - text-(breakpoint)-start
+    - text-(breakpoint)-center
+    - text-(breakpoint)-end
+
+
+Text wrap
+
+    - .text-wrap
+    - text-nowrap
+
+
+Word Break : 
+
+    - .text-break
+
+
+Text Transform
+
+    - text-lowercase
+    - text-uppercase
+    - text-capitalize
+
+
+Font Size : 
+
+    - fs-[1-6]
+
+
+Font Weight : 
+
+    - fw-normal
+    - fw-medium
+
+    - fw-bold
+    - fw-semibold
+    - fw-bolder
+
+    - fw-light
+    - fw-lighter
+
+
+font-style : 
+
+    - fst-normal
+    - fst-italic
+
+
+Line height : 
+
+    - lh-base
+    - lh-sm
+    - lh-lg 
+
+    - lh-1
+
+
+Special Font  (bootstrap : monospace)
+
+    - font-monospace
+
+
+Text decoration
+
+    - text-decoration-none
+    - text-decoration-line-through
+    - text-decoration-underline
+
+
+vertical align : 
+
+    - align-baseline
+    - align-top
+    - align-middle
+    - align-bottom
+    - align-text-top
+    - align-text-bottom

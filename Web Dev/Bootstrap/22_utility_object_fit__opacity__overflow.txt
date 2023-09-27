@@ -1,0 +1,27 @@
+Object Fit : 
+
+    - For Images and Videos we use Object Fit
+
+    - object-fit-(breakpoint)-contain
+    - object-fit-(breakpoint)-cover
+    - object-fit-(breakpoint)-fill
+    - object-fit-(breakpoint)-scale
+    - object-fit-(breakpoint)-none
+
+
+Opacity : 
+
+    - opacity-[100/75/50/25]
+
+
+Overflow : 
+    
+    - .overflow-auto
+    - .overflow-hidden
+    - .overflow-cisible
+    - .overflow-scroll
+
+    - .overflow-[x/y]-auto
+    - .overflow-[x/y]-hidden
+    - .overflow-[x/y]-cisible
+    - .overflow-[x/y]-scroll
