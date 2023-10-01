@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components : Alerts</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+
+    <pre>
+        <strong style="font-size: large;">Alerts</strong>
+        - Alerts in bootstrap doesn't come baked in, we have to use Js to implement their behaviour
+        - Can look in documantation for its API and methods to use it
+        - Here we will talk more about the styling of alerts
+      </pre>
+
+      <pre>
+      <strong style="font-size: large;">Classes and roles</strong>
+        - .alert : use on div that is the alert box
+        - .alert-(color) : used to give color to alert box
+        - role = 'alert' : use on alert div to specify its role
+      </pre>
+
+      <pre>
+        <strong style="font-size: large;">Dismissing</strong>
+          - .alert-dismissible : add to alert div to allow it to be alert-dismissible
+          - .fade .show : add to alert div to trigger animation when it dismisses
+
+          - The alert box shoud contain a "button" for closing
+          - add .btn-close to the close button
+          - give button attribute : data-bs-dismiss="alert"
+
+          - It can cause foucs issues (if closed with keyboard), use Js to solve it (manually give focus to nearest element after tracking the dismissal)
+        </pre>
+  
+        
+      <div class="container">
+        <div class="row" >
+          <div class="col-5">
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components : Breadcrumbs (directory view)</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+
+    <pre>
+        <strong style="font-size: large;">Breadcrumbs (directory view)</strong>
+        - .breadcrumb :  applied on ol/ul lists
+        - .breadcrumb-item :  applied on li (list items)
+        - .active  : used to specify the active directory/breadcrum
+      </pre>
+  
+      <div class="container">
+        <div class="row" >
+          <div class="col-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+      <pre>
+        <strong style="font-size: large;">Divider</strong>
+        - dividers can be changed using :  --bs-breadcrumb-divider property in style of the Wrapper
+        - We can also use svgs in places of dividers
+      </pre>
+
+      <div class="container">
+        <div class="row" >
+          <div class="col-5">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb" style="--bs-breadcrumb-divider: '>';">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Library</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Data</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+
+  </body>
+</html>

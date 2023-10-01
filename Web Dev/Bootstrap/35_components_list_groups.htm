@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Background</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">List Group</strong>
+        - It is just like Button Group
+        - Works with ul/ol/ any div and repeated elements inside like (div/a/button/p/etc...)
+
+        - .list-group : (Wrapper/parent element), used on outer div/ol/ul tags
+        - .list-group-item : used on each item inside the parent (is available to all tags)
+        - .list-group-item list-group-item-(color) : gives color to list groups ( add .list-group-item-action for a/buttons used as list-group-items)
+
+        - .list-group .list-group-flush :  (Wrapper/parent element) to remove borders and rounded corners
+        - .list-group .list-group-numbered :  (Wrapper/parent element) makes the list numbered
+        - .list-group .list-group-horizontal : makes the group horizontal
+      </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+
+            <div class="list-group list-group-item-primary list-group-numbered">
+                <p class="list-group-item m-0">list group item</p>
+                <p class="list-group-item m-0">list group item</p>
+                <p class="list-group-item m-0">list group item</p>
+                <p class="list-group-item m-0">list group item</p>
+                <p class="list-group-item m-0">list group item</p>
+                <p class="list-group-item m-0">list group item</p>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>

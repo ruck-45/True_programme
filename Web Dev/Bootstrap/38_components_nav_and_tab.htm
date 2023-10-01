@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Nav and Tab</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Nav</strong>
+        - gives base for all kinds of navigation Components
+        - .nav : (Wrapper), like ul/ol/div
+        - .nav-item : nav items (li)
+        - . nav-link : for anchor tags/buttons
+
+        -  .nav uses flexbox so can utilize all flex classes here (like justify-content, align-items etc)
+        - use .flex-column to make nav vertical
+
+        - nav-fill : (wrapper), to fill up navigation space, but elements don't take equal width
+        - nav-justified : (wrapper), to fill up navigation space, but elements take equal width
+      </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="nav">
+            <a href="" class="nav-link"> Home </a>
+            <a href="" class="nav-link"> Profile </a>
+            <a href="" class="nav-link"> Contact </a>
+            <a href="" class="nav-link"> Message </a>
+            <a href="" class="nav-link"> Support </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">Tab</strong>
+        - gives base for all kinds of navigation Components
+        - .nav .nav-tabs: (Wrapper), to generate a tab interface
+        - .nav .nav-pills : (Wrapper), to generate a pill interface
+        - .nav .nav-underline : (Wrapper), to generate a underline interface
+
+        - .active marks the active tab
+
+        - data-bs-toggle="tab" : property
+        - data-bs-target="#ID" : provide the id of the target it corresponds to
+        - aria-orientation="vertical" :  use it in (wrapper) to make tab vertical ( add a wrapper outside with flex display for it to work)
+      </pre>
+
+    <pre>
+        <strong style="font-size: large;">Tab Content</strong>
+        - Lets us move around the tab  ( separate from .nav wrapper)
+        - .tab-content : (wrapper)
+        - .tab-pane : for each tab we have in nav
+
+        - .fade (on tab-pane): to add animation
+      </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="d-flex">
+            <div class="nav nav-pills flex-column" aria-orientation="vertical">
+            <button data-bs-toggle="pill" data-bs-target="#Home" class="nav-link active">Home</button>
+            <button data-bs-toggle="pill" data-bs-target="#Profile" class="nav-link">Profile</button>
+            <button data-bs-toggle="pill" data-bs-target="#Contract" class="nav-link">Contact</button>
+            <button data-bs-toggle="pill" data-bs-target="#Message" class="nav-link">Message</button>
+            <button data-bs-toggle="pill" data-bs-target="#Support" class="nav-link">Support</button>
+          </div>
+
+          <div class="tab-content">
+            <div id="Home" class="p-4 tab-pane fade show active">Home Content</div>
+            <div id="Profile" class="p-4 tab-pane fade">Profile content</div>
+            <div id="Contract" class="p-4 tab-pane fade">Contact content</div>
+            <div id="Message" class="p-4 tab-pane fade">Message content</div>
+            <div id="Support" class="p-4 tab-pane fade">Support content</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>

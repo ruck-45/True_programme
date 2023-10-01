@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Components : Badge</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  
+  </head>
+  <body>
+
+    <pre>
+        <strong style="font-size: large;">Badge</strong>
+        - Span elements scaled to match the size of the immediate parent, used for counting or labeling
+        - .badge : use this class to make span a badge
+        - The span can have text or no content
+        - we can position it as we want
+        - use bg-(color) to give background color to the badge
+      </pre>
+  
+      <div class="container">
+        <div class="row" >
+          <div class="col-5">
+            <button type="button" class="btn btn-primary">
+                Notifications <span class="badge text-bg-secondary">4</span>
+              </button>
+
+              <button type="button" class="btn btn-primary position-relative">
+                Inbox
+                <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                  99+
+                </span>
+              </button>
+
+              <button type="button" class="btn btn-primary position-relative mx-3">
+                Profile
+                <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                </span>
+              </button>
+          </div>
+        </div>
+      </div>
+
+      <br>
+
+
+  </body>
+</html>

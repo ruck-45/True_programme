@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Modal</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Modal Window</strong>
+        - .modal : (Wraper)
+        - .modal .fade : to add fade animation to modal
+        - data-bs-backdrop="static" : the modal will not close when clicking outside of it
+        
+        - .modal-dialog : (Dialogue box of the modal)
+        - .modal-dialog modal-sm/lg/xl : controls size of the modal
+        - .modal-dialog .modal-dialog-scrollable : To make scrollbar appear for modal if its too long
+        - .modal-dialog .modal-dialog-centered : to vertically center modal dialogue box
+        - .modal-dialogue .modal-fullscreen : always fullscreen modal 
+        - .modal-dialogue .modal-fullscreen-(breakpoint)-down : fullscreen below the breakpoint
+        
+        - .modal-content : content of the modal
+        
+        - .modal-header : Header ( has a title and a close btn)
+        - .modal-title : title of the header
+
+        - .modal-body : Has body related content
+
+        - .modal-footer : has footer content (usually byttons)
+      </pre>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">Modal Button (controls the visibility of the modal)</strong>
+        - data-bs-toggle="modal" : property specifies modal button
+        - data-bs-target="#ID" : provide the modal id here
+      </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Modal Button
+          </button>
+
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Registration From</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="">
+                    <div class="mb-3">
+                      <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" placeholder="name@example.com" />
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleFormControlTextarea1" class="form-label">Password</label>
+                      <input type="password" name="" id="" class="form-control" />
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>
