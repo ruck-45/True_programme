@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Helpers</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">.clearfix</strong>
+        - clears float behaviour and adds block behaviour to the parent element
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <div class="bg-info clearfix">
+            <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+            <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+          </div>
+          <br />
+          <br />
+
+          Without clearfix the parent doesn't span around the children (can cause broken layouts)
+          <br />
+          The parent is blue in color
+          <br />
+          <br />
+
+          <div class="bg-info">
+            <button type="button" class="btn btn-secondary float-start">Example Button floated left</button>
+            <button type="button" class="btn btn-secondary float-end">Example Button floated right</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">.focus-ring</strong>
+        - adds focus rings outside the element when interacted
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-8">
+          <a href="" class="focus-ring border p-2 text-decoration-none link-dark rounded"> hello </a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">.ratio .ratio-(aspectratio)</strong>
+        - aspect ratios avialable : 
+          - ratio-1x1
+          - ratio-4x3
+          - ratio-16x9
+          - ratio-21x9
+
+        - mostly used for iframes
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="ratio ratio-1x1">
+            <img
+              src="https://images.unsplash.com/photo-1695918431205-b70d3d43b332?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">.vstack and .hstack</strong>
+        - stack items vertically or horizontally
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          vstack
+          <div class="vstack bg-primary">
+            <p class="m-1 rounded text-center bg-primary-subtle">lorem</p>
+            <p class="m-1 rounded text-center bg-primary-subtle">lorem</p>
+            <p class="m-1 rounded text-center bg-primary-subtle">lorem</p>
+          </div>
+        </div>
+
+        <div class="col-4">
+          hstack
+          <div class="hstack bg-primary">
+            <p class="m-1 rounded text-center bg-primary-subtle">lorem</p>
+            <p class="m-1 rounded text-center bg-primary-subtle">lorem</p>
+            <p class="m-1 rounded text-center bg-primary-subtle">lorem</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">.text-truncate</strong>
+        - to truncate the text with an ellipsis.
+        - requires display: inline-block or display: block.
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2 text-truncate">This text is quite long, and will be truncated once displayed.</div>
+      </div>
+    </div>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">.vr (vertical rule)</strong>
+        - to truncate the text with an ellipsis.
+        - requires display: inline-block or display: block.
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2">
+          <div class="vr" style="height: 100px;"></div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>

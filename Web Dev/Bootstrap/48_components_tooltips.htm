@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Tooltips</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Tooltips</strong>
+        - simplified popovers
+        - data-bs-toggle="tooltip" : to enable Tooltips
+        - data-bs-title="message" : to give custom message in tooltips
+        - data-bs-placement="top/bottom/left/right" : gives positioning to the tooltip popover
+
+        - It can be used with anything
+
+        - Include popper.js for support
+
+        - Use below js for setup : 
+            const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+            const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="card text-center">
+            <div class="card-header">
+              <h5 class="card-title pt-2">Grass</h5>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit numquam aliquid tenetur quae. Ipsa
+                deserunt excepturi voluptatibus
+                <a data-bs-toggle="tooltip" data-bs-title="A head wear." href="">hat</a> aliquid laborum dolore. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Accusantium, magni? Voluptatum
+                <strong data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="A solution of some kind.">remedy</strong> perspiciatis,
+                veritatis <b data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="A japanese warrior."><i>ronin</i></b> commodi esse
+                placeat culpa obcaecati explicabo omnis?
+              </p>
+            </div>
+            <div class="card-footer">
+              <button data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="I concent to sell my soul" class="btn btn-primary">
+                submit
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <script>
+      const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+      const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+    </script>
+  </body>
+</html>

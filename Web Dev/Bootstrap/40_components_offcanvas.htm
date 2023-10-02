@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Background</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Offcanvas</strong>
+        - It is structurally similar to a modal
+        - .offcanvas-(breakpoint) : (Wrapper)\
+        - .offcanvas .offcanvas-(start/end/top/bottm) : controls the placement of the offcanvas
+        - data-bs-scroll="true" : to enable body scrolling while on offcanvas
+        - data-bs-backdrop="false" : to disable backdrop of offcanvas
+        - data-bs-backdrop="static" : to make static backdrop (non interactive)
+
+        - .offcanvas-header :  (contains offcanvas-title and cross-btn)
+
+        - .offcanvas-title : header title 
+
+        - .offcanvas-body :  (body of offcanvas, can have anything inside)
+    </pre>
+
+    <br />
+
+    <pre>
+        <strong style="font-size: large;">Offcanvas Toggle Button</strong>
+        - It can be a button or anchor tag
+        - give the IF of the offcanvas in : href="#offcanvasExample" ( if anchor tag ) or data-bs-target="#offcanvasExample" ( if button )
+        - use data-bs-toggle="offcanvas" attribute in both a/button 
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <button data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" class="btn btn-primary rounded-pill">
+            Offcanvas
+          </button>
+
+          <div id="offcanvasExample" class="offcanvas offcanvas-start" data-bs-backdrop="true" data-bs-scroll="true">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">Dummy Title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <div class="offcanvas-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quae temporibus dolor eos culpa
+                voluptatibus quidem aliquid et eius? Amet, qui placeat. Provident similique illum nihil officiis itaque
+                non reiciendis at aspernatur id deserunt vitae, necessitatibus ducimus, vel quaerat labore, modi odit
+                accusamus impedit repellendus distinctio nam eveniet hic. Nobis.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Progress</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Progress</strong>
+        - used to make progress bars
+
+        - .progress : (Wrapper)
+        - aria-valuemin="0" aria-valuemax="100" : (Wrapper) min max values
+        - we can give height and width to determine the size of the bar
+        
+        - .progress-bar : the actual progress bar
+        - we can give width to display the progress of the content
+        - we can write content in it as progress lables
+        - .bg-(color) : provides color to progress-bar
+        - .progress-bar-striped : creates striped patten for progress bars
+        - .progress-bar-animated : Animates progress-bars
+    </pre>
+
+    <pre>
+        <strong style="font-size: large;">Progress bar stacked</strong>
+        - .progress-stacked : (Wrapper above .progress), groups progress bars just like other grouping
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <div class="progress w-100 rounded-pill" style="height: 1.5rem">
+            <div class="progress-bar w-75 progress-bar-striped progress-bar-animated">75%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br />
+    <br />
+
+    <div class="container">
+      <div class="row">
+        <div class="col-9">
+          <div class="progress-stacked">
+            <div class="progress w-25 rounded-pill">
+              <div class="progress-bar progress-bar-striped progress-bar-animated">25%</div>
+            </div>
+            <div class="progress w-25 rounded-pill">
+              <div class="progress-bar bg-warning">25%</div>
+            </div>
+            <div class="progress w-25 rounded-pill">
+              <div class="progress-bar progress-bar-striped bg-success">25%</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br />
+  </body>
+</html>

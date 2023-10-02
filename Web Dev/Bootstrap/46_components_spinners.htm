@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Components : Background</title>
+    <title>Components : Spinner</title>
 
     <!-- Bootstrap -->
     <link
@@ -20,14 +20,19 @@
   </head>
   <body>
     <pre>
-        <strong style="font-size: large;">.bg-(color-code)</strong>
-        - gives background color to element
-        - We have following color codes :
-      </pre>
+        <strong style="font-size: large;">Spinner</strong>
+        - .spinner-(border/grow) : creates the spinner 
+        - .text-(color) : gives color 
+    </pre>
 
     <div class="container">
       <div class="row">
-        <div class="col-5"></div>
+        <div class="col-1">
+            <div class="spinner-border text-success"></div>
+        </div>
+        <div class="col-1">
+            <div class="spinner-grow text-warning"></div>
+        </div>
       </div>
     </div>
 

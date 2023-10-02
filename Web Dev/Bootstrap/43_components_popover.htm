@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Popover</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Popover</strong>
+        - usually used with buttons
+        - data-bs-toggle="popover" : property enabling popover
+        - data-bs-title="Popover title" : property gives popover title
+        - data-bs-content="popover content" : property gives popover content 
+        - data-bs-placement="top/bottom/right/left" : property used for placement
+
+
+        - include in your script and make sure pooer.js is included in bootstrap bundle: 
+            const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+            const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
+    </pre>
+
+    <pre>
+        <strong style="font-size: large;">Dismissable Popover</strong>
+        - can only be done using anchor tags 
+        - data-bs-trigger="focus" : use this property for dismissable feature 
+        - tabindex="index" : is a must include
+    </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-5">
+          <a
+            class="btn btn-primary"
+            data-bs-toggle="popover"
+            data-bs-title="Thesus"
+            data-bs-content="To break something in parts."
+            data-bs-placement="top"
+            data-bs-trigger="focus"
+            tabindex="0"
+          >
+            Dismantle
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <script>
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+      const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
+    </script>
+  </body>
+</html>

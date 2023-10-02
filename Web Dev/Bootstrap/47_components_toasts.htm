@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Toasts</title>
+
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Toasts</strong>
+        - behaviour similar to modals and offcanvas
+
+        - Toast classes : 
+            - .toast : (Wrapper)
+            - .bg-text-(color) : give background color
+
+            - .toast-header : header of toast (contains logo(if required), title, close button and aditional info)
+
+            - .toast-body : has content of toast
+
+        - use custom js to attach toasts to buttons
+                const toastTrigger = document.getElementById('liveToastBtn')
+                const toastLiveExample = document.getElementById('liveToast')
+
+                if (toastTrigger) {
+                const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+                toastTrigger.addEventListener('click', () => {
+                    toastBootstrap.show()
+                })
+                }
+
+
+        - .toast-container : (wrapping above toast), used to group together multiple toasts, which will stack after one another after being triggered
+    </pre>
+
+    <div class="position-fixed bottom-0 end-0">
+      <div id="welcomeToast" class="toast m-3">
+        <div class="toast-header">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-body-secondary">11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">Welcome ! Traveller , The great journy awaits you.</div>
+      </div>
+
+      <div id="questToast" class="toast m-3">
+        <div class="toast-header">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-body-secondary">9 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">
+          We are in great peril! our village has been burnt down, we need help stop the bandits.
+        </div>
+      </div>
+
+      <div id="completeToast" class="toast m-3">
+        <div class="toast-header">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-body-secondary">11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">Ohh Thank you traveller, we will forever be greatful to you.</div>
+      </div>
+
+      <div id="rewardToast" class="toast m-3">
+        <div class="toast-header">
+          <strong class="me-auto">Bootstrap</strong>
+          <small class="text-body-secondary">11 mins ago</small>
+          <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+        <div class="toast-body">Here you go, i don't have much but this should suffice you.</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-2 d-flex flex-column gap-1">
+          <button id="welcomeBtn" class="btn btn-primary">Welcome</button>
+          <button id="questBtn" class="btn btn-primary">Receive Quest</button>
+          <button id="completeBtn" class="btn btn-primary">Complete Quest</button>
+          <button id="rewardBtn" class="btn btn-primary">Receive Reward</button>
+        </div>
+      </div>
+    </div>
+
+    <br />
+
+    <script>
+      let tasks = ["welcome", "quest", "complete", "reward"];
+
+      tasks.forEach((task) => {
+        let toastTrigger = document.getElementById(`${task}Btn`);
+        let toastDialogue = document.getElementById(`${task}Toast`);
+
+        if (toastTrigger) {
+          const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastDialogue);
+          toastTrigger.addEventListener("click", () => {
+            toastBootstrap.show();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>

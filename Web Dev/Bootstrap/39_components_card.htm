@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Components : Cards</title>
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <pre>
+        <strong style="font-size: large;">Cards</strong>
+        - A card is a flexible and extensible content container.
+        - .card : (Wrapper)
+        - use text alignment on card wrapper (text-start, text-center, text-end) to align contents inside card-body 
+        - .text-bg-(color) : to give background color to card 
+
+
+        - .card-header : header
+        - .card-footer : footer 
+
+        - .card-img-top : if image used at top
+        - .card-img-bottom : if image used at bottom
+        - .card-img : if image used as background 
+
+        - .card-body : (wrapper for content) 
+        - .card-title : title inside body 
+        - .card-subtitle : subtitle inside body 
+        - .card-text : text inside body 
+        - .card-link : anchor tags inside body 
+
+        - instead of card body use .card-img-overlay to use card-img as a background ( Note : content will overflow if they exceed image height) 
+
+      </pre>
+
+    <pre>
+        <strong style="font-size: large;">Card Groups</strong>
+        - Groups multiple cards under it
+        - .card-group : (Wrapper)
+
+      </pre>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card-group">
+            <div class="card text-bg-dark text-center" style="max-width: 20rem">
+              <img
+                src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+                alt=""
+                class="card-img-top img-thumbnail bg-dark border-dark"
+              />
+              <h5 class="card-header">Waffles</h5>
+              <div class="card-body">
+                <h6 class="card-title text-secondary">Its Wafflin Time</h6>
+                <div class="card-text">
+                  A waffle is a dish made from leavened batter or dough that is cooked between two plates that are
+                  patterned to give a characteristic size, shape, and surface impression. There are many variations
+                  based on the type of waffle iron and recipe used.
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary">Shop Waffles</button>
+              </div>
+            </div>
+
+            <div class="card text-bg-dark text-center" style="max-width: 20rem">
+              <img
+                src="https://images.unsplash.com/photo-1555813456-94a3dd418cd3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1926&q=80"
+                alt=""
+                class="card-img-top img-thumbnail bg-dark border-dark"
+              />
+              <h5 class="card-header">Pancake</h5>
+              <div class="card-body">
+                <h6 class="card-title text-secondary">Its Panikin Time</h6>
+                <div class="card-text">
+                  Pancakes are flat cakes made from batter and cooked on a griddle. They are often eaten with syrup,
+                  butter, or fruit. Pancakes are a tasty and easy breakfast.
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary">Shop Pancakes</button>
+              </div>
+            </div>
+
+            <div class="card text-bg-dark text-center" style="max-width: 20rem">
+              <img
+                src="https://images.unsplash.com/photo-1560910615-9eaa2e704e63?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+                alt=""
+                class="card-img-top img-thumbnail bg-dark border-dark"
+              />
+              <h5 class="card-header">Cookie</h5>
+              <div class="card-body">
+                <h6 class="card-title text-secondary">Its Cookin Time</h6>
+                <div class="card-text">
+                  Cookies are baked treats made from dough and various ingredients. They can be soft, chewy, crunchy, or
+                  crispy. Cookies come in many shapes, sizes, and flavors. Cookies are a sweet and satisfying snack.
+                </div>
+              </div>
+              <div class="card-footer">
+                <button class="btn btn-primary">Shop Cookie</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card w-25">
+            <img
+              src="https://images.unsplash.com/photo-1562376552-0d160a2f238d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1925&q=80"
+              alt=""
+              class="card-img"
+            />
+            <h5 class="card-header">Waffles</h5>
+            <div class="card-img-overlay text-light">
+              <h6 class="card-title">Its Wafflin Time</h6>
+              <div class="card-text">
+                A waffle is a dish made from leavened batter or dough that is cooked between two plates that are
+                patterned to give a characteristic size, shape, and surface impression. There are many variations based
+                on the type of waffle iron and recipe used.
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary">Shop Waffles</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <br />
+  </body>
+</html>
