@@ -1,0 +1,40 @@
+File Structure : 
+
+    0 - node_modules         --------------> Holds all node modules/core files necessery to run the project, autometically updates when package.json is updated
+        1 - module..
+        1 - module..
+        1 - module..
+    
+    0 - public
+        1 - fabicons & pngs
+        1 - index.html          --------------> This is our MAIN ONE PAGE WEBSITE file ( it is not much customized)
+                                                It has all important files connected to It
+                                                In its body there is a noscript tag, that detects and warns users if their Js is disabled
+                                                And it has a single div ith id = "root" // All of our components come and get injected inside this div (primarily)
+                                                If we want we can introduce more elements to body of index.html but , we primarily don't  
+
+        1 - manifest.json       --------------> used to build PWA (Progressive web app, lightweight app version of the website that saves to our homescreen in phones)
+        
+        1 - robots.txt          --------------> used in SEO (Search Engine Optimization), used to tell what to crawl and what not to
+
+
+
+    0 - src ---------------------------------> Source, main place where we write the React Logic
+        
+        1 - App.css & App.js                -------------------------> It works as wrapper of all components (it gets called in index.js)
+        1 - index.css & index.js            -------------------------> It represents the universal Website (or the whole, it puts HTML in App.js into the "root" div in index.html (public folder))
+        
+        1 - reportWebVitals.js -------------> used for report generation
+        1 - App.test.js & setupTests.js ---------------> used for testing
+
+        1 - logo.svg       ---------------> additional support file
+
+
+
+    0 - .gitignore      --------------------------> Includes all the files we don't want to push to github (mainly the dependencies)
+    
+    
+    0 - package.json    --------------------------> Holds important metadata about the project (dependencies, name, version ,scripts)
+    0 - package-lock.json  --------------------------> Is generated autometically from package.json
+
+    0 - README.md       --------------------------> Project Documentation

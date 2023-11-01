@@ -1,0 +1,12 @@
+Introduction
+
+    - React is a Js library made to make web development faster and more modular
+    - It uses node (used to run Js in servers/local machines)
+    
+    - It is used for two purposes
+        - Reusability : React uses Components : These are reuseable building blocks in react , which helps us reuse various code blocks
+        - Code maintenance : code is divided in modular form , helps maintain better file structure
+
+    - Starter Commands : 
+       - npx create-react-app "Project_Name" :  creates a react project folder with necessery files
+       - npm start : starts deployment server

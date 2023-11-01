@@ -1,0 +1,65 @@
+# USE Javascript In Jsx : 
+
+    - We can use Js in Jsx by using : "{}"
+    - Anything we write inside "{}" is treated as a Js code inside Jsx 
+
+    - Example : 
+
+        MemoItem.js : 
+
+            function MemoItem(props){
+                let priceClass = "MemoItemPrice"; -----------------> We set a variable "priceClass" which holds classes for second div inside MemoItemBox
+
+                if (props.cost >= 0) { -------------------> We write a logic for "priceClass"
+                    priceClass += " profit";
+                } else {
+                    priceClass += " loss";
+                }
+
+                return (
+                    <div className="MemoItemBox" id = {props.id}>
+                        <div className="MemoItemTitle">{props.title}</div>
+                        <div className={priceClass}>  ---------------------> We pass the Js variable "priceClass" to className using "{}"
+                            {32 + 78}  ----------------------> We also performed math inside the div' content using this feature
+                        </div> 
+                    </div>
+                );
+            }
+
+
+
+
+# Props : 
+
+    - props is how we generalize a component
+    - In above example we have a component which can have the 
+        - Desired ID
+        - Modified ClassName (under circumstances)
+        - Desired Title 
+
+        etc.... That is passed to the component
+
+    - we can use props to access the attributes passed to the component when it is called.
+
+
+    - The way attributes are passed are the way we attach attribute to html tags 
+    - All the attributes that are passed are stored inside the props object and we can access them using that in the function
+
+    Example : passing attributes to components when calling them
+
+        <MemoItem date = "November 20, 2020" title = "Paper Rolls" cost = {cost} ></MemoItem> 
+
+                // date , title , cost are all passed here as attributes to MemoItem component
+                // cost has been passed as a JS variable 
+                // All of these attributes can be accessed like : props.date, props.title, props.cost
+
+
+                // Then we can make as much MemoItem  just by calling a single Jsx code and passing some attributes
+                // If number is big, try storing data in a JSON (in array of objects format) and then utilize it from there one by one
+
+
+    
+
+
+
+

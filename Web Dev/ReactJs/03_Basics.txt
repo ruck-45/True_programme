@@ -1,0 +1,172 @@
+Some Develpoer Rules and basics we Follow in React : 
+
+
+    # index.html
+
+        - There is only one HTML file in React, i.e : index.html ( in public Folder )
+        - All HTML code we write, we write it in ./src folder in Js files with jsx
+        - In sort in React we write HTML in Js 
+
+    
+    # Jsx
+
+        - Developers have developed a language based on XML that enables us to define HTML objects by directly writing HTML code onto Js 
+        - It has some differences to HTML, but its preety similar in syntax
+        - We call it Jsx (HTMl that we can write in Js)
+
+
+    # index.js & index.css 
+
+        - These files as the name suggest interact with index.html
+        - index.js uses : ReactDom.render(HTML Code, Target) function to Replace InnerHTML code of the "root" Id' div in index.html 
+                          Normally This HTML code is our Entire Website
+                          The HTML code it takes generally is Contained In a Wrapper (A single Tag Code), It will not allow multi Tag HTMl code
+                          So make sure the HTMl code of the Website is Properly Wrapped (if it contains multiple HTML tags) Before injecting into index.HTML 
+
+            index.html : 
+                <div id="root"></div>
+
+            index.js : 
+                ReactDom.render(
+                    <App />, -----------------------------------------------------> The HTML code
+                     document.getElementById('root') -----------------------------> Inject Inside the Wrapper whose ID is Root
+                );
+
+
+            Creates : 
+                <div id="root">
+                    <App /> ------------------------> Literally Replaces Everything inside of root to App component,
+                </div>                                If we had some HTML in "root" div, before it will be overWritten
+
+
+
+        - index.css is css file for index.html , it is mainly used when we have something global to apply to.
+        - Otherwise each component have their own css file to style them.
+
+
+    # Importing files (Images, Video, Js, Css etc..)
+
+        - Since our interaction with the HTML file (index.html) is preety much non-existant, all these asset files are now imported to js files of the component
+        - Jsx allows imporing images , videos and css files directly to js files using "import" keyword
+
+            import "./index.css"
+            import "./App.css"
+
+    
+    # App.js and App.css
+
+        - This is known as the master Component
+        - Our Website may be comprised of few hundred Components and non-components 
+        - Inorder to have index.js clean, we use App.js as the master componenet
+
+        - In App.js : 
+            - We import all components, subcomponents that are needed to be used in our website
+            - We import App.css that contains styling at master level
+
+
+            - We make a Function of the Same Name (function App() {}) that returns the Whole Master Container Jsx Code (Wrappeed)
+            - We combine all our components and non-componenets into a single website
+            - We Export the function as default (which is then imported by index.js and injected to "root" div in index.html)
+            
+
+
+    # Components and subcomponents
+
+        - Since our website can have multiple components and subcomponents, we keep them in a separate folder inside ./src folder
+        - It is important to maintain a clean file structure and nomenclature to avoid confusion and to reuse components efficiently
+        - It also avoids crowding ./src folder 
+
+
+    # Component naming and Best Practices
+       
+        - It is important to have the Name of the .js , .css files and also the function in the .js file same for easier access and understanding
+        - This also by default groups the .js and .css files together and hence they appear right after one another in the editor which makes accessing files easier
+        
+        - It is important to Name our components (.js , .css and also the function name) starting with capital Letters
+        - Firstly beacuse to remain consistant and ease of access 
+        - Second since we use the functions and Tags to send the HTML code, the compiler and editor will consider small lettered tags as Jsx tags and captial lettered Tags as components 
+
+        Example : 
+
+            Component.js : --------------------------> Capital Name
+
+                import './Component.css'; _------------------> Css same Name as Js File
+                
+                function Component(){ --------------------------> Function same Name as Js and Css file
+                    return (
+                        <div>
+                            <h1>Heading</h1>
+                            <p className="italic">Lorem Mollitia, modi.</p>
+                        </div>
+                    );
+                }
+
+                export default Component; ----------> Default Export such that the function can be used by any other component by providing any arbitary name (to avoid conflict)
+                                                      But we mostly prefer the Given Name while importing (unless we have a conflict)
+
+
+
+
+            App.js : 
+
+                import Component from '.component_folder/Component' -------------> Js files in React don't need extensions
+
+                function App(){
+                    return (
+                        <div>
+                            <h1>Heading</h1>
+                            <Component />  --------------------> compiler reads as a custom component as the tag name starts with a CAPITAL letter
+                        </div>
+                    );
+                }
+
+                export default App;
+
+
+
+        - We basically Export functions in React as default beacuse to avoid any conflicts
+        - Properties exported as default can be assigned any arbitary name while importing without using 'as' keyword , its used as its more convinient
+
+        
+        - Just like index.js, We can only return a single Jsx tag in a function of a component, so make sure to wrap the Jsx code if there are multiple tags before returning
+
+
+        - <Component/> --------------> is replaced by the Jsx code that Component returns 
+        - It can also be written as  <Component></Component> : But we cannot insert any elements inside the start and closing tag as It is a self closing tag and doesn't allow children like that
+
+
+
+
+# Note : Since css is attached to each component, The whole css for the websie is not loaded once
+         This makes react faster as it loads css for only those components needed and removes if not needed
+
+
+# The Big Picture : 
+
+    index.html ("root" div)
+
+            ^
+            |
+            |
+            |
+
+    index.css  (adds Style at global level)
+    index.js   (Replaces InnerHTML of "root" div with <App />)
+
+            ^
+            |
+            |
+            |
+
+    App.css   (adds Style at Master Component level)
+    App.js    (combines multiple components and non-components to make the website)
+
+            ^
+            |
+            |
+            |
+
+    Flie Structure in ./src (   ----------------> Contains all Components used in the website
+        - Components.css , Componenets.js
+        - Subcomponents.css , Subcomponents.js 
+    )

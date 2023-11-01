@@ -1,0 +1,68 @@
+# Subcomponents : 
+
+    - We can use components inside componenets, just like we use components inside App.js (which itself is a componenet)
+
+    - Since Arrow function is widely used in Modern Js, make sure to use only arrow function in components 
+    - Use const most of the time to maintain strictness in component 
+
+
+
+# Nested Component
+
+    - We discussed that <Component /> is a self closing tag and even if we can write it as <Component></Component> we can't provide any children between it.
+    - This was because once compiler encounters a component, from its starting to its ending tag, it replaces/overwrites the whole section with the Jsx code returned bu the componenet
+
+    Example : 
+
+        Component.js : 
+
+            const Component = () => {
+                return (
+                    <div>
+                        <h1> This is a heading </h1>
+                        <p> Paragraph under it</p>
+                    </div>
+                )
+            }
+
+
+
+        App.js : 
+
+            const App = () => {
+                return (
+                    <Component>            //                                                      <div>
+                        <a> Link1 </a>     // ----> This Whole Thing is replaced with :--->         <h1> This is a heading </h1>
+                    </Component>           //                                                       <p> Paragraph under it</p>
+                )                                                                                  </div>
+            }
+
+        So as soon as compiler encounters <Component> ... </Component> or <Component /> it immediately overwrites the whole block with Jsx code returned by the component 
+
+
+
+
+    Can we still pass the children and include them ?
+
+        - Yes, It can be done using props.children
+        - props, by default stores the innerHTML passed when the component is called , in children property
+
+        Component.js : 
+
+            const Component = (props) => {
+                const className = "customClass " + props.className; ----->   props stores all attributes, and so is className
+                                                            by doing this we can still retain the className passed when it is called and also add new classNames if required
+                return (
+                    <div className = {className}>
+                        {props.children} ------->   contains innerHTML passed when called, 
+                                                    so now it includes the HTML code when overwrites
+                        <h1> This is a heading </h1>
+                        <p> Paragraph under it</p>
+                    </div>
+                )
+            }
+
+
+
+    - We can use this Nesting feature to make custom Wrapper Containers,
+    - Like a Card, when a container is passed to a card Component, it makes it rounded and adds shadow to it.
