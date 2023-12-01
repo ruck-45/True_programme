@@ -56,3 +56,36 @@
     module.exports.c = c;
     
     console.log(module);
+
+
+    // For importing we can directly import using require() storing the module in a variable
+    const module_1 = require("./module_1.js")  // .js is optional (only for js files)
+
+    // Or by destructuring specific methods/variables we want
+    const {var1,var2,fun1} = require("./module_1")
+
+
+// secret require() feature
+
+    // One feature require() has is that if we import any module through require() and the module "calls" any function in itself
+    // Then it will execute that function when importing
+    
+    
+    // Eg : 
+
+    // Module 1
+
+        const fun = (a,b)=>{
+            return a*b
+        }
+
+        console.log(fun(4,5))
+
+        module.exports = fun
+
+    // Module 2
+
+        require('./Module_1') // It will print 20 as 4*5 = 20
+                              // It mainly happens because node parses the js file before importing and it runs any function it encounters
+
+    

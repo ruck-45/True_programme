@@ -1,0 +1,107 @@
+npm
+
+    - NPM : Node Package Manager
+    - It is a platform that people use to get useful modules for their project
+    - They can also build their own module and share it in npm
+
+    - npm is installed alongside with node
+        npm --v : version
+
+
+
+Lcoal Dependency install
+
+    - Most of the time in order to use npm we need to download the package and install in our environment to make use of it
+    - We can do that by installing Globally / Locally
+
+    - One upside for global install is it will be installed for our whole system and we cna use the package for all projects in our system
+    - But we generally don't do global install as not all projects require the same module and even if they do, they may require different versions and it will be problematic
+
+    - To install dependencies locally we use :
+        npm i <package-name>
+
+
+
+Global Dependency install
+
+    - To install packages globally we can use :
+        npm install -g <package-name>
+        sudo npm install -g <package-name> (mac)
+
+
+
+package.json
+
+    - package.json is a manifest file that stores important metadata for our node project
+    - The metadata helps for documentation and also helps others use our project with same environment we built it in
+
+    - We can create package.json in following ways:
+        - manual : (not recommended) create package.json in root , create properties
+        - npm init : creates package.json for you , step by step requires inputs
+        - npm init -y : makes a default package.json (can be changed later) (recommended)
+
+    - There are various properties in package.json
+
+        # name : name of the package (if uploading to npm it should be globally unique)
+        # version : tracks the current version of package ( 1.0.0 )
+            first : major version (breaking change)
+            second : minor change
+            third : patch
+
+        # description : the description of the package 
+        # main : the starting file of the package (main/app.js)
+
+        # scripts : custom scripts we can assign that can be run through "npm run ..." command
+
+        # author : the author of the package 
+        # license : license of the package
+
+        # dependencies : each external module we install for the project that is required to run the project through npm is automatically added to dependencies
+        # dev-dependencies : the packages that are only required for production is added under dev-dependencies
+                - it is not installed in client's system / server
+                - to install dev dependencies use: 
+                    npm i <package-name> -D 
+                    npm i <package-name> --save-dev 
+
+
+
+
+
+node modules
+
+    - It is a folder that holds all external modules installed through npm 
+    - All the modules and their dependencies in dependencies and dev-dependencies of package.json exist here
+
+    - we can install all packages simultaneously and generate the node module by running ;
+        npm install 
+
+    
+
+.gitignore 
+
+    - it is a file that contains all the packages that should be ignored when pushing to git 
+    - since we have the metadata, no need to push the complete node module folder to git and make the repo heavy
+    - the cloner can easily install all node modules by : npm install (if he has the package.json file)
+
+
+
+Uninstall Package
+
+    - npm uninstall <package-name>
+    - it removes package from node modules and also from package.json and package-lock.json
+
+
+
+npx 
+
+    - Before libraries like Gatsbi, StrapAi and React needed to be installed globally inorder to use it 
+    - After updte of npm V5 they introduced npx 
+    - we can now install these files locally using npx route now 
+
+
+
+package-lock.json :
+
+    - dependencies have dependencies of their own and they also have a compatible version 
+    - if the versions are not comaptible then it will throw error 
+    - package-lock .json not only stores the exact version of the dependencies, it also stores version info for the dependencies of the dependencies
