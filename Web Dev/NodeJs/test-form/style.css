@@ -1,0 +1,12 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.nav{
+    padding: 1.5rem 5rem;
+    box-sizing: content-box;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Calibri';
+}
